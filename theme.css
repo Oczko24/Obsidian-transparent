@@ -122,7 +122,10 @@ select,
   backdrop-filter: blur(var(--set-blur));
   box-shadow: none;
 }
-
+.suggestion { 
+    background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); /* tasks integration */
+}
 
 /* mobile (unended) */
 
