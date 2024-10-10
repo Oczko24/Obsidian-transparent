@@ -15,3 +15,5 @@ Enjoy a beautiful and functional writing experience with this theme!
 
 - Full mobile support
 - better light theme (i have code that is not full tested yet)
+- style plugin settings
+- (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
