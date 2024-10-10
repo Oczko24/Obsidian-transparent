@@ -1,4 +1,4 @@
-# Obsidian-transparent
+# Obsidian transparent
 
 This theme is designed to be **light**, **simple**, **aesthetic**, and **minimalistic**. It provides a clean and unobtrusive user interface that allows you to focus on your notes without distraction.
 
@@ -10,5 +10,7 @@ This theme is designed to be **light**, **simple**, **aesthetic**, and **minimal
 
 Enjoy a beautiful and functional writing experience with this theme!
 
-### Todo;
+
+### Todo
+
 - Full mobile support
