@@ -12,4 +12,6 @@ Enjoy a beautiful and functional writing experience with this theme!
 
 
 ### Todo
+
 - Full mobile support
+- better light theme (i have code that is not full tested yet)
