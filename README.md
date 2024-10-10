@@ -7,6 +7,7 @@ This theme is designed to be **light**, **simple**, **aesthetic**, and **minimal
 - **Light Color Palette**: The theme uses a soft color scheme that is easy on the eyes.
 - **Minimalistic Design**: Clean lines and ample white space create a serene workspace.
 - **Customizable Background**: You can easily add a background image by linking it in the `.css` file, enhancing the visual appeal of your notes.
+- **Integration with plugins**: some plugins just look better with this theme due to taking them into account in the code.
 
 Enjoy a beautiful and functional writing experience with this theme!
 
