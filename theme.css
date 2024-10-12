@@ -129,7 +129,11 @@ select,
 .status-bar {
   backdrop-filter: blur(2px);
 }
-
+.notice {
+    background-color: var(--tr);
+    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+    
+}
 /* canvas */
 .canvas-control-item {
   background-color: var(--tr);
