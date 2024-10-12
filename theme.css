@@ -24,7 +24,7 @@ body {
 }
 
 .theme-dark .workspace {
-  backdrop-filter: brightness(0.70) blur(var(--set-blur));
+  backdrop-filter: brightness(0.60) blur(var(--set-blur));
   --icon-color: #ffffff;
 }
 
