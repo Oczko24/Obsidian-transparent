@@ -131,9 +131,14 @@ select,
 }
 .notice {
     background-color: var(--tr);
-    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
-    
+    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));   
 }
+/* code blocks */
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: #00000060;
+}
+
+
 /* canvas */
 .canvas-control-item {
   background-color: var(--tr);
