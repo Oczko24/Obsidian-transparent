@@ -137,6 +137,9 @@ select,
 .cm-s-obsidian div.HyperMD-codeblock-bg {
   background-color: #00000060;
 }
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  border-inline-end: 0;
+}
 
 
 /* canvas */
