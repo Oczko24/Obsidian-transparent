@@ -126,6 +126,10 @@ select,
     background-color: var(--tr);
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); /* tasks integration */
 }
+.status-bar {
+  backdrop-filter: blur(2px);
+}
+
 
 /* mobile (unended) */
 
