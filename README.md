@@ -2,6 +2,7 @@
 
 This theme is designed to be **light**, **simple**, **aesthetic**, and **minimalistic**. It provides a clean and unobtrusive user interface that allows you to focus on your notes without distraction.
 
+![screnshoot](cover.jpg)
 ## Features
 
 - **Light Color Palette**: The theme uses a soft color scheme that is easy on the eyes.
