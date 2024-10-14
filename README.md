@@ -19,3 +19,5 @@ Enjoy a beautiful and functional writing experience with this theme!
 - better light theme (i have code that is not full tested yet)
 - style plugin settings
 - (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
+
+%% https://unsplash.com/photos/a-forest-filled-with-lots-of-green-trees-CrOh4o8Yr-g %%
