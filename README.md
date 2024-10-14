@@ -11,7 +11,8 @@ if you like this theme you can give a star to this repo on github
 - **Light Color Palette**: The theme uses a soft color scheme that is easy on the eyes.
 - **Minimalistic Design**: Clean lines and ample white space create a serene workspace.
 - **Customizable Background**: You can add a background image by linking it in the `.css` file via base64, enhancing the visual appeal of your notes.
-- **Integration with plugins**: some plugins just look better with this theme due to taking them into account in the code.
+- **Integration with plugins**: Some plugins just look better with this theme due to taking them into account in the code.
+- **Integration with snippets**: theme is made to work with my own snippets, for example [Accent everywhere](https://github.com/Oczko24/Obsidian_things/blob/main/css_snippets/Accent%20everywhere.css)
 
 Enjoy a **beautiful** and functional writing experience with this theme!
 
