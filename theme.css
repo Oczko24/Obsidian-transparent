@@ -169,10 +169,12 @@ select,
   background-color: var(--tr);
 }
 .mobile-navbar {
-  background-color: transparent;
+  background-color: #000000;
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   padding: var(--size-4-2) max(var(--safe-area-inset-right), var(--size-4-4)) max(var(--size-4-2), var(--safe-area-inset-bottom)) max(var(--safe-area-inset-left), var(--size-4-4));
   position: relative;
   z-index: 1;
 }
-  
+.is-phone .workspace-split {
+    padding-top: 0;
+}
