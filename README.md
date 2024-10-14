@@ -20,4 +20,7 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 - style plugin settings
 - (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
 
+
+
+
 If you find any bug please let me know
