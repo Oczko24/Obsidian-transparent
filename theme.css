@@ -107,14 +107,21 @@ input[type='number'] {
   max-height: 600px;
 }
 
+/* finnally buttons look good */
 button:not(.clickable-icon) {
   background-color: var(--color-accent);
   box-shadow: none;
+  color: #060606;
 }
-
 button {
   color: #060606;
 }
+/* sliders */
+input[type='range'] {
+  background-color: #00000060;
+}
+
+
 
 select,
 .dropdown {
@@ -139,6 +146,18 @@ select,
 }
 .markdown-source-view.mod-cm6 .cm-indent::before {
   border-inline-end: 0;
+}
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+  background-color: #00000060; /* smol */
+}
+.markdown-rendered pre {
+  background-color: #00000060;
+}
+.markdown-rendered code {
+  background-color: #00000060; /* both for read mode */
+}
+.cm-s-obsidian span.cm-inline-code {
+  background-color: #00000060; /* source mode edit */
 }
 
 
