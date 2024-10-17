@@ -4,6 +4,9 @@ This theme is designed to be **light**, **simple**, **aesthetic**, and **minimal
 
 ![screnshoot](preview.png)
 
+settings looks like this, accent color from screnshoots; `#FFA200`
+
+![settings](settings.png)
 if you like this theme you can give a star to this repo on github
 
 ## Features
