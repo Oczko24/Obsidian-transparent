@@ -176,8 +176,14 @@ input[type="range"]::-webkit-slider-thumb {
 }
 /* canvas */
 .canvas-control-item {
-  background-color: var(--tr);
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  background-color: #00000000;
+}
+
+.canvas-card-menu {
+  box-shadow: none;
+}
+.canvas-control-group {
+  box-shadow: none;
 }
 
 /* hover on links */ 
