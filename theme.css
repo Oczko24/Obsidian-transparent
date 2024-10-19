@@ -180,6 +180,11 @@ input[type="range"]::-webkit-slider-thumb {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
 
+/* hover on links */ 
+.popover.hover-popover .markdown-preview-view {
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
 
 /* mobile (unended) */
 
