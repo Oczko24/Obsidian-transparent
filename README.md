@@ -22,7 +22,7 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 
 ### Todo
 
-- Full mobile support
+- Better mobile support (however it works nice at the moment)
 - better light theme (i have code that is not full tested yet)
 - style plugin settings
 - (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
