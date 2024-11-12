@@ -1,5 +1,6 @@
 # Obsidian transparent
 
+##### mobile support 
 This theme is designed to be **light**, **simple**, **aesthetic**, and **minimalistic**. It provides a clean and unobtrusive user interface that allows you to focus on your notes without distraction, with **mobile support**.
 
 ![screnshoot](preview.png)
@@ -22,7 +23,6 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 
 ### Todo
 
-- Better mobile support (however it works nice at the moment)
 - better light theme (i have code that is not full tested yet)
 - style plugin settings
 - (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
