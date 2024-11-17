@@ -122,6 +122,11 @@ input[type='range'] {
 }
 
 
+/* done task fix */
+input[type=checkbox]:checked:after {
+  background-color: #1C2E28;
+}
+
 
 select,
 .dropdown {
