@@ -44,7 +44,7 @@ body {
   --brightness: 3;
 }
 .theme-dark {
-  --brightness: 0.60;
+  --brightness: 0.50;
 }
 
 .nav-file-title,
