@@ -1,4 +1,7 @@
 # Obsidian transparent
+
+now it looks more minimal and screenshoots are not up to date at the moment
+
 This theme is designed to be **light**, **simple**, **aesthetic**, and **minimalistic**. It provides a clean and unobtrusive user interface that allows you to focus on your notes without distraction, with **mobile support**.
 
 ![screnshoot](preview.png)
