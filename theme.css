@@ -227,7 +227,9 @@ input[type="range"]::-webkit-slider-thumb {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
 
-
+.file-embed {
+  background-color: #00000060;
+}
 
 
 
