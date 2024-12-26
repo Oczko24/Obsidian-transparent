@@ -231,13 +231,11 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #00000060;
 }
 
+
+
 /* make.md integration */
 button:not(.clickable-icon) {
 color: #d8ded3;
-}
-
-button:not(.clickable-icon) {
-background-color: transparent;
 }
 .mk-menu-container {
   width: auto;
