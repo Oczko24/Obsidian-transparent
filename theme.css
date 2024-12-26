@@ -234,8 +234,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 /* make.md integration */
-button:not(.clickable-icon) {
-color: #d8ded3;
+
 }
 .mk-menu-container {
   width: auto;
