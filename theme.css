@@ -170,6 +170,15 @@ select,
     backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));   
 }
 
+/* graph view */
+.graph-controls {
+  background-color: rgba(0, 0, 0, var(--brightness));
+}
+.graph-controls:not(.is-close) {
+  box-shadow: none;
+}
+
+
 
 
 
