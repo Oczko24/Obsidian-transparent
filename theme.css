@@ -251,7 +251,36 @@ input[type="range"]::-webkit-slider-thumb {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
 
+/* ================================== TESTING ANIMATIONS ================================== */
+/* Keyframes for the opening animation */
+@keyframes modalOpen {
+  0% {
+    opacity: 0; /* Initially invisible */
+    transform: translateY(-20px); /* Start slightly off-screen */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* End at the final position */
+  }
+}
 
+/* When the modal is closed, apply this animation */
+.modal-container.mod-dim .modal.closed {
+  animation: modalClose 0.3s ease-in forwards; /* Animation for closing */
+}
+
+/* Keyframes for the closing animation */
+@keyframes modalClose {
+  0% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Current position */
+  }
+  100% {
+    opacity: 0; /* Fully hidden */
+    transform: translateY(-20px); /* Move off-screen */
+  }
+}
+/* ================================== TESTING ANIMATIONS ================================== */
 
 
 /* mobile (unended) */
