@@ -281,7 +281,10 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 /* ================================== TESTING ANIMATIONS ================================== */
-
+/* better settings */ 
+.vertical-tab-header-group-title {
+  color: var(--color-accent);
+}
 
 /* mobile (unended) */
 
