@@ -250,7 +250,10 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: var(--tr);
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
-
+/* templater code look better */ 
+.cm-s-obsidian .templater-command-bg {
+  background-color: #00000060;
+}
 /* ================================== TESTING ANIMATIONS ================================== */
 /* Keyframes for the opening animation */
 @keyframes modalOpen {
