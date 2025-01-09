@@ -6,11 +6,11 @@ This theme is designed to be **light**, **simple**, **aesthetic**, and **minimal
 
 colors may differ a litte bit
 
-![screnshoot](preview.png)
+![screnshoot](assets/preview.png)
 
 settings looks like this (you dont have to change anything or so it is just preview), accent color from screnshoots; `#FFA200`
 
-![settings](settings.png)
+![settings](assets/settings.png)
 if you like this theme you can give a star to this repo on github
 
 ## Features
