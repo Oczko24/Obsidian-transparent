@@ -32,7 +32,8 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 - turn on/off accent everywhere built in this plugin via style settings
 
 
-integration with: 
+Built-in integration with:
+
 - make.md
 - MySnippets
 - Day Planner
