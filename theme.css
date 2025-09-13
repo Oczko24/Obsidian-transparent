@@ -291,6 +291,12 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* mobile (unended) */
 
+/* tab manager on mobile/ */
+.mobile-tab-preview-empty {
+    box-shadow: none;
+}
+/* */
+
 
 .is-phone, .workspace-drawer {
   background-color: #000000;
