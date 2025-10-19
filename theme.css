@@ -332,12 +332,12 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* folders, search bar etc. blur */
 .workspace-drawer.mod-left {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(50px);
 }
 /* blur on the right menu, same as 5 lines above */
 .workspace-drawer.mod-right {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(50px);
 }
 
