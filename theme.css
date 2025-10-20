@@ -178,7 +178,14 @@ select,
   box-shadow: none;
 }
 
-
+/* making tables more visible, until now it was fully transparent and now they are visible it is easier to navigate for new obsidian users */ 
+.cm-html-embed td, .markdown-rendered td, .cm-html-embed th, .markdown-rendered th {
+    border: var(--table-border-width) solid #ffffff10;
+}
+.cm-html-embed thead tr > th, .markdown-rendered thead tr > th {
+    border-color: #ffffff10;
+}
+/* tables */
 
 
 
