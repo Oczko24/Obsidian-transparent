@@ -23,11 +23,11 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 
 
 ### Todo
-
+---
 - [ ] better light theme (i have code that is not full tested yet)
 - [ ] style plugin settings
 - [ ] (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
-- [ ] turn on/off accent everywhere built in this plugin via style settings
+- [ ] turn on/off snippets like [accent everywhere](https://github.com/Oczko24/Obsidian_things) built in this theme via style settings
 
 
 Built-in integration with plugins like:
