@@ -30,7 +30,7 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 - [ ] turn on/off accent everywhere built in this plugin via style settings
 
 
-Built-in integration with:
+Built-in integration with plugins like:
 
 - make.md
 - MySnippets
