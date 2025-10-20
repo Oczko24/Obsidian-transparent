@@ -24,10 +24,10 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 
 ### Todo
 
-- better light theme (i have code that is not full tested yet)
-- style plugin settings
-- (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
-- turn on/off accent everywhere built in this plugin via style settings
+- [ ] better light theme (i have code that is not full tested yet)
+- [ ] style plugin settings
+- [ ] (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
+- [ ] turn on/off accent everywhere built in this plugin via style settings
 
 
 Built-in integration with:
