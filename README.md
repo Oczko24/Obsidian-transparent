@@ -24,7 +24,7 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 
 ### Todo
 ---
-- [ ] better light theme (i have code that is not full tested yet)
+- [ ] better light theme
 - [ ] style plugin settings
 - [ ] (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
 - [ ] turn on/off my snippets from [Obsidian things](https://github.com/Oczko24/Obsidian_things) built in this theme via style settings
