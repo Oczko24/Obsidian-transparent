@@ -21,6 +21,7 @@ if you like this theme you can give a star to this repo on github
 
 Enjoy a **beautiful** and functional writing experience with this theme!
 
+i recommend to install this theme via obsidian theme browser because im regulary updating this theme:)
 
 ### Todo
 ---
