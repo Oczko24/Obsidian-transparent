@@ -131,7 +131,10 @@ button {
   color: #060606;
 }
 
-
+/* right click on top right centered down arrow adjustments */
+.menu-scroll {
+    display: inline;
+}
 
 /* sliders */
 input[type='range'] {
