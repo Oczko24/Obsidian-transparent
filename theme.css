@@ -18,6 +18,7 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 
   --mobile-sidebar-min-width: 100vw
 }
+/* in general main things to make this theme work */ 
 body {
   --background-primary: var(--tr);
   --background-secondary: var(--tr);
