@@ -46,6 +46,7 @@ body {
 }
 .theme-dark {
   --brightness: 0.50;
+  --interactive-hover: #00000060;
 }
 
 .nav-file-title,
@@ -158,15 +159,8 @@ input[type=checkbox]:checked:after {
 
 .theme-dark select,
 .dropdown {
-  background-color: var(--interactive-accent);
-  backdrop-filter: blur(var(--set-blur)); 
+  background-color: #00000060;
   box-shadow: none;
-  color: #060606;
-}
-
-/* mobile icon lol */ 
-.theme-dark .dropdown {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E");
 }
 
 .suggestion { 
@@ -272,36 +266,7 @@ input[type="range"]::-webkit-slider-thumb {
 .cm-s-obsidian .templater-command-bg {
   background-color: #00000060;
 }
-/* ================================== TESTING ANIMATIONS ================================== */
-/* Keyframes for the opening animation */
-@keyframes modalOpen {
-  0% {
-    opacity: 0; /* Initially invisible */
-    transform: translateY(-20px); /* Start slightly off-screen */
-  }
-  100% {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* End at the final position */
-  }
-}
 
-/* When the modal is closed, apply this animation */
-.modal-container.mod-dim .modal.closed {
-  animation: modalClose 0.3s ease-in forwards; /* Animation for closing */
-}
-
-/* Keyframes for the closing animation */
-@keyframes modalClose {
-  0% {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Current position */
-  }
-  100% {
-    opacity: 0; /* Fully hidden */
-    transform: translateY(-20px); /* Move off-screen */
-  }
-}
-/* ================================== TESTING ANIMATIONS ================================== */
 /* better settings */ 
 .vertical-tab-header-group-title {
   color: var(--color-accent);
