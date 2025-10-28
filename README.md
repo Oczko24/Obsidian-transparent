@@ -27,10 +27,6 @@ i recommend to install this theme via obsidian theme browser because im regulary
 ---
 - [ ] better light theme
 - [ ] style plugin settings
-- [ ] (maybye) plugin to change its background (its coded in base64, easy to change for advanced users)
-- [ ] turn on/off my snippets from [Obsidian things](https://github.com/Oczko24/Obsidian_things) built in this theme via style settings
-- [ ] make everything in vars and less hard-coded
-
 
 Built-in integration with plugins like:
 
