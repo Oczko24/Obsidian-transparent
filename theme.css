@@ -47,6 +47,10 @@ body {
 .theme-dark {
   --brightness: 0.50;
   --interactive-hover: #00000060;
+  --input-shadow-hover:
+  inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+  0 0 4px 1px rgba(255, 255, 255, 0.08);
+  --background-modifier-border-focus: #55555560 /*     --color-base-40: #555555; but with 60 */
 }
 
 .nav-file-title,
@@ -333,3 +337,4 @@ input[type='range'] {
 }
 
 */
+
