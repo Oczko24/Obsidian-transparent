@@ -28,11 +28,13 @@ body {
 }
 
 .theme-light .workspace {
-  backdrop-filter: brightness(3) blur(var(--set-blur));
+  backdrop-filter: brightness(4) blur(var(--set-blur));
   --icon-color: #000000;
-  --icon-color: var(--kolorboku);
 }
-.nav-file-title, .nav-folder-title {
+.theme-light .nav-file-title, .nav-folder-title {
+  color: #000000;
+}
+.theme-dark .nav-file-title, .nav-folder-title {
   color: var(--kolorboku);
 }
 
@@ -53,10 +55,6 @@ body {
   --background-modifier-border-focus: #55555560 /*     --color-base-40: #555555; but with 60 */
 }
 
-.nav-file-title,
-.nav-folder-title {
-  color: var(--kolorboku);
-}
 
 
 .workspace-split.mod-root {
