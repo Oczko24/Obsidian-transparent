@@ -169,6 +169,7 @@ input[type=checkbox]:checked:after {
     background-color: var(--tr);
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); /* tasks integration */
 }
+/* blur of 80px looks bad there */
 .status-bar {
   backdrop-filter: blur(2px);
 }
