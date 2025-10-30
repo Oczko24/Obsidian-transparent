@@ -30,7 +30,7 @@ i recommend to install this theme via obsidian theme browser because im regulary
 
 Built-in integration with plugins like:
 
-- make.md
+- [make.md](https://github.com/Make-md/makemd)
 - MySnippets
 - Day Planner
 - [Remotely Save](https://github.com/remotely-save/remotely-save)
