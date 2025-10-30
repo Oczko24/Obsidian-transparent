@@ -33,5 +33,6 @@ Built-in integration with plugins like:
 - make.md
 - MySnippets
 - Day Planner
+- [Remotely Save](https://github.com/remotely-save/remotely-save)
 
 If you find any bug please let me know
