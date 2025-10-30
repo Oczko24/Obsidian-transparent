@@ -32,7 +32,7 @@ Built-in integration with plugins like:
 
 - [make.md](https://github.com/Make-md/makemd)
 - MySnippets
-- Day Planner
+- [Day Planner](https://github.com/ivan-lednev/Obsidian-day-planner)
 - [Remotely Save](https://github.com/remotely-save/remotely-save)
 
 If you find any bug please let me know
