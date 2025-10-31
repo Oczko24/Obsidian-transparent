@@ -23,11 +23,12 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 
 i recommend to install this theme via obsidian theme browser because im regulary updating this theme:)
 
+<!---
 ### Todo
 ---
 - [ ] better light theme
 - [ ] style plugin settings
-
+--->
 Built-in integration with plugins like:
 
 - [make.md](https://github.com/Make-md/makemd)
