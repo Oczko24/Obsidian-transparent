@@ -29,11 +29,21 @@ i recommend to install this theme via obsidian theme browser because im regulary
 - [ ] better light theme
 - [ ] style plugin settings
 --->
-Built-in integration with plugins like:
 
-- [make.md](https://github.com/Make-md/makemd)
+### Plugin Styling
+
+Some plugins don't always look great on transparent themes - so this theme includes small tweaks to make them blend perfectly with the main design.
+
+Works especially well with:
+
+- Make.md
+
 - MySnippets
-- [Day Planner](https://github.com/ivan-lednev/Obsidian-day-planner)
-- [Remotely Save](https://github.com/remotely-save/remotely-save)
+
+- Day Planner
+
+- Remotely Save
+
+You don't need to change anything – everything works out of the box.
 
 If you find any bug please let me know
