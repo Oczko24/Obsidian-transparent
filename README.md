@@ -11,6 +11,8 @@ settings look like this (you dont have to change anything or so it is just previ
 ![settings](assets/settings.png)
 if you like this theme you can give a star to this repo on github
 
+
+
 ## Features
 
 - **Light Color Palette**: The theme uses a soft color scheme that is easy on the eyes.
