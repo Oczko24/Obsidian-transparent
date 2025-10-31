@@ -37,11 +37,8 @@ Some plugins don't always look great on transparent themes - so this theme inclu
 Works especially well with:
 
 - Make.md
-
 - MySnippets
-
 - Day Planner
-
 - Remotely Save
 
 You don't need to change anything – everything works out of the box.
