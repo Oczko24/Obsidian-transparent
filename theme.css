@@ -182,12 +182,11 @@ input[type=checkbox]:checked:after {
 .status-bar {
   backdrop-filter: blur(2px);
 }
-.theme-light .notice {
-    color: #000000;
-}
+
 .notice {
     background-color: var(--tr);
-    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));   
+    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+    color: var(--kolorboku);
 }
 
 /* graph view */
