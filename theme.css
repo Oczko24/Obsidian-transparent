@@ -8,7 +8,7 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 */
 
 
-/* vars */
+/* ===================== vars ===================== */
 :root {
   --tr: Transparent;
   --set-blur: 80px;
@@ -25,7 +25,9 @@ body {
   --divider-color: var(--tr);
   --background-modifier-border: essaopie;
 }
+/* ===================== vars ===================== */
 
+/* theme-light  */
 .theme-light .workspace {
   backdrop-filter: brightness(4) blur(var(--set-blur));
   --icon-color: #000000;
@@ -33,6 +35,11 @@ body {
 .theme-light .nav-file-title, .nav-folder-title {
   color: #000000;
 }
+.theme-light {
+  --brightness: 3;
+}
+
+/* theme-dark */
 .theme-dark .nav-file-title, .nav-folder-title {
   color: var(--kolorboku);
 }
@@ -42,9 +49,6 @@ body {
   --icon-color: #ffffff;
 }
 
-.theme-light {
-  --brightness: 3;
-}
 .theme-dark {
   --brightness: 0.50;
   --interactive-hover: #00000060;
@@ -116,6 +120,10 @@ input[type='number'] {
 
   background-color: #00000060;
 }
+/* sliders */
+input[type='range'] {
+  background-color: #00000060;
+}
 
 .suggestion-container.mod-search-suggestion {
   background-color: var(--tr);
@@ -139,10 +147,6 @@ button {
     display: inline;
 }
 
-/* sliders */
-input[type='range'] {
-  background-color: #00000060;
-}
 
 /* presentation background fix */
 .reveal .slide-background-content {
@@ -198,7 +202,7 @@ input[type=checkbox]:checked:after {
 
 
 
-/* code blocks */
+/* code blocks looks beautiful */
 .cm-s-obsidian div.HyperMD-codeblock-bg {
   background-color: #00000060;
 }
