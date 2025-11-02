@@ -161,6 +161,12 @@ input[type=checkbox]:checked:after {
   background-color: #1C2E28;
 }
 
+/* musze ustandaryzować w theme-light odcien bluru + przezroczystosci aby wydac 2.0 albo po prostu nie kopiowac kodu x2 tylko zrobic wszysko w zmiennych tak jak bylo w zamysle xd*/
+.theme-light select,
+.dropdown {
+  background-color: #d3d3d370;
+  box-shadow: none;
+}
 
 .theme-dark select,
 .dropdown {
