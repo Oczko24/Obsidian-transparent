@@ -33,7 +33,7 @@ body {
 }
 .theme-light {
   --brightness: 1.3;
-  --kolorboku: #000000; /* texe color pure black */
+  --kolorboku: #1d1d1f; /* texe color readable black */
 }
 /* ===================== theme-light ===================== */
 
@@ -45,7 +45,7 @@ body {
 }
 
 .theme-dark {
-  --kolorboku: #ffffff; /* text color pure white */
+  --kolorboku: #e2e0dc; /* text color readable white */
   --brightness: 0.50;
   --interactive-hover: #00000060;
   --input-shadow-hover:
