@@ -31,19 +31,18 @@ body {
   backdrop-filter: brightness(4) blur(var(--set-blur));
   --icon-color: #000000;
 }
-.theme-light .nav-file-title, .nav-folder-title {
-  color: #000000;
-}
 .theme-light {
   --brightness: 1.3;
   --kolorboku: #000000; /* texe color pure black */
 }
 
-/* theme-dark */
-.theme-dark .nav-file-title, .nav-folder-title {
+/* test */
+.nav-file-title, .nav-folder-title {
   color: var(--kolorboku);
 }
+/* test */
 
+/* theme-dark */
 .theme-dark .workspace {
   backdrop-filter: brightness(0.54) blur(var(--set-blur));
   --icon-color: #ffffff;
