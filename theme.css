@@ -59,7 +59,7 @@ body {
 /* left menu text */
 .nav-file-title, .nav-folder-title {
   color: var(--kolorboku);
-
+}
 .workspace-split.mod-root {
   background-color: var(--background-primary);
 }
