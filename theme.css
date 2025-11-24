@@ -24,6 +24,7 @@ body {
   --divider-width: 0px;
   --divider-color: var(--tr);
   --background-modifier-border: essaopie;
+  --input-border-width: 1px;
 }
 /* ===================== vars ===================== */
 
