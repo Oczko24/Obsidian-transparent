@@ -284,6 +284,11 @@ input[type="range"]::-webkit-slider-thumb {
 .vertical-tab-header-group-title {
   color: var(--color-accent);
 }
+/* you can find this in canvas for example after hovering over menu on the right */ 
+.tooltip {
+    background-color: var(--tr);
+    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
 
 /* ===================== mobile ===================== */
 /* better settings on mobile  */
