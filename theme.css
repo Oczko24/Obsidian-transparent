@@ -320,6 +320,10 @@ input[type="range"]::-webkit-slider-thumb {
 .popover, .formula-editor .cm-tooltip.cm-tooltip-autocomplete, .suggestion-container {
     background-color: #00000060;
     }
+.combobox .search-input-container {
+    background-color: var(--tr);
+    backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
 /* ===================== mobile ===================== */
 /* better settings on mobile  */
 .is-phone .vertical-tab-header-group-title, .is-phone .setting-item-heading .setting-item-name {
