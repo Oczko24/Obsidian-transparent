@@ -199,6 +199,7 @@ input[type=checkbox]:checked:after {
 }
 .graph-controls:not(.is-close) {
   box-shadow: none;
+  border: 0px solid var(--tr);
 }
 
 /* making tables more visible, until now it was fully transparent and now they are visible it is easier to navigate for new obsidian users */ 
