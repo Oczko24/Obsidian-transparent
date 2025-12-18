@@ -51,7 +51,7 @@ body {
   --brightness: 0.50;
   --interactive-normal: #00000060;
   --interactive-hover: #00000060;
-
+  --color-trans-06: #00000060;
   --input-shadow-hover:
   inset 0 0 0 1px rgba(255, 255, 255, 0.12),
   0 0 4px 1px rgba(255, 255, 255, 0.08);
@@ -122,11 +122,11 @@ input[type='email'],
 input[type='password'],
 input[type='number'] {
 
-  background-color: #00000060;
+  background-color: var(--color-trans-06);
 }
 /* sliders */
 input[type='range'] {
-  background-color: #00000060;
+  background-color: var(--color-trans-06);
 }
 
 .suggestion-container.mod-search-suggestion {
@@ -174,7 +174,7 @@ input[type=checkbox]:checked:after {
 
 .theme-dark select,
 .dropdown {
-  background-color: #00000060;
+  background-color: var(--color-trans-06);
   box-shadow: none;
 }
 
