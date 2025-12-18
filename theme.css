@@ -100,6 +100,10 @@ body.is-focused .workspace-ribbon.mod-left {
   position: relative;
   z-index: 1000;
 }
+.is-mobile .modal {
+  backdrop-filter: brightness(1) blur(var(--set-blur)); /* brightness na 1 to jest tak jakby go nie bylo ale jest G tak jak mlody g z gdyni*/ 
+}
+
 .modal-bg {
   width: 100%;
   background-color: var(--tr);
