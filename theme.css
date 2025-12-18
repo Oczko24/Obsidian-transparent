@@ -83,6 +83,10 @@ body.is-focused .workspace-ribbon.mod-left {
 .workspace-tab-header-container {
   background-color: var(--tr);
 }
+/* change color of active tab, imo this is really nice feature and it is now easier to navigate */
+.is-focused .workspace-tab-header {
+    color: #666666;
+}
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
   background-color: var(--tr);
