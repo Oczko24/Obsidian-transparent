@@ -10,7 +10,7 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 
 /* ===================== vars ===================== */
 :root {
-  --tr: Transparent;
+  --tr: transparent;
   
   --set-blur: 80px;
   --mobile-sidebar-min-width: 100vw;
