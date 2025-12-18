@@ -100,7 +100,8 @@ body.is-focused .workspace-ribbon.mod-left {
   position: relative;
   z-index: 1000;
 }
-.is-mobile .modal {
+/* w ogole pamietaj, ze phone i mobile to sa dwie inne rzeczy, tak na wszelki zebys sie nie pomylil jak kiedys bedziesz edytowac po przerwie */
+.is-phone .modal {
   backdrop-filter: brightness(1) blur(var(--set-blur)); /* brightness na 1 to jest tak jakby go nie bylo ale jest G tak jak mlody g z gdyni*/ 
 }
 
