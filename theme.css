@@ -299,6 +299,9 @@ input[type="range"]::-webkit-slider-thumb {
 .tooltip {
     background-color: var(--fakeblur); /* ten kolor to jest fake blur stosowany w miejscach gdzie nie da się inaczej */ 
 }
+.tooltip .tooltip-arrow {
+    border-bottom: 5px solid var(--fakeblur);
+}
 .tooltip.mod-right .tooltip-arrow {
     border-right: 5px solid var(--fakeblur);
 }
