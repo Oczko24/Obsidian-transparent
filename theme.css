@@ -52,8 +52,8 @@ body {
   --interactive-normal: #00000060;
   --interactive-hover: #00000060;
   --color-trans-06: #00000060;
-  --input-shadow-hover:
   --fakeblur: #0f0f0c; /* fake blur specyficzny dla theme-dark */
+  --input-shadow-hover:
   inset 0 0 0 1px rgba(255, 255, 255, 0.12),
   0 0 4px 1px rgba(255, 255, 255, 0.08);
   --background-modifier-border-focus: #55555560 /*     --color-base-40: #555555; but with 60 */
