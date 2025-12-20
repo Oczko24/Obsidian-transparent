@@ -21,6 +21,8 @@ if you like this theme you can give a star to this repo on github
 - **Integration with plugins**: Some plugins just look better with this theme due to taking them into account in the code.
 - **Integration with snippets**: theme is made to work with my own snippets, for example; [Accent everywhere](https://github.com/Oczko24/Obsidian_things/blob/main/css_snippets/Accent%20everywhere.css)
 
+- Now you can change look of this theme via style settings
+
 Enjoy a **beautiful** and functional writing experience with this theme!
 
 i recommend to install this theme via obsidian theme browser because im regulary updating this theme:)
