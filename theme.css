@@ -23,7 +23,7 @@ body {
   --background-secondary: var(--tr);
   --divider-width: 0px;
   --divider-color: var(--tr);
-  --background-modifier-border: essaopie;
+  --background-modifier-border: var(--tr); /* i dont remember if it will destroy something if i make statement like transparent instead of "transparent" but i think writing transparent is more correct than random letters */
   --input-border-width: 1px;
 }
 /* ===================== vars ===================== */
