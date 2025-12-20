@@ -17,7 +17,7 @@ settings:
     -
        id: my-info-text
        title: Information
-       description: "This is *informational* text'
+       description: "This is *informational* text"
        type: info-text
        markdown: true
     - 
