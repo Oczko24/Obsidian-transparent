@@ -33,6 +33,7 @@ i recommend to install this theme via obsidian theme browser because im regulary
 - [x] better light theme
 - [x] style plugin settings
 - [ ] more readable readme + more screenshots
+- [ ] more animations!!!
 --->
 
 ### Plugin Styling
