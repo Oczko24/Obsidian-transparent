@@ -14,6 +14,12 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 name: Obsidian Transparent Config
 id: obsidian-transparent
 settings:
+    -
+       id: my-info-text
+       title: Information
+       description: "This is *informational* text'
+       type: info-text
+       markdown: true
     - 
         id: set-blur
         title: Blur Intensity
