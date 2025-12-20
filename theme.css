@@ -8,7 +8,6 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 */
 
 /* style settings plugin support */
-
 /* @settings
 
 name: Obsidian Transparent Config
@@ -17,10 +16,13 @@ settings:
     - 
         id: set-blur
         title: Blur Intensity
-        type: variable-number
+        type: variable-number-slider
         default: 80
+        description: Adjust with care; lower values may affect visual quality, while significantly higher values can impact performance.
+        min: 10
+        max: 100
+        step: 1
         format: px
-        description: Use this carefully; setting the blur to a low value (like 0, 1 or 5) can break the look of the entire theme.
 */
 
 
