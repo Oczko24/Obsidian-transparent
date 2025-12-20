@@ -377,7 +377,7 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: var(--tr);
 }
 .mobile-navbar {
-  background-color: var(--workspace-drawer-background-color);
+  background-color: #000000;
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   padding: var(--size-4-2) max(var(--safe-area-inset-right), var(--size-4-4)) max(var(--size-4-2), var(--safe-area-inset-bottom)) max(var(--safe-area-inset-left), var(--size-4-4));
   position: relative;
