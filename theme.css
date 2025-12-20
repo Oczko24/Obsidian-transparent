@@ -32,6 +32,20 @@ I update this theme daily so remember about regularly updating this theme to get
         max: 100
         step: 1
         format: px
+    - 
+        id: tr
+        title: Theme variant
+        description: Variations on a theme background take in account that this is not tested
+        type: variable-select
+        allowEmpty: false
+        default: transparent
+        options:
+            - 
+                label: Transparent
+                value: transparent
+            - 
+                label: Amoled
+                value: '#000000'
 */
 
 
