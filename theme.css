@@ -35,7 +35,7 @@ I update this theme daily so remember about regularly updating this theme to get
     - 
         id: tr
         title: Theme variant
-        description: Variations on a theme background take in account that this is not tested
+        description: Variations on a theme background take in account that this is not tested. **NOTE** that Amoled works only on dark theme and pure white works only with light theme (you can change it via obsidian settings > appearance)
         type: variable-select
         allowEmpty: false
         default: transparent
@@ -46,6 +46,9 @@ I update this theme daily so remember about regularly updating this theme to get
             - 
                 label: Amoled
                 value: '#000000'
+            - 
+                label: pure white
+                value: '#ffffff'
 */
 
 
