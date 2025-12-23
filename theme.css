@@ -336,6 +336,10 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #00000060;
 }
 
+/* tasks integration */
+.popover, .formula-editor .cm-tooltip.cm-tooltip-autocomplete, .suggestion-container {
+    background-color: #00000000;
+}
 
 
 /* make.md integration */
@@ -380,6 +384,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .popover.hover-popover.is-editing {
     outline: 0px var(--tr);
+    border-color: var(--tr);
 }
 .bases-query-container .filter-row .filter-operator {
     border-width: 0 0px;
