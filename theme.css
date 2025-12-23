@@ -164,6 +164,12 @@ body.is-focused .workspace-ribbon.mod-left {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   border: 1px solid var(--tr);
 }
+hr {
+    border-color: var(--kolorboku); /* naprawa lini **** */
+}
+.menu-separator {
+    border-bottom: 0px solid; /* prawy przycisk myszy */
+}
 
 .prompt {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
