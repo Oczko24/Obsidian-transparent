@@ -225,7 +225,15 @@ button {
   background-size: cover;
   filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
-
+.reveal .progress span {
+    background-color: var(--color-accent);
+}
+.reveal .controls {
+    color: var(--color-accent);
+}
+.reveal a {
+    color: var(--color-accent);
+}
 
 /* done task fix */
 input[type=checkbox]:checked:after {
