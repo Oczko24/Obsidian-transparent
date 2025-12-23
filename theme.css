@@ -376,8 +376,19 @@ input[type="range"]::-webkit-slider-thumb {
 /* bases */
 /* no tu na pewno jest duzo do zrobienia z fake blur bo po prostu jak element na siebie sie naklada i drugi na niego nachodzi to wychodza odcienie czerni a nie estetyka tego motywu */
 .bases-table-container {
-    background: #00000060;
+    background: #00000000;
 }
+/* te 3 rzeczy to jest od tabelki w bases */
+.bases-tr {
+    box-shadow: 0 calc(var(--bases-table-row-border-width) * -1) 0 #ffffff10; /* zalezy tu tylko na kolorku ale reszta musi tu byc */
+}
+.bases-td {
+    box-shadow: calc(var(--bases-table-column-border-width) * -1) 0 0 #ffffff10;
+}
+.bases-header {
+        border-color: #ffffff10;
+}
+
 .markdown-source-view.mod-cm6 .cm-scroller {
     background-color: var(--tr);
     backdrop-filter: blur(var(--set-blur));
