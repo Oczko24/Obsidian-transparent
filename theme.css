@@ -503,3 +503,8 @@ input[type='range'] {
     background-color: #00000060;
     backdrop-filter: blur(var(--set-blur));
 }
+
+.is-phone .workspace-drawer .nav-buttons-container .nav-action-button {
+    background-color: #00000060;
+    backdrop-filter: blur(10px);
+}
