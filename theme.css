@@ -11,43 +11,53 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 
 /* @settings
 
-name: Obsidian-Transparent theme configuration
+name: Obsidian-Transparent Theme Configuration
 id: obsidian-transparent
 settings:
     -
-       id: Obsidian-Transparent-information
-       description: " # Information
-
-I update this theme daily so remember about regularly updating this theme to get more features 
-"
-       type: info-text
-       markdown: true
-    - 
+        id: info-section
+        title: ℹ️ Information & Updates
+        description: |
+            ### Theme Status
+            I update this theme frequently. Please ensure you **update regularly** via the Community Themes settings to access the latest features and stability improvements.
+        type: info-text
+        markdown: true
+    -
         id: set-blur
         title: Blur Intensity
         type: variable-number-slider
         default: 80
-        description: Adjust with care; lower values may affect visual quality, while significantly higher values can impact performance.
+        description: "Adjust the background blur effect. **Note:** Lower values improve clarity; significantly higher values may impact system performance."
         min: 10
         max: 100
         step: 1
         format: px
-    - 
+    -
+        id: variant-info
+        title: 🎨 Theme Variants Guide
+        description: |
+            Select the variant that matches your Obsidian appearance settings:
+            * **Default:** Standard transparent look.
+            * **AMOLED:** High-contrast pure black. Best used with Obsidian **"Dark"** mode.
+            * **Pure White:** Clean light background. Best used with Obsidian **"Light"** mode.
+        type: info-text
+        markdown: true
+    -
         id: tr
-        title: Theme variant
-        description: Variations on a theme background take in account that this is not tested. **NOTE** that Amoled works only on dark theme and pure white works only with light theme (you can change it via obsidian settings > appearance)
+        title: Active Theme Variant
+        description: "Choose a specific variation for your background. Note: AMOLED and Pure White variants are optimized for their respective base color schemes."
         type: variable-select
         allowEmpty: false
         default: transparent
         options:
-            - 
-                label: Default
+            -
+                label: Default (Transparent)
                 value: transparent
-            - 
-                label: AMOLED
+            -
+                label: AMOLED (Experimental)
                 value: '#000000'
-            - 
-                label: pure white
+            -
+                label: Pure White (Experimental)
                 value: '#ffffff'
 */
 
