@@ -4,11 +4,11 @@ This theme is designed to be **light**, **simple**, **aesthetic**, and **minimal
 
 colors may differ a litte bit
 
-![screnshoot](assets/image.png)
+![screnshoot](assets/image1.png)
 
 settings look like this (you dont have to change anything or so it is just preview), accent color from screenshots; `#FFA200`
 
-![settings](assets/settings.png)
+![screnshoot](assets/image.png)
 if you like this theme you can give a star to this repo on github
 
 
