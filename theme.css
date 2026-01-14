@@ -508,3 +508,11 @@ input[type='range'] {
     background-color: #00000060;
     backdrop-filter: blur(10px);
 }
+/* some fixes to make after leatest update */
+
+.setting-group .setting-items {
+    background-color: var(--tr);
+    }
+.setting-group .setting-group-search {
+    background-color: var(--tr);
+    }
