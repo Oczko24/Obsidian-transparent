@@ -516,3 +516,6 @@ input[type='range'] {
 .setting-group .setting-group-search {
     background-color: var(--tr);
     }
+.setting-item {
+    background-color: var(--tr);
+    }
