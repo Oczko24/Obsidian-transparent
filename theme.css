@@ -16,48 +16,53 @@ id: obsidian-transparent
 settings:
     -
         id: info-section
-        title: ℹ️ Information & Updates
+        title: "✨ Obsidian-Transparent"
         description: |
-            ### Theme Status
-            I update this theme frequently. Please ensure you **update regularly** via the Community Themes settings to access the latest features and stability improvements.
+            I'm actively developing this theme to provide the best transparent experience for Obsidian.
+            
+            **Support the project:**
+            If you find this theme useful, please consider dropping a ⭐ on GitHub. It's a huge motivation for me to keep shipping updates and new features!
+            
+            [View Repository on GitHub](https://github.com/Oczko24/Obsidian-transparent)
         type: info-text
         markdown: true
     -
         id: set-blur
-        title: Blur Intensity
+        title: "🌫️ Blur Intensity"
         type: variable-number-slider
         default: 80
-        description: "Adjust the background blur effect. **Note:** Lower values improve clarity; significantly higher values may impact system performance."
+        description: "Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems."
         min: 10
         max: 100
         step: 1
         format: px
     -
         id: variant-info
-        title: 🎨 Theme Variants Guide
+        title: "Theme Variants Guide"
         description: |
-            Select the variant that matches your Obsidian appearance settings:
-            * **Default:** Standard transparent look.
-            * **AMOLED:** High-contrast pure black. Best used with Obsidian **"Dark"** mode.
-            * **Pure White:** Clean light background. Best used with Obsidian **"Light"** mode.
+            Match the variant with your Obsidian appearance settings:
+            * **Default:** Standard transparency for all-around use.
+            * **AMOLED:** Deep black background. Designed specifically for **Dark** mode.
+            * **Pure White:** Clean aesthetic. Designed specifically for **Light** mode.
+            
+            *AMOLED and Pure White variants are currently in beta. Feedback on GitHub is appreciated!*
         type: info-text
         markdown: true
     -
         id: tr
-        title: Active Theme Variant
-        description: "Choose a specific variation for your background. Note: AMOLED and Pure White variants are optimized for their respective base color schemes."
+        title: "🌀 Select Variant"
         type: variable-select
         allowEmpty: false
         default: transparent
         options:
             -
-                label: Default (Transparent)
+                label: "Default (Transparent)"
                 value: transparent
             -
-                label: AMOLED (Experimental)
+                label: "AMOLED (Dark Mode Only)"
                 value: '#000000'
             -
-                label: Pure White (Experimental)
+                label: "Pure White (Light Mode Only)"
                 value: '#ffffff'
 */
 
