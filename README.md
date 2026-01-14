@@ -4,7 +4,7 @@ This theme is designed to be **light**, **simple**, **aesthetic**, and **minimal
 
 colors may differ a litte bit
 
-![screnshoot](assets/preview.png)
+![screnshoot](assets/image.png)
 
 settings look like this (you dont have to change anything or so it is just preview), accent color from screenshots; `#FFA200`
 
