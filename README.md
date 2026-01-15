@@ -49,6 +49,8 @@ Works especially well with:
 
 You don't need to change anything – everything works out of the box.
 
+
+
 ### How to Install:
 1. In Obsidian, navigate to **Settings** -> **Appearance** -> **Themes**.
 2. Click **Manage** and search for **Transparent** (by Oczko24).
