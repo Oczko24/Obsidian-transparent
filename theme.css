@@ -505,7 +505,7 @@ input[type='range'] {
     background-color: #00000000;
     }
 .is-tablet .workspace-drawer {
-    background-color: #00000060;
+    background-color: #000000;
     }
 .is-phone .workspace-drawer-tab-options-list {
     background-color: #000000; /* pure black cuz i have no clue how to apply this */
