@@ -460,13 +460,25 @@ input[type="range"]::-webkit-slider-thumb {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   border-color: var(--tr);
 }
+
+
+/* github issue #4 fix */
+
+
 .mobile-toolbar {
 /*  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); 18 jan 2026 fix */
   background-color: var(--tr);
 }
-.is-mobile .app-container {
+body.is-mobile .app-container {
     max-height: 10vh;
 }
+.is-mobile .mod-raised {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+    }
+
+
+/* github issue #4 fix */
+
 
       .theme-dark .mobile-navbar {
         background-color: #000000; 
