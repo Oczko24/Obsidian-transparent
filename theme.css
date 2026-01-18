@@ -461,7 +461,7 @@ input[type="range"]::-webkit-slider-thumb {
   border-color: var(--tr);
 }
 .mobile-toolbar {
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+/*  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); 18 jan 2026 fix */
   background-color: var(--tr);
 }
 
