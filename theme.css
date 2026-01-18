@@ -473,7 +473,7 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: var(--tr);
 }
 body.is-mobile .app-container {
-    max-height: 100vh;
+ /*   max-height: 100vh; tempomary fix or so*/
 }
 .is-mobile .mod-raised {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
