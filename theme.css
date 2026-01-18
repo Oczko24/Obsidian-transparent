@@ -464,7 +464,9 @@ input[type="range"]::-webkit-slider-thumb {
 /*  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); 18 jan 2026 fix */
   background-color: var(--tr);
 }
-
+.is-mobile .app-container {
+    max-height: 10vh;
+}
 
       .theme-dark .mobile-navbar {
         background-color: #000000; 
