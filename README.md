@@ -9,7 +9,7 @@ colors may differ a little bit
 settings look like this (you dont have to change anything or so it is just preview), accent color from screenshots; `#FFA200`
 
 ![screnshoot](assets/image.png)
-✨ If you like this theme you can give a star to this repo on github
+If you like this theme you can give a star to this repo on github
 
 
 
