@@ -566,3 +566,8 @@ visibility: initial;
     visibility: initial;
 }
 /* until there thanks Lithou */
+
+/* tempomary fix again because this shitty update reverted look of the mobile obisidan and i have to adjust it again kurwa */
+.is-phone .workspace-drawer {
+    background-color: #000000;
+}
