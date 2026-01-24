@@ -519,7 +519,7 @@ input[type='range'] {
 */
 /* tempomary fixes to new mobile obisian update */
 .is-phone .workspace-drawer {
-    background-color: #00000000;
+    background-color: #000000;
     }
 .is-tablet .workspace-drawer {
     background-color: #000000;
