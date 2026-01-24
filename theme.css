@@ -569,17 +569,17 @@ visibility: initial;
 
 /* fixes */
 
-.status-bar,
+.is-phone .status-bar,
 .workspace-tab-header-container,
 .titlebar {
   position: relative;
   z-index: 9999 !important;
 }
 
-.is-hidden-nav .mobile-navbar {
+.is-phone .is-hidden-nav .mobile-navbar {
     opacity: 1;
 }
-.mobile-navbar {
+.is-phone .mobile-navbar {
     max-width: 100vw;
     border-radius: 0px;
     width: 100vw;
