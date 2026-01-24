@@ -570,7 +570,7 @@ visibility: initial;
 /* fixes */
 .is-mobile .titlebar {
   position: relative;
-  z-index: 9999 !important;
+  z-index: 9999;
 }
 
 .is-mobile .is-hidden-nav .mobile-navbar {
@@ -586,4 +586,7 @@ visibility: initial;
 /* tablet fix */
 body.is-mobile .mobile-navbar {
     display: flex; 
+}
+.is-tablet .workspace-drawer {
+height: calc(100vh - var(--size-4-12) - var(--safe-area-inset-bottom));
 }
