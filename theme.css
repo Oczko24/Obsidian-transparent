@@ -583,4 +583,6 @@ visibility: initial;
     max-width: 100vw;
     border-radius: 0px;
     width: 100vw;
+    margin-bottom: 0px;
+    position: relative;
     }
