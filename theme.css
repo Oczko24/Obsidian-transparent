@@ -590,3 +590,9 @@ body.is-mobile .mobile-navbar {
 .is-tablet .workspace-drawer {
 height: calc(100vh - var(--size-4-12) - var(--safe-area-inset-bottom));
 }
+
+/* fast fix for tables in .canvas */
+
+body .markdown-rendered thead tr > th {
+    border-color: #ffffff10;
+}
