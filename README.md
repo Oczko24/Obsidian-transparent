@@ -42,6 +42,7 @@ Some plugins don't always look great on transparent themes - so this theme inclu
 
 Works especially well with:
 
+- Style Settings
 - Make.md
 - MySnippets
 - Day Planner
