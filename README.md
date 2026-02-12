@@ -34,7 +34,7 @@ i recommend to install this theme via obsidian theme browser because im regulary
 - [x] style plugin settings
 - [ ] more readable readme + more screenshots
 - [ ] more animations!!!
-- [ ] better mobile mode trough it is good rn especially after latest update 
+- [ ] better mobile mode trough it is good rn especially after latest update (1.11.7)
 
 
 ### Plugin Styling
