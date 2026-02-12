@@ -28,14 +28,6 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 i recommend to install this theme via obsidian theme browser because im regulary updating this theme:)
 
 
-### Todo
----
-- [x] better light theme
-- [x] style plugin settings
-- [ ] more readable readme + more screenshots
-- [ ] more animations!!!
-- [ ] better mobile mode trough it is good rn especially after latest obsidian update (1.11.7)
-
 
 ### Plugin Styling
 
@@ -50,6 +42,14 @@ Works especially well with:
 - Remotely Save
 
 You don't need to change anything – everything works out of the box.
+
+### Todo
+---
+- [x] better light theme
+- [x] style plugin settings
+- [ ] more readable readme + more screenshots
+- [ ] more animations!!!
+- [ ] better mobile mode trough it is good rn especially after latest obsidian update (1.11.7)
 
 
 ---
