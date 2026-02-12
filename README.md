@@ -27,15 +27,15 @@ Enjoy a **beautiful** and functional writing experience with this theme!
 
 i recommend to install this theme via obsidian theme browser because im regulary updating this theme:)
 
-<!---
+
 ### Todo
 ---
 - [x] better light theme
 - [x] style plugin settings
 - [ ] more readable readme + more screenshots
 - [ ] more animations!!!
-- [ ] better mobile mode trough it is good rn 
---->
+- [ ] better mobile mode trough it is good rn especially after latest update 
+
 
 ### Plugin Styling
 
