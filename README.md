@@ -47,7 +47,7 @@ You don't need to change anything – everything works out of the box.
 ---
 - [x] better light theme
 - [x] style plugin settings
-- [ ] more readable readme + more screenshots
+- [ ] more readable readme with recommend settings + more screenshot especially from mobile
 - [ ] more animations!!!
 - [ ] better mobile mode trough it is good rn especially after latest obsidian update (1.11.7)
 - [ ] unification of everything possible on every platforms
