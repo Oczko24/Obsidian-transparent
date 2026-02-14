@@ -98,7 +98,6 @@ body {
 
 /* ===================== theme-light ===================== */
 .theme-light .workspace {
-  backdrop-filter: brightness(4) blur(var(--set-blur));
   --icon-color: #000000;
   --workspace-drawer-background-color: #00000000;
 }
@@ -115,7 +114,6 @@ body {
 
 /* ===================== theme-dark ===================== */
 .theme-dark .workspace {
-  backdrop-filter: brightness(0.54) blur(var(--set-blur));
   --icon-color: #ffffff;
   --workspace-drawer-background-color: #000000;
 }
@@ -140,6 +138,38 @@ body {
 /* ===================== theme-dark ===================== */
 
 
+/* ===================== blurred background via pseudo-element ===================== */
+/* instead of backdrop-filter (which creates stacking context issues),
+   background image is placed on a ::before pseudo with filter: blur.
+   isolation: isolate ensures z-index:-1 stays above .app-container bg
+   but below all children. No stacking context traps for drawer/navbar. */
+.app-container {
+  position: relative;
+  isolation: isolate;
+}
+
+.app-container::before {
+  content: '';
+  position: absolute;
+  inset: calc(-1 * var(--set-blur));
+  background-image: var(--background-image-base64);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.theme-dark .app-container::before {
+  filter: brightness(0.54) blur(var(--set-blur));
+}
+
+.theme-light .app-container::before {
+  filter: brightness(4) blur(var(--set-blur));
+}
+
+/* ===================== blurred background via pseudo-element ===================== */
+
+
 /* left menu text */
 .nav-file-title,
 .nav-folder-title {
@@ -150,11 +180,10 @@ body {
   background-color: var(--background-primary);
 }
 
-/* there is background image coded in base64 in var. Change it if you wanna. */
+/* background image is now on .app-container::before, not here */
 .horizontal-main-container {
-  background-image: var(--background-image-base64);
   background-size: cover;
-  background-position: absolute;
+  background-position: center;
 }
 
 body.is-focused .titlebar,
@@ -525,7 +554,7 @@ input[type="range"]::-webkit-slider-thumb {
 .is-phone .workspace-drawer {
   background-color: #00000000;
 
-  z-index: 9999999;
+  z-index: 15;
 }
 
 .mobile-toolbar-options-list {
@@ -539,13 +568,10 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 .mobile-toolbar {
-  /*  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur)); 18 jan 2026 fix */
   background-color: var(--tr);
 }
 
-body.is-mobile .app-container {
-  /*   max-height: 100vh; tempomary fix or so*/
-}
+
 
 .is-mobile .mod-raised {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
@@ -708,4 +734,5 @@ hr {
 
 .mobile-navbar {
   position: absolute;
+  background-color: var(--tr);
 }
