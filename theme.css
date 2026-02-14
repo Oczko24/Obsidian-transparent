@@ -524,7 +524,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .is-phone .workspace-drawer {
   background-color: #00000000;
-  position: fixed;
+
   z-index: 9999999;
 }
 
@@ -554,7 +554,7 @@ body.is-mobile .app-container {
 
 /* github issue #4 fix */
 
-
+/*
 .theme-dark .mobile-navbar {
   background-color: #000000;
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
@@ -564,7 +564,7 @@ body.is-mobile .app-container {
   background-color: #ffffff;
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
-
+*/
 
 .is-phone .workspace-split {
   padding-top: 0;
@@ -611,11 +611,12 @@ input[type='range'] {
   background-color: var(--tr);
 }
 
+/*
 .is-phone .mobile-navbar {
   background-color: #000000;
   backdrop-filter: blur(var(--set-blur));
 }
-
+*/
 .is-phone .workspace-drawer .nav-buttons-container .nav-action-button {
   background-color: #00000060;
   backdrop-filter: blur(10px);
@@ -654,7 +655,7 @@ input[type='range'] {
 
 /* until there thanks Lithou */
 
-/* fixes */
+/* fixes 
 .is-mobile .titlebar {
   position: relative;
   z-index: 9999;
@@ -672,7 +673,7 @@ input[type='range'] {
   position: relative;
 }
 
-/* tablet fix */
+/* tablet fix 
 body.is-mobile .mobile-navbar {
   display: flex;
 }
@@ -680,7 +681,7 @@ body.is-mobile .mobile-navbar {
 .is-tablet .workspace-drawer {
   height: calc(100vh - var(--size-4-12) - var(--safe-area-inset-bottom));
 }
-
+*/
 /* fast fix for tables in .canvas */
 
 body .markdown-rendered th,
@@ -703,4 +704,8 @@ body .cm-html-embed thead tr>th {
 
 hr {
   margin: 0;
+}
+
+.mobile-navbar {
+  position: absolute;
 }
