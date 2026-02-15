@@ -345,7 +345,8 @@ input[type=checkbox]:checked:after {
 
 /* graph view */
 .graph-controls {
-  background-color: rgba(0, 0, 0, var(--brightness));
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(10px);
 }
 
 .graph-controls:not(.is-close) {
