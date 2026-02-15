@@ -524,7 +524,8 @@ input[type="range"]::-webkit-slider-thumb {
 .popover,
 .formula-editor .cm-tooltip.cm-tooltip-autocomplete,
 .suggestion-container {
-  background-color: #00000060;
+  background-color: var(--tr);
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
 
 .combobox .search-input-container {
@@ -553,7 +554,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .is-phone .workspace-drawer {
   background-color: #00000000;
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  /*backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));*/
   /* WOW pierwszy raz w zyciu mi zadziałał blur tego imagine ale poteżny postęp w developmencie trybu */
   z-index: 15;
 }
@@ -606,22 +607,6 @@ input[type='range'] {
   background-color: var(--interactive-accent);
 }
 
-/* work in progress lol
-/* folders, search bar etc. blur 
-.workspace-drawer.mod-left {
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(50px);
-}
-/* blur on the right menu, same as 5 lines above 
-.workspace-drawer.mod-right {
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(50px);
-}
-
-*/
-/* tempomary fixes to new mobile obisian update */
-
-
 .is-phone .workspace-drawer-tab-options-list {
   background-color: #000000;
   /* pure black cuz i have no clue how to apply this */
@@ -638,12 +623,16 @@ input[type='range'] {
   backdrop-filter: blur(var(--set-blur));
 }
 */
-.is-phone .workspace-drawer .nav-buttons-container .nav-action-button {
-  background-color: #00000060;
-  backdrop-filter: blur(10px);
+.theme-dark.is-phone .workspace-drawer .nav-buttons-container .nav-action-button {
+  background-color: #1d1e19;
+  /* hardcoded a little bit but it is really hard to make */
 }
 
-/* some fixes to make after leatest update */
+.theme-light.is-phone .workspace-drawer .nav-buttons-container .nav-action-button {
+  background-color: #dadeac;
+  /* hardcoded a little bit but it is really hard to make */
+}
+
 
 .setting-group .setting-items {
   background-color: var(--tr);
@@ -733,10 +722,43 @@ hr {
 }
 
 .is-mobile.is-floating-nav .mod-raised {
-  backdrop-filter: brightness(0.50) blur(var(--set-blur));
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
 
-/* na tabletach blur */
+/* blur + przyciemnienie gdy sliding sidebars jest wylaczone */
 .workspace-drawer-inner {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+}
+
+/* gdy sliding sidebars jest wlaczone - bez blura i przyciemnienia */
+.is-sliding .workspace-drawer-inner {
+  backdrop-filter: none;
+}
+
+/* przyciemnienie tla za drawerem gdy sliding sidebars jest wylaczone */
+.workspace-drawer-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.is-sliding .workspace-drawer-backdrop {
+  background-color: transparent;
+}
+
+.workspace-drawer-backdrop {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.suggestion {
+  background-color: var(--tr);
+}
+
+.is-mobile .suggestion-container {
+  border-radius: var(--radius-l);
+  background-color: #00000000;
+}
+
+.popover,
+.suggestion-container,
+.cm-tooltip.cm-tooltip-autocomplete {
+  border: 0px;
 }
