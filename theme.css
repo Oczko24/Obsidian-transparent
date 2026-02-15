@@ -215,7 +215,7 @@ body.is-focused .workspace-ribbon.mod-left {
 
 /* w ogole pamietaj, ze phone i mobile to sa dwie inne rzeczy, tak na wszelki zebys sie nie pomylil jak kiedys bedziesz edytowac po przerwie */
 .is-phone .modal {
-  backdrop-filter: brightness(1) blur(var(--set-blur));
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   /* brightness na 1 to jest tak jakby go nie bylo ale jest G tak jak mlody g z gdyni*/
 }
 
@@ -789,4 +789,18 @@ hr {
 
 .modal-container.mod-dim {
   animation: modal-bg-fade 0.3s ease-out;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top-left-radius: var(--radius-l);
+  border-top-right-radius: var(--radius-l);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom-left-radius: var(--radius-l);
+  border-bottom-right-radius: var(--radius-l);
+}
+
+.callout {
+  border-radius: var(--radius-l);
 }
