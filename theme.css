@@ -553,7 +553,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 .is-phone .workspace-drawer {
   background-color: #00000000;
-
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  /* WOW pierwszy raz w zyciu mi zadziałał blur tego imagine ale poteżny postęp w developmencie trybu */
   z-index: 15;
 }
 
@@ -619,13 +620,7 @@ input[type='range'] {
 
 */
 /* tempomary fixes to new mobile obisian update */
-.is-phone .workspace-drawer {
-  background-color: #000000;
-}
 
-.is-tablet .workspace-drawer {
-  background-color: #000000;
-}
 
 .is-phone .workspace-drawer-tab-options-list {
   background-color: #000000;
@@ -735,4 +730,13 @@ hr {
 .mobile-navbar {
   position: absolute;
   background-color: var(--tr);
+}
+
+.is-mobile.is-floating-nav .mod-raised {
+  backdrop-filter: brightness(0.50) blur(var(--set-blur));
+}
+
+/* na tabletach blur */
+.workspace-drawer-inner {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
