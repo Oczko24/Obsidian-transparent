@@ -762,3 +762,31 @@ hr {
 .cm-tooltip.cm-tooltip-autocomplete {
   border: 0px;
 }
+
+/* ===================== settings open animation - CLEAN SLIDE ===================== */
+@keyframes modal-open {
+  from {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modal-bg-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.modal.mod-settings {
+  /* Ogolnie to wstepne zabieranie sie za animacje wszystkiego */
+  animation: modal-open 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-container.mod-dim {
+  animation: modal-bg-fade 0.3s ease-out;
+}
