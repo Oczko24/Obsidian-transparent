@@ -586,7 +586,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .is-phone .mobile-tab-switcher {
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  backdrop-filter: blur(var(--set-blur));
 }
 
 /* sliders mobile */
