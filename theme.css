@@ -33,7 +33,7 @@ settings:
         default: 80
         description: "Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems."
         min: 10
-        max: 100
+        max: 200
         step: 1
         format: px
     -
@@ -103,7 +103,6 @@ body {
   --brightness: 1.3;
   --kolorboku: #1d1d1f;
   /* text color readable black */
-
 }
 
 /* ===================== theme-light ===================== */
@@ -139,7 +138,8 @@ body {
 /* instead of backdrop-filter (which creates stacking context issues),
    background image is placed on a ::before pseudo with filter: blur.
    isolation: isolate ensures z-index:-1 stays above .app-container bg
-   but below all children. No stacking context traps for drawer/navbar. */
+   but below all children. No stacking context traps for drawer/navbar. 
+   Fixes all fundamental problems with mobile version of this theme */
 .app-container {
   position: relative;
   isolation: isolate;
@@ -210,7 +210,11 @@ body.is-focused .workspace-ribbon.mod-left {
   z-index: 1000;
 }
 
-/* remember that phone and mobile are two different things, just so you don't get confused when editing after a break */
+/* remember that phone and mobile are two different things, just so you don't get confused when editing after a break 
+is-phone
+is-tablet
+is-mobile - tablet and phone
+*/
 .is-phone .modal {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   /* brightness at 1 is as if it wasn't there at all */
@@ -310,7 +314,6 @@ input[type=checkbox]:checked:after {
   background-color: #1C2E28;
 }
 
-/* need to standardize the blur shade + transparency in theme-light for 2.0 release, or just stop duplicating code and put everything in variables as originally intended */
 .theme-light select,
 .dropdown {
   background-color: #d3d3d370;
@@ -326,7 +329,7 @@ input[type=checkbox]:checked:after {
 .suggestion {
   background-color: var(--tr);
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
-  /* tasks integration */
+  /* tasks plugin integration */
 }
 
 /* blur of 80px looks bad there */
@@ -343,7 +346,7 @@ input[type=checkbox]:checked:after {
 /* graph view */
 .graph-controls {
   background-color: var(--tr);
-  backdrop-filter: brightness(var(--brightness)) blur(10px);
+  backdrop-filter: brightness(var(--brightness)) blur(12px);
 }
 
 .graph-controls:not(.is-close) {
@@ -577,21 +580,6 @@ input[type="range"]::-webkit-slider-thumb {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
 }
 
-
-/* github issue #4 fix */
-
-/*
-.theme-dark .mobile-navbar {
-  background-color: #000000;
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
-}
-
-.theme-light .mobile-navbar {
-  background-color: #ffffff;
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
-}
-*/
-
 .is-phone .workspace-split {
   padding-top: 0;
 }
@@ -615,12 +603,6 @@ input[type='range'] {
   background-color: var(--tr);
 }
 
-/*
-.is-phone .mobile-navbar {
-  background-color: #000000;
-  backdrop-filter: blur(var(--set-blur));
-}
-*/
 .theme-dark.is-phone .workspace-drawer .nav-buttons-container .nav-action-button {
   background-color: #1d1e19;
   /* hardcoded a little bit but it is really hard to make */
@@ -662,35 +644,6 @@ input[type='range'] {
 }
 
 /* until there thanks Lithou */
-
-/* fixes 
-.is-mobile .titlebar {
-  position: relative;
-  z-index: 9999;
-}
-
-.is-mobile .is-hidden-nav .mobile-navbar {
-  opacity: 1;
-}
-
-.is-mobile .mobile-navbar {
-  max-width: 100vw;
-  border-radius: 0px;
-  width: 100vw;
-  margin-bottom: var(--safe-area-inset-bottom);
-  position: relative;
-}
-
-/* tablet fix 
-body.is-mobile .mobile-navbar {
-  display: flex;
-}
-
-.is-tablet .workspace-drawer {
-  height: calc(100vh - var(--size-4-12) - var(--safe-area-inset-bottom));
-}
-*/
-/* fast fix for tables in .canvas */
 
 body .markdown-rendered th,
 body .markdown-rendered td,
