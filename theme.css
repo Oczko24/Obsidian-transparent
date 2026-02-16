@@ -148,7 +148,8 @@ body {
 .app-container::before {
   content: '';
   position: absolute;
-  inset: calc(-1 * var(--set-blur));
+  /* blur x 2 because of weird and miserable border around the edges */
+  inset: calc(-2 * var(--set-blur));
   background-image: var(--background-image-base64);
   background-size: cover;
   background-position: center;
