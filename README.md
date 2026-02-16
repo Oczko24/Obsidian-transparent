@@ -11,6 +11,15 @@ colors may differ a little bit
 settings look like this (you dont have to change anything or so it is just preview), accent color from screenshots; `#FFA200`
 
 ![preview2](assets/preview2_computer.png)
+<p align="center">
+  <img src="assets/phone_screenshots/Phone_17_2_2026_1.png" width="24%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_2.png" width="24%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_3.png" width="24%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_4.png" width="24%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_5.png" width="24%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_6.png" width="24%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_7.png" width="24%" />
+</p>
 
 If you like this theme you can give a star to this repo on github
 
