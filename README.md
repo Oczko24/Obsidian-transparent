@@ -4,12 +4,13 @@ This theme is designed to be **light**, **simple**, **aesthetic**, and **minimal
 
 colors may differ a little bit
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4a8d2117-fe23-4dde-8b2e-c8a95d203a4c" />
+![preview1](assets/preview1_computer.png)
+
 
 
 settings look like this (you dont have to change anything or so it is just preview), accent color from screenshots; `#FFA200`
 
-<img src="https://github.com/user-attachments/assets/9864746a-4afe-445d-937f-b25c67a6fc5e" style="max-width: 100%; height: auto;">
+![preview2](assets/preview2_computer.png)
 
 If you like this theme you can give a star to this repo on github
 
