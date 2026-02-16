@@ -757,3 +757,7 @@ hr {
 .callout {
   border-radius: var(--radius-l);
 }
+
+.is-phone .modal .vertical-tab-header-group-title {
+  color: var(--color-accent);
+}
