@@ -9,7 +9,8 @@ colors may differ a little bit
 
 settings look like this (you dont have to change anything or so it is just preview), accent color from screenshots; `#FFA200`
 
-![screnshoot](assets/image.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9864746a-4afe-445d-937f-b25c67a6fc5e" />
+
 If you like this theme you can give a star to this repo on github
 
 ## Features
