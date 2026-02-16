@@ -147,7 +147,7 @@ body {
 
 .app-container::before {
   content: '';
-  position: absolute;
+  position: fixed;
   /* blur x 2 because of weird and miserable border around the edges */
   inset: calc(-2 * var(--set-blur));
   background-image: var(--background-image-base64);
