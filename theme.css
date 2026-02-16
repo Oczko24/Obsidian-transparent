@@ -586,6 +586,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .is-phone .mobile-tab-switcher {
+  background-color: #00000060;
   backdrop-filter: blur(var(--set-blur));
 }
 
