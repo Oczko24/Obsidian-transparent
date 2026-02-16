@@ -1,14 +1,13 @@
 # Obsidian transparent
 
 This theme is designed to be **light**, **simple**, **aesthetic**, and **minimalistic**. It provides a clean and unobtrusive user interface that allows you to focus on your notes without distraction, with **excellent mobile support**.
-
-colors may differ a little bit
+Supports both Light and Dark modes
 
 ![preview1](assets/preview1_computer.png)
 
 
 
-settings look like this (you dont have to change anything or so it is just preview), accent color from screenshots; `#FFA200`
+Accent color from screenshots; `#FFA200`
 
 ![preview2](assets/preview2_computer.png)
 <p align="center">
