@@ -6,6 +6,6 @@
 - [ ] more animations and make them all consistent
 - [ ] unification of everything possible on every platforms
 - [ ] the ability to change the background color to another via style settings etc.
-- [ ] add more snippets to turn on via style settings
+- [ ] add more **snippets** to turn on via style settings
     - [x] accent everywhere
     - [x] hide canvas dots
