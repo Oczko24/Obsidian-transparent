@@ -58,6 +58,7 @@ You don't need to change anything – everything works out of the box.
 - [ ] more animations and make them all consistent
 - [x] better mobile mode trough it is good rn especially after latest obsidian update (1.11.7)
 - [ ] unification of everything possible on every platforms
+- [ ] the ability to change the background color to another via style settings etc.
 
 ---
 
