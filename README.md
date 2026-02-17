@@ -1,6 +1,8 @@
 # Obsidian transparent
 
-This theme is designed to be **light**, **simple**, **aesthetic**, and **minimalistic**. It provides a clean and unobtrusive user interface that allows you to focus on your notes without distraction, with **excellent mobile support**. The theme is fully responsive and **supports both Light and Dark modes**, adapting perfectly to your system settings for a comfortable reading experience at any time.
+This theme is designed to be **light**, **simple**, **aesthetic**, and **minimalistic**. It provides a clean and unobtrusive user interface that allows you to focus on your notes without distraction, with **excellent mobile support**.
+
+The theme is fully responsive and **supports both Light and Dark modes**, adapting perfectly to your system settings for a comfortable reading experience at any time.
 
 <p align="center">
   <img src="assets/preview1_computer.png" width="100%" />
