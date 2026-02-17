@@ -50,7 +50,8 @@ You don't need to change anything – everything works out of the box.
 
 ### Roadmap
 
-[RoadMap.md]
+![Link](https://github.com/Oczko24/Obsidian-transparent/blob/main/RoadMap.md)
+
 ---
 
 
