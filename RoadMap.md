@@ -1,7 +1,11 @@
 - [x] better light theme
 - [x] style plugin settings
 - [x] better mobile mode trough it is good rn especially after latest obsidian update (1.11.7)
-- [ ] more readable readme + more screenshot especially from mobile
+- [ ] more readable readme
+    - [x] more screenshot especially from mobile
 - [ ] more animations and make them all consistent
 - [ ] unification of everything possible on every platforms
 - [ ] the ability to change the background color to another via style settings etc.
+- [ ] add more snippets to turn on via style settings
+    - [x] accent everywhere
+    - [x] hide canvas dots
