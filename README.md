@@ -61,6 +61,17 @@ You don't need to change anything – everything works out of the box.
 2. Click **Manage** and search for **Transparent** (by Oczko24).
 3. Select **Install and Use**.
 
+
+### Star History
+
+<a href="https://www.star-history.com/?lang=en&utm_source=chatgpt.com#Oczko24/Obsidian-transparent&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Oczko24/Obsidian-transparent&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Oczko24/Obsidian-transparent&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Oczko24/Obsidian-transparent&type=date&legend=top-left" />
+ </picture>
+</a>
+
 ### Support
 
 If you like this theme you can give a star to this repo on github :)
