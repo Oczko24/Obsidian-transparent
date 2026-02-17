@@ -84,9 +84,77 @@ body {
   --divider-width: 0px;
   --divider-color: var(--tr);
   --background-modifier-border: var(--tr);
-  /* i dont remember if it will destroy something if i make statement like transparent instead of "transparent" but i think writing transparent is more correct than random letters */
+
   --input-border-width: 1px;
   --scrollbar-width: 10px;
+
+  /* ===================== Animation Speed Control ===================== */
+
+  /* 
+     Base animation speed.
+     User requested slow, iOS-like animations.
+     Set to 500ms (0.5s) as a baseline.
+     Changing this value scales all animations proportionally.
+  */
+  --animationspeed: 500ms;
+
+  /* 
+     Overriding Obsidian's internal variables to scale relative to our base speed.
+     This maintains the hierarchy (fast < slow) but slows everything down proportionally.
+  */
+  --anim-duration-superfast: calc(var(--animationspeed) / 4);
+  /* Result: 125ms */
+  --anim-duration-fast: calc(var(--animationspeed) / 2);
+  /* Result: 250ms */
+  --anim-duration-moderate: var(--animationspeed);
+  /* Result: 500ms */
+  --anim-duration-slow: calc(var(--animationspeed) * 2);
+  /* Result: 1000ms (1s) */
+}
+
+/* ===================== Specific Animation Overrides ===================== */
+
+/* 
+   Using 'body ...' selector to increase specificity.
+   This avoids using '!important' while still overriding default Obsidian styles.
+*/
+
+/* 
+   Tooltips. 
+   Original hardcoded value: 200ms. 
+   New value: ~250ms (based on 500ms base).
+*/
+body .tooltip,
+body .tooltip.mod-right,
+body .tooltip.mod-left {
+  animation-duration: var(--anim-duration-fast);
+}
+
+/* 
+   Multi-select duplicate animation.
+   Original value: 2000ms.
+   New value: 3000ms (500ms * 6).
+*/
+body .multi-select-duplicate {
+  animation-duration: calc(var(--animationspeed) * 6);
+}
+
+/* 
+   Text highlight (Ctrl+F).
+   Original value: 0.25s (250ms).
+   New value: 250ms (based on 500ms base).
+*/
+body .textLayer .highlight {
+  transition-duration: var(--anim-duration-fast);
+}
+
+/* 
+   Scroll handles.
+   Ensuring they follow the fast duration (~250ms).
+*/
+body .v-scroll-handle,
+body .h-scroll-handle {
+  transition-duration: var(--anim-duration-fast);
 }
 
 /* ===================== vars ===================== */
@@ -735,14 +803,27 @@ hr {
   }
 }
 
-.modal.mod-settings {
-  /* General initial approach to animating everything */
-  animation: modal-open 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+/* 
+   Settings Modal Open Animation.
+   Original value: 1.2s (1200ms).
+   New Duration: ~2000ms (500ms * 4).
+   Timing function: cubic-bezier(0.16, 1, 0.3, 1) to create deceleration effect.
+*/
+body .modal.mod-settings {
+  animation: modal-open calc(var(--animationspeed) * 4) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.modal-container.mod-dim {
-  animation: modal-bg-fade 0.3s ease-out;
+/* 
+   Modal Background Dimming.
+   Original value: 0.3s (300ms).
+   New Duration: 500ms (matches base speed).
+   Timing function: ease-out.
+*/
+body .modal-container.mod-dim {
+  animation: modal-bg-fade var(--animationspeed) ease-out;
 }
+
+/* ===================== code blocks border radius ===================== */
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
   border-top-left-radius: var(--radius-l);
@@ -758,6 +839,11 @@ hr {
   border-radius: var(--radius-l);
 }
 
+/* mobile settings improvements */
 .is-phone .modal .vertical-tab-header-group-title {
   color: var(--color-accent);
+}
+
+.is-phone .modal-header {
+  position: absolute;
 }
