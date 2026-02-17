@@ -1,15 +1,17 @@
 # Obsidian transparent
 
-This theme is designed to be **light**, **simple**, **aesthetic**, and **minimalistic**. It provides a clean and unobtrusive user interface that allows you to focus on your notes without distraction, with **excellent mobile support**.
-Supports both Light and Dark modes
+This theme is designed to be **light**, **simple**, **aesthetic**, and **minimalistic**. It provides a clean and unobtrusive user interface that allows you to focus on your notes without distraction, with **excellent mobile support**. The theme is fully responsive and **supports both Light and Dark modes**, adapting perfectly to your system settings for a comfortable reading experience at any time.
 
-![preview1](assets/preview1_computer.png)
+<p align="center">
+  <img src="assets/preview1_computer.png" width="100%" />
+</p>
 
+> **Accent color from screenshots:** `#FFA200`
 
+<p align="center">
+  <img src="assets/preview2_computer.png" width="100%" />
+</p>
 
-Accent color from screenshots; `#FFA200`
-
-![preview2](assets/preview2_computer.png)
 <p align="center">
   <img src="assets/phone_screenshots/Phone_17_2_2026_2.png" width="24%" />
   <img src="assets/phone_screenshots/Phone_17_2_2026_6.png" width="24%" />
@@ -17,14 +19,12 @@ Accent color from screenshots; `#FFA200`
   <img src="assets/phone_screenshots/Phone_17_2_2026_1.png" width="24%" />
 </p>
 
-If you like this theme you can give a star to this repo on github
-
 ## Features
 
-- **Light Color Palette**: The theme uses a soft color scheme that is easy on the eyes.
-- **Minimalistic Design**: Clean lines and ample white space create a serene workspace.
-- **Customizable Background**: You can add a background image by linking it in the `.css` file via base64, enhancing the visual appeal of your notes. (for advanced users)
-- **Integration with plugins**: Some plugins just look better with this theme due to taking them into account in the code.
+- **Light Color Palette**: The theme uses a soft color scheme that is easy on the eyes, perfect for long writing sessions.
+- **Minimalistic Design**: Clean lines and ample white space create a serene workspace, **focusing on your content**.
+- **Customizable Background**: You can add a background image by linking it in the `.css` file via base64 **or using CSS snippets**, enhancing the visual appeal of your notes. (for advanced users)
+- **Integration with plugins**: Some plugins just look better with this theme due to **seamless integration**, taking them into account in the code.
 - **Integration with snippets**: theme is made to work with my own snippets, for example; [Accent everywhere](https://github.com/Oczko24/Obsidian_things/blob/main/css_snippets/Accent%20everywhere.css)
 - **Now you can change look of this theme via [style settings](https://github.com/mgmeyers/obsidian-style-settings)**
 
@@ -34,7 +34,7 @@ i recommend to install this theme via obsidian theme browser because im regulary
 
 ### Plugin Styling
 
-Some plugins don't always look great on transparent themes - so this theme includes small tweaks to make them blend perfectly with the main design.
+Some plugins don't always look great by default - so this theme includes small tweaks to make them blend perfectly with the main design. **These plugins are styled to match the theme's transparency and blur effects.**
 
 Works especially well with:
 
@@ -64,5 +64,11 @@ You don't need to change anything – everything works out of the box.
 1. In Obsidian, navigate to **Settings** -> **Appearance** -> **Themes**.
 2. Click **Manage** and search for **Transparent** (by Oczko24).
 3. Select **Install and Use**.
+
+### Support
+
+If you like this theme you can give a star to this repo on github :)
+
+[![GitHub stars](https://img.shields.io/github/stars/Oczko24/Obsidian-Transparent?style=social)](https://github.com/Oczko24/Obsidian-Transparent)
 
 If you find any bug please let me know
