@@ -6,6 +6,13 @@
 - [ ] more animations and make them all consistent
 - [ ] unification of everything possible on every platforms
 - [ ] the ability to change the background color to another via style settings etc.
-- [ ] add more **snippets/tweaks** to turn on via style settings
-    - [x] accent everywhere
-    - [x] hide canvas dots
+- [ ] style settings
+    - [ ] add more **snippets/tweaks** to turn on via style settings
+        - [x] accent everywhere
+        - [x] hide canvas dots
+        - [ ] colored folders
+    - [ ] more customisation
+        - [ ] Headings
+        - [ ] shades of black & change brightness
+        - [ ] etc
+      
