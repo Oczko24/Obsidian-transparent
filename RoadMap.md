@@ -1,3 +1,5 @@
+# Roadmap / Todo
+
 - [x] better light theme
 - [x] style plugin settings
 - [x] better mobile mode trough it is good rn especially after latest obsidian update (1.11.7)
