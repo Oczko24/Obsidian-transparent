@@ -27,17 +27,16 @@ The theme is fully responsive and **supports both Light and Dark modes**, adapti
 - **Minimalistic Design**: Clean lines and ample white space create a serene workspace, **focusing on your content**.
 - **Customizable Background**: You can add a background image by linking it in the `.css` file via base64 **or using CSS snippets**, enhancing the visual appeal of your notes. (for advanced users)
 - **Integration with plugins**: Some plugins just look better with this theme due to **seamless integration**, taking them into account in the code.
-- **Integration with snippets**: theme is made to work with my own snippets, for example; [Accent everywhere](https://github.com/Oczko24/Obsidian_things/blob/main/css_snippets/Accent%20everywhere.css)
-- **Now you can change look of this theme via [style settings](https://github.com/mgmeyers/obsidian-style-settings)**
+- **Integration with snippets**: The theme includes built-in support for my custom snippets, for example: [Accent everywhere](https://github.com/Oczko24/Obsidian_things/blob/main/css_snippets/Accent%20everywhere.css). You can enable them via Style Settings.
+- **Style Settings**: You can fully customize the look of this theme via [Style Settings](https://github.com/mgmeyers/obsidian-style-settings).
 
 Enjoy a **beautiful** and functional writing experience with this theme!
-
 
 This is a complete, plug-and-play theme that is regularly updated. To stay up to date, I recommend installing it through the Obsidian theme browser. While inspired by transparency snippets, it has been carefully refined to provide a cohesive and polished experience.
 
 ### Plugin Styling
 
-Some plugins don't always look great by default - so this theme includes small tweaks to make them blend perfectly with the main design. **These plugins are styled to match the theme's transparency and blur effects.**
+Some plugins don't always look great by default, so this theme includes small tweaks to make them blend perfectly with the main design. **These plugins are styled to match the theme's transparency and blur effects.**
 
 Works especially well with:
 
@@ -51,17 +50,15 @@ You don't need to change anything – everything works out of the box.
 
 ### Roadmap
 
-![Link](https://github.com/Oczko24/Obsidian-transparent/blob/main/RoadMap.md)
+[Roadmap](https://github.com/Oczko24/Obsidian-transparent/blob/main/RoadMap.md)
 
 ---
-
 
 ### How to Install
 
 1. In Obsidian, navigate to **Settings** -> **Appearance** -> **Themes**.
 2. Click **Manage** and search for **Transparent** (by Oczko24).
 3. Select **Install and Use**.
-
 
 ### Star History
 
@@ -73,7 +70,7 @@ You don't need to change anything – everything works out of the box.
 
 ### Support
 
-If you like this theme you can give a star to this repo on github :)
+If you like this theme, you can give a star to this repo on GitHub :)
 
 [![GitHub stars](https://img.shields.io/github/stars/Oczko24/Obsidian-Transparent?style=social)](https://github.com/Oczko24/Obsidian-Transparent)
 
