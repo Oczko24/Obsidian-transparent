@@ -32,7 +32,8 @@ The theme is fully responsive and **supports both Light and Dark modes**, adapti
 
 Enjoy a **beautiful** and functional writing experience with this theme!
 
-i recommend to install this theme via obsidian theme browser because im regulary updating this theme:)
+
+This is a complete, plug-and-play theme that is regularly updated. To stay up to date, I recommend installing it through the Obsidian theme browser. While inspired by transparency snippets, it has been carefully refined to provide a cohesive and polished experience.
 
 ### Plugin Styling
 
