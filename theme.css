@@ -811,7 +811,7 @@ hr {
   border: 0px;
 }
 
-/* ===================== settings open animation - CLEAN SLIDE ===================== */
+/* ===================== settings open animation - CLEAN SLIDE ===================== * /
 @keyframes modal-open {
   from {
     opacity: 0;
@@ -835,7 +835,7 @@ hr {
    Original value: 1.2s (1200ms).
    New Duration: ~2000ms (500ms * 4).
    Timing function: cubic-bezier(0.16, 1, 0.3, 1) to create deceleration effect.
-*/
+* /
 body .modal.mod-settings {
   animation: modal-open calc(var(--animationspeed) * 4) cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -845,12 +845,12 @@ body .modal.mod-settings {
    Original value: 0.3s (300ms).
    New Duration: 500ms (matches base speed).
    Timing function: ease-out.
-*/
+
 body .modal-container.mod-dim {
   animation: modal-bg-fade var(--animationspeed) ease-out;
 }
 
-/* ===================== code blocks border radius ===================== */
+ * / ===================== code blocks border radius ===================== */
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
   border-top-left-radius: var(--radius-l);
