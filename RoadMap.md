@@ -4,17 +4,17 @@
 - [x] style plugin settings
 - [x] better mobile mode trough it is good rn especially after latest obsidian update (1.11.7)
 - [ ] more readable readme
-    - [x] more screenshot especially from mobile
+  - [x] more screenshot especially from mobile
 - [ ] more animations and make them all consistent
 - [ ] unification of everything possible on every platforms
-- [ ] the ability to change the background color to another via style settings etc.
+- [x] the ability to change the background color to another via style settings etc.
 - [ ] style settings
-    - [ ] add more **snippets/tweaks** to turn on via style settings
-        - [x] accent everywhere
-        - [x] hide canvas dots
-        - [ ] colored folders
-    - [ ] more customisation
-        - [ ] Headings
-        - [ ] shades of black & change brightness
-        - [ ] etc
-      
+  - [ ] add more **snippets/tweaks** to turn on via style settings
+    - [x] accent everywhere
+    - [x] hide canvas dots
+    - [ ] colored folders
+  - [ ] more customisation
+    - [ ] Headings
+    - [ ] shades of black & change brightness
+    - [ ] etc
+    - [ ] change background to your on not only via base64

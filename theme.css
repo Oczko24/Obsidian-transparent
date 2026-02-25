@@ -18,7 +18,7 @@ settings:
         id: info-section
         title: "✨ Obsidian-Transparent"
         description: |
-            I'm actively developing this theme to provide the best transparent experience for Obsidian.
+            I'm actively developing this theme to provide the best transparent experience for Obsidian:)
             
             **Support the project:**
             If you find this theme useful, please consider dropping a ⭐ on GitHub. It's a huge motivation for me to keep shipping updates and new features!
@@ -28,13 +28,13 @@ settings:
         markdown: true
     -
         id: main-section
-        title: "🧩 Adjust Obsidian Theme"
+        title: "Adjust Obsidian Theme"
         type: heading
         level: 1
         collapsed: false
     -
         id: set-blur
-        title: "🌫️ Blur Intensity"
+        title: "🫧 Blur Intensity"
         type: variable-number-slider
         default: 80
         description: "Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems."
@@ -72,7 +72,7 @@ settings:
     #             value: '#ffffff'
     -
         id: bg-tint-section
-        title: "🎨 Background Color Tint"
+        title: "Background Color Tint"
         type: heading
         level: 2
         collapsed: false
@@ -105,8 +105,18 @@ settings:
         description: "Removes the dot pattern from the canvas background."
         type: class-toggle
     -
+        id: file-line-width
+        title: "Note Max Width"
+        description: "Changes the maximum width of currently displayed note."
+        type: variable-number-slider
+        default: 700
+        min: 400
+        max: 1400
+        step: 10
+        format: px
+    -
         id: accent-everywhere
-        title: "(Beta) Accent Everywhere"
+        title: "(Experimental) Accent Everywhere"
         description: "Applies accent color to more UI elements (headings, sliders, icons)."
         type: class-toggle
 */
