@@ -71,6 +71,29 @@ settings:
                 label: "Pure White (Light Mode Only)"
                 value: '#ffffff'
     -
+        id: bg-tint-section
+        title: "🎨 Background Color Tint"
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: bg-tint-color
+        title: "Tint Color"
+        description: "Pick the color you want to overlay on the background."
+        type: variable-color
+        opacity: false
+        format: hsl-split
+        default: '#898625'
+    -
+        id: bg-tint-opacity
+        title: "Tint Intensity"
+        description: "How strongly the tint is applied. 0 = off (no performance cost), 0.3 = maximum."
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 0.3
+        step: 0.01
+    -
         id: snippets-section
         title: "🧩 Snippets / Dodatki"
         type: heading
@@ -254,6 +277,52 @@ body .h-scroll-handle {
 .theme-light .app-container::before {
   filter: brightness(4) blur(var(--set-blur));
 }
+
+/* ===================== Background Color Tint ===================== */
+/*
+   Overlay tint on the background image via ::after pseudo-element.
+   --bg-tint-color is set by the Style Settings color picker (with opacity).
+   Default: fully transparent (#00000000) = invisible = zero perf cost.
+   The overlay only has visual impact when the user picks a color with
+   non-zero opacity. No extra GPU layer is created when transparent.
+*/
+:root {
+  /* fallback values: tint off by default */
+  --bg-tint-color-h: 240;
+  /* hue (set by Style Settings)        */
+  --bg-tint-color-s: 100%;
+  /* saturation (set by Style Settings) */
+  --bg-tint-color-l: 50%;
+  /* lightness (set by Style Settings)  */
+  --bg-tint-opacity: 0;
+  /* 0 = off, max 0.5 (slider capped)   */
+}
+
+.app-container::after {
+  content: '';
+  /* create the pseudo-element           */
+  position: fixed;
+  /* cover the entire viewport           */
+  inset: 0;
+  /* stretch to all edges                */
+  /* build color from hsl-split vars + separate opacity slider */
+  background-color: hsla(var(--bg-tint-color-h),
+      var(--bg-tint-color-s),
+      var(--bg-tint-color-l),
+      var(--bg-tint-opacity));
+  z-index: -1;
+  /* above ::before (bg), below content  */
+  pointer-events: none;
+  /* don't block any mouse/touch events  */
+  /*
+     mix-blend-mode: color lets the luminosity of the blurred
+     background show through while applying the chosen hue.
+  */
+  mix-blend-mode: color;
+}
+
+/* ===================== Background Color Tint ===================== */
+
 
 /* ===================== blurred background via pseudo-element ===================== */
 
