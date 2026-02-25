@@ -42,40 +42,40 @@ settings:
         max: 200
         step: 1
         format: px
-    -
-        id: variant-info
-        title: "Theme Variants Guide"
-        description: |
-            Match the variant with your Obsidian appearance settings:
-            * **Default:** Standard transparency for all-around use.
-            * **AMOLED:** Deep black background. Designed specifically for **Dark** mode.
-            * **Pure White:** Clean aesthetic. Designed specifically for **Light** mode.
-            
-            *AMOLED and Pure White variants are currently in beta. Feedback on GitHub is appreciated!*
-        type: info-text
-        markdown: true
-    -
-        id: tr
-        title: "🧩 Select Variant"
-        type: variable-select
-        allowEmpty: false
-        default: transparent
-        options:
-            -
-                label: "Default (Transparent)"
-                value: transparent
-            -
-                label: "AMOLED (Dark Mode Only)"
-                value: '#000000'
-            -
-                label: "Pure White (Light Mode Only)"
-                value: '#ffffff'
+    # -
+    #     id: variant-info
+    #     title: "Theme Variants Guide"
+    #     description: |
+    #         Match the variant with your Obsidian appearance settings:
+    #         * **Default:** Standard transparency for all-around use.
+    #         * **AMOLED:** Deep black background. Designed specifically for **Dark** mode.
+    #         * **Pure White:** Clean aesthetic. Designed specifically for **Light** mode.
+    #         
+    #         *AMOLED and Pure White variants are currently in beta. Feedback on GitHub is appreciated!*
+    #     type: info-text
+    #     markdown: true
+    # -
+    #     id: tr
+    #     title: "🧩 Select Variant"
+    #     type: variable-select
+    #     allowEmpty: false
+    #     default: transparent
+    #     options:
+    #         -
+    #             label: "Default (Transparent)"
+    #             value: transparent
+    #         -
+    #             label: "AMOLED (Dark Mode Only)"
+    #             value: '#000000'
+    #         -
+    #             label: "Pure White (Light Mode Only)"
+    #             value: '#ffffff'
     -
         id: bg-tint-section
         title: "🎨 Background Color Tint"
         type: heading
         level: 2
-        collapsed: true
+        collapsed: false
     -
         id: bg-tint-color
         title: "Tint Color"
