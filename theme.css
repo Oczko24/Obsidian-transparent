@@ -768,16 +768,14 @@ input[type='range'] {
 }
 
 .theme-dark.is-phone .workspace-drawer .nav-buttons-container .nav-action-button {
-  /*background-color: #1d1e19;*/
-  /* hardcoded a little bit but it is really hard to make */
-  position: sticky;
+  /*background-color: #1d1e19;
+  hardcoded a little bit but it is really hard to make */
   z-index: 1;
 }
 
 .theme-light.is-phone .workspace-drawer .nav-buttons-container .nav-action-button {
-  /*background-color: #ffffff;*/
-  /* hardcoded a little bit but it is really hard to make */
-  position: absolute;
+  /*background-color: #ffffff;
+  hardcoded a little bit but it is really hard to make */
   z-index: 1;
 
 }
