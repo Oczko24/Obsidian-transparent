@@ -782,6 +782,12 @@ input[type='range'] {
 
 }
 
+/* fade at the bottom of file list, behind nav buttons */
+.is-phone .workspace-drawer .nav-files-container {
+  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 120px), transparent);
+  mask-image: linear-gradient(to bottom, black calc(100% - 120px), transparent);
+}
+
 
 .setting-group .setting-items {
   background-color: var(--tr);
