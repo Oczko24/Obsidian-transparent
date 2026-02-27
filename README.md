@@ -74,4 +74,4 @@ If you like this theme, you can give a star to this repo on GitHub :)
 
 [![GitHub stars](https://img.shields.io/github/stars/Oczko24/Obsidian-Transparent?style=social)](https://github.com/Oczko24/Obsidian-Transparent)
 
-If you find any bugs or have ideas for new features, feel free to open an issue or submit a pull request. Your feedback and contributions mean a lot — they genuinely motivate me to keep improving and developing this project :))
+If you find any bugs or have ideas for new features, feel free to open an issue or submit a pull request. Your feedback and contributions mean a lot; they genuinely motivate me to keep improving and developing this project :))
