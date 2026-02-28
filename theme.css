@@ -899,13 +899,9 @@ hr {
 
 /* community themes fix top right X button */
 .is-phone .community-modal-controls {
-  padding-top: var(--size-4-12);
+  /*  padding-top: var(--size-4-12); */
 }
 
-/* i dont know why this bug occurs but it is weird and here is hardcoded fix */
-.is-phone .modal-content {
-  margin-top: 50px;
-}
 
 /* ===================== settings open animation - CLEAN SLIDE ===================== * /
 @keyframes modal-open {
