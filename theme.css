@@ -115,6 +115,15 @@ settings:
         step: 10
         format: px
     -
+        id: border-opacity
+        title: "Border Opacity"
+        description: "Controls the visibility of subtle borders on tables, bases, and horizontal rules. 0 = invisible, 0.25 = clearly visible."
+        type: variable-number-slider
+        default: 0.063
+        min: 0
+        max: 0.25
+        step: 0.001
+    -
         id: accent-everywhere
         title: "(Experimental) Accent Everywhere"
         description: "Applies accent color to more UI elements (headings, sliders, icons)."
@@ -238,7 +247,6 @@ body .h-scroll-handle {
   --tr06: #00000060;
   --interactive-normal: var(--tr06);
   --interactive-hover: var(--tr06);
-  --background-modifier-hover: var(--tr06);
   --fakeblur: #0f0f0c;
   /* fake blur specific to theme-dark */
   --input-shadow-hover:
@@ -304,6 +312,8 @@ body .h-scroll-handle {
   /* lightness (set by Style Settings)  */
   --bg-tint-opacity: 0;
   /* 0 = off, max 0.5 (slider capped)   */
+  --border-opacity: 0.063;
+  /* subtle borders on tables, bases, hr (≈ #ffffff10) */
 }
 
 .app-container::after {
@@ -526,12 +536,12 @@ input[type=checkbox]:checked:after {
 .markdown-rendered td,
 .cm-html-embed th,
 .markdown-rendered th {
-  border: var(--table-border-width) solid #ffffff10;
+  border: var(--table-border-width) solid rgba(255, 255, 255, var(--border-opacity));
 }
 
 .cm-html-embed thead tr>th,
 .markdown-rendered thead tr>th {
-  border-color: #ffffff10;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
 /* code blocks looks beautiful */
@@ -657,16 +667,16 @@ body.hide-canvas-dots svg.canvas-background {
 
 /* these 3 things are for the table in bases */
 .bases-tr {
-  box-shadow: 0 calc(var(--bases-table-row-border-width) * -1) 0 #ffffff10;
+  box-shadow: 0 calc(var(--bases-table-row-border-width) * -1) 0 rgba(255, 255, 255, var(--border-opacity));
   /* only the color matters here but the rest must stay */
 }
 
 .bases-td {
-  box-shadow: calc(var(--bases-table-column-border-width) * -1) 0 0 #ffffff10;
+  box-shadow: calc(var(--bases-table-column-border-width) * -1) 0 0 rgba(255, 255, 255, var(--border-opacity));
 }
 
 .bases-header {
-  border-color: #ffffff10;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
@@ -822,18 +832,18 @@ body .markdown-rendered th,
 body .markdown-rendered td,
 body .cm-html-embed th,
 body .cm-html-embed td {
-  border: var(--table-border-width) solid #ffffff10;
-  border-color: #ffffff10;
+  border: var(--table-border-width) solid rgba(255, 255, 255, var(--border-opacity));
+  border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
 body .markdown-rendered thead tr>th,
 body .cm-html-embed thead tr>th {
-  border-color: #ffffff10;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
 
 .markdown-rendered hr {
-  border-color: #ffffff10;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
 hr {
