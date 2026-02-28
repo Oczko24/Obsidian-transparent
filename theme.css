@@ -235,9 +235,10 @@ body .h-scroll-handle {
   --kolorboku: #e2e0dc;
   /* text color readable white */
   --brightness: 0.50;
-  --interactive-normal: #00000060;
-  --interactive-hover: #00000060;
-  --color-trans-06: #00000060;
+  --tr06: #00000060;
+  --interactive-normal: var(--tr06);
+  --interactive-hover: var(--tr06);
+  --background-modifier-hover: var(--tr06);
   --fakeblur: #0f0f0c;
   /* fake blur specific to theme-dark */
   --input-shadow-hover:
@@ -424,13 +425,12 @@ input[type='search'],
 input[type='email'],
 input[type='password'],
 input[type='number'] {
-
-  background-color: var(--color-trans-06);
+  background-color: var(--tr06);
 }
 
 /* sliders */
 input[type='range'] {
-  background-color: var(--color-trans-06);
+  background-color: var(--tr06);
 }
 
 .suggestion-container.mod-search-suggestion {
@@ -489,7 +489,7 @@ input[type=checkbox]:checked:after {
 
 .theme-dark select,
 .dropdown {
-  background-color: var(--color-trans-06);
+  background-color: var(--tr06);
   box-shadow: none;
 }
 
@@ -536,7 +536,7 @@ input[type=checkbox]:checked:after {
 
 /* code blocks looks beautiful */
 .cm-s-obsidian div.HyperMD-codeblock-bg {
-  background-color: #00000060;
+  background-color: var(--tr06);
 }
 
 .markdown-source-view.mod-cm6 .cm-indent::before {
@@ -544,21 +544,21 @@ input[type=checkbox]:checked:after {
 }
 
 .cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
-  background-color: #00000060;
+  background-color: var(--tr06);
   /* smol */
 }
 
 .markdown-rendered pre {
-  background-color: #00000060;
+  background-color: var(--tr06);
 }
 
 .markdown-rendered code {
-  background-color: #00000060;
+  background-color: var(--tr06);
   /* both for read mode */
 }
 
 .cm-s-obsidian span.cm-inline-code {
-  background-color: #00000060;
+  background-color: var(--tr06);
   /* source mode edit */
 }
 
@@ -601,7 +601,7 @@ body.hide-canvas-dots svg.canvas-background {
 }
 
 .file-embed {
-  background-color: #00000060;
+  background-color: var(--tr06);
 }
 
 /* tasks integration */
@@ -622,7 +622,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 /* templater code look better */
 .cm-s-obsidian .templater-command-bg {
-  background-color: #00000060;
+  background-color: var(--tr06);
 }
 
 /* better settings */
@@ -749,7 +749,7 @@ body.hide-canvas-dots svg.canvas-background {
 }
 
 .is-phone .mobile-tab-switcher {
-  background-color: #00000060;
+  background-color: var(--tr06);
   backdrop-filter: blur(var(--set-blur));
 }
 
@@ -890,6 +890,11 @@ hr {
 /* community themes fix top right X button */
 .is-phone .community-modal-controls {
   padding-top: var(--size-4-12);
+}
+
+/* i dont know why this bug occurs but it is weird and here is hardcoded fix */
+.is-phone .modal-content {
+  margin-top: 50px;
 }
 
 /* ===================== settings open animation - CLEAN SLIDE ===================== * /
