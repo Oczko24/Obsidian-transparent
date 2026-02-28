@@ -887,6 +887,11 @@ hr {
   border: 0px;
 }
 
+/* community themes fix top right X button */
+.is-phone .community-modal-controls {
+  padding-top: var(--size-4-12);
+}
+
 /* ===================== settings open animation - CLEAN SLIDE ===================== * /
 @keyframes modal-open {
   from {
