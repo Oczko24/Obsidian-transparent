@@ -71,6 +71,32 @@ settings:
     #             label: "Pure White (Light Mode Only)"
     #             value: '#ffffff'
     -
+        id: bg-type-section
+        title: "Image Background"
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: bg-type
+        title: "Background Type"
+        description: "Choose between default green background and custom URL."
+        type: class-select
+        allowEmpty: false
+        default: bg-type-default
+        options:
+            -
+                label: "Default Green"
+                value: bg-type-default
+            -
+                label: "Custom Background"
+                value: bg-type-custom
+    -
+        id: bg-custom-url
+        title: "Custom Background URL"
+        description: "Paste your image URL inside the quotes. E.g. url('https://...')"
+        type: variable-text
+        default: url('')
+    -
         id: bg-tint-section
         title: "Background Color Tint"
         type: heading
@@ -284,6 +310,17 @@ body .h-scroll-handle {
   background-position: center;
   z-index: -1;
   pointer-events: none;
+}
+
+/* Style Settings UI logic - hide custom URL input if custom type is not selected */
+body:not(.bg-type-custom) .setting-item[data-id="bg-custom-url"] {
+  display: none;
+}
+
+body.bg-type-custom .app-container::before {
+  /* This stacks the custom image on top of the base64 green image. 
+     If the custom URL is invalid/empty, it becomes transparent, leaving the green background visible. */
+  background-image: var(--bg-custom-url), var(--background-image-base64);
 }
 
 .theme-dark .app-container::before {
