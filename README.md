@@ -25,7 +25,7 @@ The theme is fully responsive and **supports both Light and Dark modes**, adapti
 
 - **Light Color Palette**: The theme uses a soft color scheme that is easy on the eyes, perfect for long writing sessions.
 - **Minimalistic Design**: Clean lines and ample white space create a serene workspace, **focusing on your content**.
-- **Customizable Background**: You can easily <mark> change the background image </mark> to any custom URL directly from the **Style Settings** plugin, or stick with the default green aesthetic.
+- **Customizable Background**: You can easily `change the background image` to any custom URL directly from the **Style Settings** plugin, or stick with the default green aesthetic.
 - **Integration with plugins**: Some plugins just look better with this theme due to **seamless integration**, taking them into account in the code.
 - **Integration with snippets**: The theme includes built-in custom snippets, for example: [Accent everywhere](https://github.com/Oczko24/Obsidian_things/blob/main/css_snippets/Accent%20everywhere.css). You can enable them via Style Settings:)
 - **Style Settings**: You can fully customize the look of this theme via [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
