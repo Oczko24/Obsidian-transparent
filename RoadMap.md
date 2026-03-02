@@ -17,4 +17,4 @@
     - [ ] Headings
     - [ ] shades of black & change brightness
     - [ ] etc
-    - [ ] change background to your on not only via base64
+    - [x] change background to your on not only via base64

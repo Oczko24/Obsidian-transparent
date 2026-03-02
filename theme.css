@@ -477,7 +477,7 @@ input[type='number'] {
 
 /* sliders */
 input[type='range'] {
-  background-color: var(--tr06);
+  background-color: hsla(var(--interactive-accent-hsl), 0.50)
 }
 
 .suggestion-container.mod-search-suggestion {
@@ -802,7 +802,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 /* sliders mobile */
 input[type='range'] {
-  background-color: var(--interactive-accent);
+  accent-color: hsla(var(--color-accent-hsl), 0.6);
 }
 
 /* right sidebar menu tych rozszerzen jakby */
