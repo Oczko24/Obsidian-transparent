@@ -15,10 +15,10 @@ The theme is fully responsive and **supports both Light and Dark modes**, adapti
 </p>
 
 <p align="center">
-  <img src="assets/phone_screenshots/Phone_17_2_2026_2.png" width="24.6%" />
-  <img src="assets/phone_screenshots/Phone_17_2_2026_6.png" width="24.6%" />
-  <img src="assets/phone_screenshots/Phone_17_2_2026_3.png" width="24.6%" />
-  <img src="assets/phone_screenshots/Phone_17_2_2026_1.png" width="24.6%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_2.png" width="24.3%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_6.png" width="24.3%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_3.png" width="24.3%" />
+  <img src="assets/phone_screenshots/Phone_17_2_2026_1.png" width="24.3%" />
 </p>
 
 ## Features
