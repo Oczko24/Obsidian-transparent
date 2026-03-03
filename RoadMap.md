@@ -5,7 +5,6 @@
 - [x] better mobile mode trough it is good rn especially after latest obsidian update (1.11.7)
 - [ ] more readable readme
   - [x] more screenshot especially from mobile
-- [ ] more animations and make them all consistent
 - [ ] unification of everything possible on every platforms
 - [x] the ability to change the background color to another via style settings etc.
 - [ ] style settings
@@ -18,3 +17,24 @@
     - [ ] shades of black & change brightness
     - [ ] etc
     - [x] change background to your on not only via base64
+- Readme
+  - [ ] GIF with animations
+- [ ] more animations and make them all consistent -> below based on ai research about things i will do
+  - [ ] note open fade-in + slide up
+  - [ ] strikethrough done tasks
+  - [ ] hover scale on icons/buttons
+  - [ ] fade out inactive tabs
+  - [ ] context menu slide up
+  - [ ] cmd+p slower open animation
+  - [ ] link hover transition
+  - [ ] checkbox check animation
+  - [ ] sidebar slide in
+  - [ ] callout fold animation
+  - [ ] active tab glow
+  - [ ] ribbon show on hover
+  - [ ] tasks progress bar
+  - [ ] dataview fade in
+  - [ ] button ripple
+  - [ ] tag color transition
+  - [ ] graph hover
+  - [ ] status bar fade

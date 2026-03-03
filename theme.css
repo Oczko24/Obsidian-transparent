@@ -33,15 +33,20 @@ settings:
         level: 1
         collapsed: false
     -
-        id: set-blur
-        title: "🫧 Blur Intensity"
-        type: variable-number-slider
-        default: 80
-        description: "Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems."
-        min: 10
-        max: 200
-        step: 1
-        format: px
+           id: set-blur
+           title: "🫧 Blur Intensity"
+           type: variable-number-slider
+           default: 80
+           description: "Adjust the background blur effect. Note: Higher values offer a smoother aesthetic but may impact performance on lower-end systems."
+           min: 10
+           max: 200
+           step: 1
+           format: px
+    -
+        id: show-scrollbars
+        title: "Show Scrollbars"
+        description: ":)"
+        type: class-toggle
     # -
     #     id: variant-info
     #     title: "Theme Variants Guide"
@@ -119,6 +124,18 @@ settings:
         min: 0
         max: 0.3
         step: 0.01
+    -
+        id: animation-settings-section
+        title: "⚛️ Animation settings"
+        description: "work in progress, through you can use some of the animations"
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: animate-note-open
+        title: "(beta) Animate Note Opening"
+        description: "Adds a smooth fade-in + slide-up animation when opening or switching notes."
+        type: class-toggle
     -
         id: snippets-section
         title: "🧩 Snippets / Dodatki"
@@ -863,6 +880,14 @@ input[type='range'] {
   visibility: initial;
 }
 
+body.show-scrollbars ::-webkit-scrollbar {
+  visibility: initial;
+}
+
+body.show-scrollbars ::-webkit-scrollbar-thumb {
+  visibility: initial;
+}
+
 /* until there thanks Lithou */
 
 body .markdown-rendered th,
@@ -1044,4 +1069,30 @@ body.accent-everywhere .tree-item-self.is-active {
 }
 
 /* ===================== Accent Everywhere Snippet ===================== */
-/* test */
+
+
+/* ===================== Animate Note Opening ===================== */
+/*
+   Smooth fade-in + slide-up animation when opening or switching notes
+   Toggle via Style Settings > animate-note-open
+   Uses existing --animationspeed variable
+*/
+
+@keyframes tr-note-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.animate-note-open .workspace-leaf-content[data-type="markdown"] .markdown-reading-view,
+body.animate-note-open .workspace-leaf-content[data-type="markdown"] .markdown-source-view {
+  animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ===================== Animate Note Opening ===================== */
