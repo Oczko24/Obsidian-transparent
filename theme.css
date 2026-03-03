@@ -1035,6 +1035,7 @@ body.accent-everywhere.theme-dark,
 body.accent-everywhere.theme-light {
   --text-muted: var(--color-accent-2);
   --titlebar-text-color: var(--color-accent);
+  --titlebar-text-color-focused: var(--color-accent);
   --color-accent-tr-20: hsla(var(--color-accent-hsl), 0.2);
   --color-accent-tr-50: hsla(var(--color-accent-hsl), 0.5);
   --color-accent-tr-85: hsla(var(--color-accent-hsl), 0.85);
@@ -1066,6 +1067,10 @@ body.accent-everywhere .vertical-tab-header-group-title {
 body.accent-everywhere:not(.is-grabbing) .tree-item-self.is-active:hover,
 body.accent-everywhere .tree-item-self.is-active {
   background-color: var(--color-accent-tr-20);
+}
+
+body.accent-everywhere hr {
+  border-color: var(--hr-color);
 }
 
 /* ===================== Accent Everywhere Snippet ===================== */
