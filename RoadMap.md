@@ -17,7 +17,7 @@
     - [ ] shades of black & change brightness
     - [ ] etc
     - [x] change background to your on not only via base64
-- Readme
+- [ ] Make readme better
   - [ ] GIF with animations
 - [ ] more animations and make them all consistent -> below based on ai research about things i will do
   - [ ] note open fade-in + slide up
