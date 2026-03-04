@@ -974,6 +974,9 @@ hr {
   /*  padding-top: var(--size-4-12); */
 }
 
+.is-mobile .metadata-content {
+  background-color: var(--tr);
+}
 
 /* ===================== settings open animation ===================== */
 @keyframes modal-open {
