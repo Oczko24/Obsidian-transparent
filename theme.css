@@ -458,7 +458,7 @@ is-tablet
 is-mobile - tablet and phone
 */
 .is-phone .modal {
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  backdrop-filter: blur(var(--set-blur));
   /* brightness at 1 is as if it wasn't there at all */
 }
 
@@ -468,7 +468,9 @@ is-mobile - tablet and phone
 }
 
 .menu {
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  backdrop-filter: blur(20px);
+  /* 20px looks objectively better than 80px */
+  background-color: var(--overlay-color);
   border: 1px solid var(--tr);
 }
 
