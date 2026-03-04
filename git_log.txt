@@ -1,0 +1,5 @@
+f5e220b refactor: Make prompt styling theme-specific for blur, border, and background, and device-specific for animation.
+cbee68f refactor: Simplify backdrop-filter for mobile modals and menus, and add background color and border to menus.
+8dc3664 nice fixes
+442e98e refactor: Make prompt styling theme-specific for blur, border, and background, and device-specific for animation.
+11dba06 delete weird bug and more animations:)
