@@ -25,7 +25,7 @@
   - [ ] hover scale on icons/buttons
   - [ ] fade out inactive tabs
   - [ ] context menu slide up
-  - [ ] cmd+p slower open animation
+  - [x] cmd+p slower open animation
   - [ ] link hover transition
   - [ ] checkbox check animation
   - [ ] sidebar slide in
