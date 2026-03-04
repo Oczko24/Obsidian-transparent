@@ -482,10 +482,14 @@ hr {
   /* right mouse button */
 }
 
-.prompt {
+body.theme-light .prompt,
+body.theme-dark .prompt {
   backdrop-filter: blur(var(--set-blur));
   border: 1px solid var(--tr);
   background-color: var(--overlay-color);
+}
+
+body:not(.is-phone) .prompt {
   animation: promptSlideUp var(--anim-duration-moderate) cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
