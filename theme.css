@@ -444,9 +444,9 @@ body.is-focused .workspace-ribbon.mod-left {
 .modal {
   backdrop-filter: blur(var(--set-blur));
   border: 1px solid var(--tr);
-  background-color: #00000080;
-  --settings-background: #00000080;
-  --modal-background: #00000080;
+  background-color: var(--overlay-color);
+  --settings-background: var(--overlay-color);
+  --modal-background: var(--overlay-color);
   /* chyba to jest najlepsza implementacja */
   position: relative;
   z-index: 1000;
@@ -483,9 +483,22 @@ hr {
 }
 
 .prompt {
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  backdrop-filter: blur(var(--set-blur));
   border: 1px solid var(--tr);
-  background-color: var(--tr);
+  background-color: var(--overlay-color);
+  animation: promptSlideUp var(--anim-duration-moderate) cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes promptSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
@@ -494,7 +507,7 @@ textarea,
 input.metadata-input-text,
 input[type='date'],
 input[type='datetime-local'],
-input[type='text'],
+input[type='text']:not(.prompt-input),
 input[type='search'],
 input[type='email'],
 input[type='password'],
