@@ -144,7 +144,7 @@ settings:
         default: true
     -
         id: snippets-section
-        title: "🧩 Snippets / Dodatki"
+        title: "🧩 Snippets / Addons"
         type: heading
         level: 1
         collapsed: false
@@ -447,7 +447,7 @@ body.is-focused .workspace-ribbon.mod-left {
   background-color: var(--overlay-color);
   --settings-background: var(--overlay-color);
   --modal-background: var(--overlay-color);
-  /* chyba to jest najlepsza implementacja */
+  /* I think this is the best implementation */
   position: relative;
   z-index: 1000;
 }
@@ -883,7 +883,7 @@ input[type='range'] {
   accent-color: hsla(var(--color-accent-hsl), 0.6);
 }
 
-/* right sidebar menu tych rozszerzen jakby */
+/* right sidebar menu for those extensions */
 .is-phone .workspace-drawer-tab-options-list {
   background-color: #000000;
 }
@@ -1153,10 +1153,10 @@ body.accent-everywhere hr {
   }
 }
 
-/* Główny widok notatki – mod-root wyklucza side-panele, '>' wyklucza embeddy */
+/* Main note view - mod-root excludes side-panels, '>' excludes embeds */
 body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
 body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
-/* mod-active re-fires animację gdy przełączasz notatkę z lewego panelu plików */
+/* mod-active re-fires animation when switching note from the left file panel */
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
   animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
