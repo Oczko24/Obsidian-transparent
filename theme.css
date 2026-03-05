@@ -179,7 +179,6 @@ settings:
         type: class-toggle
 */
 
-
 /* ===================== vars ===================== */
 :root {
   --tr: transparent;
@@ -282,7 +281,6 @@ body .h-scroll-handle {
 
 /* ===================== theme-light ===================== */
 
-
 /* ===================== theme-dark ===================== */
 .theme-dark .workspace {
   --icon-color: #ffffff;
@@ -292,7 +290,7 @@ body .h-scroll-handle {
 .theme-dark {
   --kolorboku: #e2e0dc;
   /* text color readable white */
-  --brightness: 0.50;
+  --brightness: 0.5;
   --tr06: #00000060;
   --interactive-normal: var(--tr06);
   --interactive-hover: var(--tr06);
@@ -309,7 +307,6 @@ body .h-scroll-handle {
 
 /* ===================== theme-dark ===================== */
 
-
 /* ===================== blurred background via pseudo-element ===================== */
 /* instead of backdrop-filter (which creates stacking context issues),
    background image is placed on a ::before pseudo with filter: blur.
@@ -322,7 +319,7 @@ body .h-scroll-handle {
 }
 
 .app-container::before {
-  content: '';
+  content: "";
   position: fixed;
   /* blur x 2 because of weird and miserable border around the edges */
   inset: calc(-2 * var(--set-blur));
@@ -378,7 +375,7 @@ body.bg-type-custom .app-container::before {
 }
 
 .app-container::after {
-  content: '';
+  content: "";
   /* create the pseudo-element           */
   position: fixed;
   /* cover the entire viewport           */
@@ -402,9 +399,7 @@ body.bg-type-custom .app-container::before {
 
 /* ===================== Background Color Tint ===================== */
 
-
 /* ===================== blurred background via pseudo-element ===================== */
-
 
 /* left menu text */
 .nav-file-title,
@@ -426,7 +421,6 @@ body.is-focused .titlebar,
 body.is-focused .workspace-ribbon.mod-left {
   --titlebar-background: var(--tr);
 }
-
 
 .workspace-tab-header-container {
   background-color: var(--tr);
@@ -507,23 +501,22 @@ body:not(.is-phone) .prompt {
   }
 }
 
-
 /* dont add blur in small places because its useless */
 textarea,
 input.metadata-input-text,
-input[type='date'],
-input[type='datetime-local'],
-input[type='text']:not(.prompt-input),
-input[type='search'],
-input[type='email'],
-input[type='password'],
-input[type='number'] {
+input[type="date"],
+input[type="datetime-local"],
+input[type="text"]:not(.prompt-input),
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
   background-color: var(--tr06);
 }
 
 /* sliders */
-input[type='range'] {
-  background-color: hsla(var(--interactive-accent-hsl), 0.50)
+input[type="range"] {
+  background-color: hsla(var(--interactive-accent-hsl), 0.5);
 }
 
 .suggestion-container.mod-search-suggestion {
@@ -549,7 +542,6 @@ button {
   display: inline;
 }
 
-
 /* presentation background fix */
 .reveal .slide-background-content {
   background-image: var(--background-image-base64);
@@ -570,8 +562,8 @@ button {
 }
 
 /* done task fix */
-input[type=checkbox]:checked:after {
-  background-color: #1C2E28;
+input[type="checkbox"]:checked:after {
+  background-color: #1c2e28;
 }
 
 .theme-light select,
@@ -667,7 +659,6 @@ input[type=checkbox]:checked:after {
 input[type="range"]::-webkit-slider-thumb {
   background: var(--color-accent);
   border-color: var(--color-accent);
-
 }
 
 /* canvas */
@@ -688,7 +679,7 @@ because there was stupid glitch :((( but it is now fixed :)))
 
 .theme-dark .canvas-wrapper.is-screenshotting::before,
 .theme-light .canvas-wrapper.is-screenshotting::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: calc(-2 * var(--set-blur));
   background-image: var(--background-image-base64);
@@ -705,7 +696,6 @@ because there was stupid glitch :((( but it is now fixed :)))
 .theme-light .canvas-wrapper.is-screenshotting::before {
   filter: brightness(4) blur(var(--set-blur));
 }
-
 
 .canvas-control-item {
   background-color: #00000000;
@@ -735,7 +725,6 @@ because there was stupid glitch :((( but it is now fixed :)))
 .suggestion-container {
   background-color: #00000000;
 }
-
 
 /* make.md integration */
 
@@ -843,7 +832,6 @@ because there was stupid glitch :((( but it is now fixed :)))
 
 /* */
 
-
 .is-phone .workspace-drawer {
   background-color: #00000000;
   z-index: 15;
@@ -855,15 +843,11 @@ because there was stupid glitch :((( but it is now fixed :)))
   border-color: var(--tr);
 }
 
-
 /* github issue #4 fix */
-
 
 .mobile-toolbar {
   background-color: var(--tr);
 }
-
-
 
 .is-mobile .mod-raised {
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
@@ -879,7 +863,7 @@ because there was stupid glitch :((( but it is now fixed :)))
 }
 
 /* sliders mobile */
-input[type='range'] {
+input[type="range"] {
   accent-color: hsla(var(--color-accent-hsl), 0.6);
 }
 
@@ -902,15 +886,15 @@ input[type='range'] {
   /*background-color: #ffffff;
   hardcoded a little bit but it is really hard to make */
   z-index: 1;
-
 }
 
 /* fade at the bottom of file list, behind nav buttons */
 .is-phone .workspace-drawer .nav-files-container {
-  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 120px), transparent);
+  -webkit-mask-image: linear-gradient(to bottom,
+      black calc(100% - 120px),
+      transparent);
   mask-image: linear-gradient(to bottom, black calc(100% - 120px), transparent);
 }
-
 
 .setting-group .setting-items {
   background-color: var(--tr);
@@ -963,7 +947,6 @@ body .markdown-rendered thead tr>th,
 body .cm-html-embed thead tr>th {
   border-color: rgba(255, 255, 255, var(--border-opacity));
 }
-
 
 .markdown-rendered hr {
   border-color: rgba(255, 255, 255, var(--border-opacity));
@@ -1132,7 +1115,6 @@ body.accent-everywhere hr {
 }
 
 /* ===================== Accent Everywhere Snippet ===================== */
-
 
 /* ===================== Animate Note Opening ===================== */
 /*
