@@ -675,6 +675,38 @@ body.hide-canvas-dots svg.canvas-background {
   display: none;
 }
 
+/* canvas export / screenshot fix 
+because there was stupid glitch :((( but it is now fixed :)))
+ */
+.theme-dark .canvas-wrapper.is-screenshotting {
+  background-color: #0f0f0c;
+}
+
+.theme-light .canvas-wrapper.is-screenshotting {
+  background-color: #f0f0ee;
+}
+
+.theme-dark .canvas-wrapper.is-screenshotting::before,
+.theme-light .canvas-wrapper.is-screenshotting::before {
+  content: '';
+  position: absolute;
+  inset: calc(-2 * var(--set-blur));
+  background-image: var(--background-image-base64);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.theme-dark .canvas-wrapper.is-screenshotting::before {
+  filter: brightness(0.54) blur(var(--set-blur));
+}
+
+.theme-light .canvas-wrapper.is-screenshotting::before {
+  filter: brightness(4) blur(var(--set-blur));
+}
+
+
 .canvas-control-item {
   background-color: #00000000;
 }
