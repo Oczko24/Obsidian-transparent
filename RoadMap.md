@@ -38,3 +38,4 @@
   - [ ] tag color transition
   - [ ] graph hover
   - [ ] status bar fade
+- [x] canvas export / screenshot fix
