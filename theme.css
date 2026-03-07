@@ -461,7 +461,9 @@ is-mobile - tablet and phone
   background-color: var(--tr);
 }
 
-.menu {
+.theme-dark .menu,
+/* fuckin bug i really hate it i have to specify it that much */
+.theme-light .menu {
   backdrop-filter: blur(20px);
   /* 20px looks objectively better than 80px */
   background-color: var(--overlay-color);
