@@ -1,6 +1,6 @@
 # Support Obsidian-transparent 
 
-If you like this theme, you could supporting my work anonymously via crypto:))
+If you like this theme, you can support my work by sending me cryptocurrency
 
 ### 🟠 Bitcoin (BTC)
 `bc1q4xsqe5d00x8qufzj8vrjcrrg8erj4d8g2trl2h`
