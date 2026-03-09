@@ -600,7 +600,9 @@ input[type="checkbox"]:checked:after {
 /* graph view */
 .graph-controls {
   background-color: var(--tr);
-  backdrop-filter: brightness(var(--brightness)) blur(12px);
+  backdrop-filter:
+    /*brightness(var(--brightness))*/
+    blur(12px);
 }
 
 .graph-controls:not(.is-close) {
@@ -1019,6 +1021,14 @@ hr {
 
 .is-mobile .metadata-content {
   background-color: var(--tr);
+}
+
+.canvas-control-group {
+  background-color: transparent;
+}
+
+.canvas-controls {
+  backdrop-filter: blur(var(--set-blur));
 }
 
 /* ===================== settings open animation ===================== */
