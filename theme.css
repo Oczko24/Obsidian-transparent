@@ -597,9 +597,15 @@ input[type="checkbox"]:checked:after {
   color: var(--kolorboku);
 }
 
+/* spojnosc */
+.canvas-control-item:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+
 /* graph view */
 .graph-controls {
-  background-color: var(--tr);
+  background-color: #00000080;
   backdrop-filter:
     /*brightness(var(--brightness))*/
     blur(12px);
