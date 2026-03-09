@@ -710,6 +710,7 @@ because there was stupid glitch :((( but it is now fixed :)))
 
 .canvas-control-item {
   background-color: #00000000;
+  border-radius: var(--canvas-controls-radius);
 }
 
 .canvas-card-menu {
@@ -973,7 +974,7 @@ hr {
 }
 
 .is-mobile.is-floating-nav .mod-raised {
-  backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
+  backdrop-filter: brightness(var(--brightness)) blur(12px);
 }
 
 /* blur + dimming when sliding sidebars is disabled */
@@ -1029,6 +1030,7 @@ hr {
 
 .canvas-controls {
   backdrop-filter: blur(var(--set-blur));
+  border-radius: var(--canvas-controls-radius);
 }
 
 /* ===================== settings open animation ===================== */
