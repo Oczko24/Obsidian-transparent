@@ -5,7 +5,7 @@ This theme is designed to be **light**, **simple**, **aesthetic**, and **minimal
 The theme is fully responsive and **supports both Light and Dark modes**, adapting perfectly to your system settings for a comfortable reading experience at any time.
 
 <p align="center">
-  <img src="assets/preview1_computer.png" width="100%" />
+  <img src="https://github.com/user-attachments/assets/8dbd907a-3a03-4d83-8657-86ea158dc79b" width="100%" />
 </p>
 
 > **Accent color from screenshots:** `#FFA200`
