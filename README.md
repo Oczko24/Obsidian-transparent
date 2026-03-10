@@ -30,11 +30,12 @@ The theme is fully responsive and **supports both Light and Dark modes**, adapti
 - **Integration with snippets**: The theme includes built-in custom snippets, for example: [Accent everywhere](https://github.com/Oczko24/Obsidian_things/blob/main/css_snippets/Accent%20everywhere.css). You can enable them via Style Settings:)
 - **Style Settings**: You can fully customize the look of this theme via [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
 <!--
-- animacje
+- piękne, premium animacje
+- spójność interfejsu 
 - stawiam na optymalizację
 - celowanie w premium design połączone z moimi smaczkami
 - testowanie na komputerze telefonie I tablecie (wszytskie konfiguracje obsidiana)
-- bardzo regularne aktualizacje, szybka odpowiedz na zgłaszane problemy czy rzeczy jakie mogę dodać
+- bardzo regularne aktualizacje, szybka odpowiedz na zgłaszane problemy czy rzeczy jakie mogę dodać - ciągły rozwój 
 --->
 
 Enjoy a **beautiful** and functional writing experience with this theme!
