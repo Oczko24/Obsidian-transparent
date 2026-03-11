@@ -595,19 +595,18 @@ input[type="checkbox"]:checked:after {
   background-color: var(--tr);
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   color: var(--kolorboku);
-  animation: tr-notice-in var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
+  animation: tr-notice-in var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes tr-notice-in {
   from {
     opacity: 0;
-    transform: translateX(40px);
-    /* z prawej odleglosc leci do lewej*/
+    transform: translateY(30px);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
