@@ -36,6 +36,7 @@ The theme is fully responsive and **supports both Light and Dark modes**, adapti
 - celowanie w premium design połączone z moimi smaczkami
 - testowanie na komputerze telefonie I tablecie (wszytskie konfiguracje obsidiana)
 - bardzo regularne aktualizacje, szybka odpowiedz na zgłaszane problemy czy rzeczy jakie mogę dodać - ciągły rozwój 
+- testy wydajnościowe na różnych urządzeniach, aby sprawdzić na ile theme obciąża urządzenie w zestawieniu z dsfult I sporządzenie tabelek wydsjnosciowych:)
 --->
 
 Enjoy a **beautiful** and functional writing experience with this theme!
