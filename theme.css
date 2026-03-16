@@ -141,7 +141,7 @@ settings:
         title: "Animate Settings / Modal Opening"
         description: "Smooth scale + fade animation when opening Settings or any modal window."
         type: class-toggle
-        default: true
+        default: false
     -
         id: snippets-section
         title: "🧩 Snippets / Addons"
