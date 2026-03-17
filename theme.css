@@ -329,6 +329,7 @@ body .h-scroll-handle {
   background-image: var(--background-image-base64);
   background-size: cover;
   background-position: center;
+  contain: strict;
   z-index: -1;
   pointer-events: none;
 }
@@ -437,6 +438,7 @@ body.is-focused .workspace-ribbon.mod-left {
 
 .modal {
   backdrop-filter: blur(var(--set-blur));
+  contain: layout style paint;
   border: 1px solid var(--tr);
   background-color: var(--overlay-color);
   --settings-background: var(--overlay-color);
