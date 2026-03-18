@@ -39,3 +39,6 @@
   - [ ] graph hover
   - [ ] status bar fade
 - [x] canvas export / screenshot fix
+- [ ] Better looking option section for example in `.dropdown option`:))
+
+- [ ] more readable roadmap lol
