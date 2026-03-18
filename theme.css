@@ -1059,9 +1059,7 @@ hr {
 
 }
 
-.dropdown option {
-  background-color: #00000061;
-}
+
 
 /* ===================== settings open animation ===================== */
 @keyframes modal-open {
@@ -1115,10 +1113,6 @@ body.animate-modal-open .modal-bg {
 /* mobile settings improvements */
 .is-phone .modal .vertical-tab-header-group-title {
   color: var(--color-accent);
-}
-
-.is-phone .modal-header {
-  position: absolute;
 }
 
 /* ===================== Accent Everywhere Snippet ===================== */
