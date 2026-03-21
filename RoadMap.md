@@ -1,4 +1,9 @@
-# Roadmap / Todo
+# Roadmap 
+
+- [ ] Animate everything possible to make more premium feeling
+- [ ] Unificate phone, tablet and computer platform to show consistent colors blurs etc on every platform 
+
+### dev notes with things to do so i can note things I can do:))
 
 - [x] better light theme
 - [x] style plugin settings
