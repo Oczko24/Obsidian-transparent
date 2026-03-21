@@ -19,7 +19,7 @@
     - [x] change background to your on not only via base64
 - [ ] Make readme better
   - [ ] GIF with animations
-- [ ] more animations and make them all consistent -> below based on ai research about things i will do
+- [ ] more animations and make them all consistent -> below based on ai research about things i will do 
   - [ ] note open fade-in + slide up
   - [ ] strikethrough done tasks
   - [ ] hover scale on icons/buttons
@@ -42,3 +42,4 @@
 - [ ] Better looking option section for example in `.dropdown option`:))
 
 - [ ] more readable roadmap lol
+- [ ] stworzenie dev wersji motywu z animacjami I sitwerdzenie Na bazie testów na słabszych urządzeniach - czy zrobic, by animacje były dostępne by-default czy przez style settings 
