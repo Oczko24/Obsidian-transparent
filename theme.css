@@ -141,7 +141,7 @@ settings:
         title: "Animate Settings / Modal Opening"
         description: "Smooth scale + fade animation when opening Settings or any modal window."
         type: class-toggle
-        default: false
+        default: true
     -
         id: snippets-section
         title: "🧩 Snippets / Addons"
@@ -505,6 +505,15 @@ body:not(.is-phone) .prompt {
   }
 }
 
+/* cos sie zbugowalo an tablecie ale nie mam czasu tego teraz narpawiac
+.is-mobile .modal.mod-settings .vertical-tab-content {
+  color: var(--tr);
+}
+
+.is-tablet.theme-dark .vertical-tab-content {
+  color: var(--tr);
+}
+*/
 /* dont add blur in small places because its useless */
 textarea,
 input.metadata-input-text,
@@ -597,10 +606,26 @@ input[type="checkbox"]:checked:after {
   background-color: var(--tr);
   backdrop-filter: brightness(var(--brightness)) blur(var(--set-blur));
   color: var(--kolorboku);
-  animation: tr-notice-in var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: tr-notice-in-desktop var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@keyframes tr-notice-in {
+.is-phone .notice {
+  animation: tr-notice-in-mobile var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes tr-notice-in-desktop {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes tr-notice-in-mobile {
   from {
     opacity: 0;
     transform: translateY(30px);
