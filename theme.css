@@ -1059,7 +1059,33 @@ hr {
 
 }
 
+/* Wymuszenie wolnej animacji dla tła i kontenera menu */
+.suggestion-bg,
+.suggestion-container,
+.menu {
+  /* 'all' zamiast samej przezroczystości, żeby złapać też ruch (transform) */
+  transition: all 3s ease-in-out !important;
 
+  /* To jest kluczowe: wymuszamy, żeby przeglądarka pamiętała o animacji 
+       nawet gdy Obsidian próbuje ją skasować przy zamykaniu */
+  transition-property: opacity, transform, visibility !important;
+  transition-duration: 3s !important;
+}
+
+/* Jeśli Obsidian używa klasy do ukrywania, spowolnijmy ją */
+.suggestion-bg[style*="display: none"],
+.suggestion-container[style*="display: none"] {
+  display: block !important;
+  /* Próba zablokowania natychmiastowego zniknięcia */
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 3s ease-in-out, visibility 3s !important;
+}
+
+/* Specyficznie dla tła ze zdjęcia */
+div.suggestion-bg {
+  transition: opacity 3s ease-in-out !important;
+}
 
 /* ===================== settings open animation ===================== */
 @keyframes modal-open {
