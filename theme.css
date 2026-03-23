@@ -505,15 +505,13 @@ body:not(.is-phone) .prompt {
   }
 }
 
-/* cos sie zbugowalo an tablecie ale nie mam czasu tego teraz narpawiac
-.is-mobile .modal.mod-settings .vertical-tab-content {
-  color: var(--tr);
+/* so much specified because it was not possbile to apply in any different way */
+body.theme-dark .modal-container .modal.mod-settings .vertical-tab-content,
+body.theme-light .modal-container .modal.mod-settings .vertical-tab-content {
+  background-color: var(--tr);
+  background: var(--tr);
 }
 
-.is-tablet.theme-dark .vertical-tab-content {
-  color: var(--tr);
-}
-*/
 /* dont add blur in small places because its useless */
 textarea,
 input.metadata-input-text,
@@ -610,7 +608,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .is-phone .notice {
-  animation: tr-notice-in-mobile var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: tr-notice-in-mobile 1000ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes tr-notice-in-desktop {
