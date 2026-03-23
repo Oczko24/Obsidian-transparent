@@ -607,6 +607,7 @@ input[type="checkbox"]:checked:after {
   animation: tr-notice-in-desktop var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* ==================== Notice animation ==================== */
 .is-phone .notice {
   animation: tr-notice-in-mobile 1000ms cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -634,6 +635,8 @@ input[type="checkbox"]:checked:after {
     transform: translateY(0);
   }
 }
+
+/* ==================== Notice animation ==================== */
 
 /* spojnosc */
 .canvas-control-item:hover {
