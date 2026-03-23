@@ -638,7 +638,7 @@ input[type="checkbox"]:checked:after {
 
 /* ==================== Notice animation ==================== */
 
-/* spojnosc */
+/* consistency */
 .canvas-control-item:hover {
   background-color: var(--background-modifier-hover);
 }
@@ -1080,37 +1080,37 @@ hr {
 .canvas-controls {
   backdrop-filter: blur(20px);
   border-radius: 24px;
-  /* fixed because of roznica w mobile and desktop */
+  /* fixed because of difference between mobile and desktop */
   gap: 4px;
 
 }
 
-/* Wymuszenie wolnej animacji dla tła i kontenera menu */
+/* Force slow animation for background and menu container */
 .suggestion-bg,
 .suggestion-container,
 .menu {
-  /* 'all' zamiast samej przezroczystości, żeby złapać też ruch (transform) */
-  transition: all 3s ease-in-out !important;
+  /* 'all' instead of just opacity, to catch transformation as well */
+  transition: all 3s ease-in-out;
 
-  /* To jest kluczowe: wymuszamy, żeby przeglądarka pamiętała o animacji 
-       nawet gdy Obsidian próbuje ją skasować przy zamykaniu */
-  transition-property: opacity, transform, visibility !important;
-  transition-duration: 3s !important;
+  /* This is crucial: we force the browser to remember the animation 
+       even when Obsidian tries to remove it on close */
+  transition-property: opacity, transform, visibility;
+  transition-duration: 3s;
 }
 
-/* Jeśli Obsidian używa klasy do ukrywania, spowolnijmy ją */
+/* If Obsidian uses a class to hide it, let's slow it down */
 .suggestion-bg[style*="display: none"],
 .suggestion-container[style*="display: none"] {
-  display: block !important;
-  /* Próba zablokowania natychmiastowego zniknięcia */
-  opacity: 0 !important;
-  visibility: hidden !important;
-  transition: opacity 3s ease-in-out, visibility 3s !important;
+  display: block;
+  /* Attempt to block immediate disappearance */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 3s ease-in-out, visibility 3s;
 }
 
-/* Specyficznie dla tła ze zdjęcia */
+/* Specifically for the image background */
 div.suggestion-bg {
-  transition: opacity 3s ease-in-out !important;
+  transition: opacity 3s ease-in-out;
 }
 
 /* ===================== settings open animation ===================== */
