@@ -76,14 +76,8 @@ settings:
     #             label: "Pure White (Light Mode Only)"
     #             value: '#ffffff'
     -
-        id: bg-type-section
-        title: "Image Background"
-        type: heading
-        level: 2
-        collapsed: false
-    -
         id: bg-type
-        title: "Background Type"
+        title: "Background Image"
         description: "Choose between default green background and custom URL."
         type: class-select
         allowEmpty: false
@@ -101,12 +95,6 @@ settings:
         description: "Paste your image URL inside the quotes. E.g. url('https://...')"
         type: variable-text
         default: url('')
-    -
-        id: bg-tint-section
-        title: "Background Color Tint"
-        type: heading
-        level: 2
-        collapsed: false
     -
         id: bg-tint-color
         title: "Tint Color"
@@ -127,7 +115,7 @@ settings:
     -
         id: animation-settings-section
         title: "⚛️ Animation settings"
-        description: "work in progress, through you can use some of the animations"
+        description: "work in progress, though you can use some of the animations"
         type: heading
         level: 1
         collapsed: true
@@ -143,11 +131,16 @@ settings:
         type: class-toggle
         default: true
     -
+        id: no-animation
+        title: "Disable All Animations"
+        description: "Turn off every animation possbile in obsidian"
+        type: class-toggle
+        default: false
+    -
         id: snippets-section
         title: "🧩 Snippets / Addons"
         type: heading
         level: 1
-        collapsed: false
     -
         id: hide-canvas-dots
         title: "Hide Canvas Dots"
@@ -166,11 +159,11 @@ settings:
     -
         id: border-opacity
         title: "Border Opacity"
-        description: "Controls the visibility of subtle borders on tables, bases, and horizontal rules. 0 = invisible, 0.25 = clearly visible."
+        description: "Controls the visibility of subtle borders on tables, bases, and horizontal rules. 0 = invisible, 0.25 = clearly visible. not recommend above 0.50"
         type: variable-number-slider
         default: 0.063
         min: 0
-        max: 0.25
+        max: 1
         step: 0.001
     -
         id: accent-everywhere
@@ -178,6 +171,19 @@ settings:
         description: "Applies accent color to more UI elements (headings, sliders, icons)."
         type: class-toggle
 */
+/* style settings stylizacja */
+div.setting-item[data-id="info-section"] {
+  background-color: #00000060;
+}
+
+[data-id="main-section"]+.style-settings-container {
+  background-color: #00000030;
+  border-radius: var(--radius-l);
+}
+
+.style-settings-container {
+  padding-bottom: 0px;
+}
 
 /* ===================== vars ===================== */
 :root {
@@ -1242,3 +1248,13 @@ body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-t
 }
 
 /* ===================== Animate Note Opening ===================== */
+
+/* ===================== No animations ===================== */
+body.no-animation *,
+body.no-animation *::before,
+body.no-animation *::after {
+  transition-duration: 0s;
+  animation-duration: 0s;
+}
+
+/* ===================== No animations ===================== */
