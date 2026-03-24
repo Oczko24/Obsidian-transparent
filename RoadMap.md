@@ -47,4 +47,5 @@
 - [ ] Better looking option section for example in `.dropdown option`:))
 
 - [ ] more readable roadmap lol
-- [ ] stworzenie dev wersji motywu z animacjami I sitwerdzenie Na bazie testów na słabszych urządzeniach - czy zrobic, by animacje były dostępne by-default czy przez style settings 
+- [ ] stworzenie dev wersji motywu z animacjami I sitwerdzenie Na bazie testów na słabszych urządzeniach - czy zrobic, by animacje były dostępne by-default czy przez style settings
+- [ ] zrobienie mniej stymulującej wersji motywu, taki przełącznik na odcięcie, zmiana kolorow wytłumienie kolorów obrazków. ogolnie taki filtr na mocne kolory + zmiana tła z filtrem czarnym i dodanie z 30% pomarańczy. Ogólnie myślę, że jakieś presety by się mega spisały... jeśli style settings na nie pozwala:)))
