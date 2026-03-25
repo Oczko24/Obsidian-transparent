@@ -17,6 +17,7 @@
     - [x] accent everywhere
     - [x] hide canvas dots
     - [ ] colored folders
+    - [ ] **option to make accesibility lines visible and give option to tune transparency level of them:)))))**
   - [ ] more customisation
     - [ ] Headings
     - [ ] shades of black & change brightness
@@ -45,6 +46,7 @@
   - [ ] status bar fade
 - [x] canvas export / screenshot fix
 - [ ] Better looking option section for example in `.dropdown option`:))
+
 
 - [ ] more readable roadmap lol
 - [ ] stworzenie dev wersji motywu z animacjami I sitwerdzenie Na bazie testów na słabszych urządzeniach - czy zrobic, by animacje były dostępne by-default czy przez style settings
