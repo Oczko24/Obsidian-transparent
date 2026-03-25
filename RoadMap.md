@@ -18,6 +18,7 @@
     - [x] hide canvas dots
     - [ ] colored folders
     - [ ] **option to make accesibility lines visible and give option to tune transparency level of them:)))))**
+    - [ ] presets to background colors, make them above blur levels because background color is more important 
   - [ ] more customisation
     - [ ] Headings
     - [ ] shades of black & change brightness
