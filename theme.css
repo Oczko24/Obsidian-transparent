@@ -102,7 +102,7 @@ settings:
         type: variable-color
         opacity: false
         format: hsl-split
-        default: '#898625'
+        default: '#B13D00'
     -
         id: bg-tint-opacity
         title: "Tint Intensity"
