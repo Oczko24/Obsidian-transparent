@@ -118,18 +118,18 @@ settings:
         description: "work in progress, though you can use some of the animations"
         type: heading
         level: 1
-        collapsed: true
-    -
-        id: animate-note-open
-        title: "(beta) Animate Note Opening"
-        description: "Adds a smooth fade-in + slide-up animation when opening or switching notes."
-        type: class-toggle
+        collapsed: false
     -
         id: animate-modal-open
         title: "Animate Settings / Modal Opening"
         description: "Smooth scale + fade animation when opening Settings or any modal window."
         type: class-toggle
         default: true
+    -
+        id: animate-note-open
+        title: "(beta) Animate Note Opening"
+        description: "Adds a smooth fade-in + slide-up animation when opening or switching notes."
+        type: class-toggle
     -
         id: no-animation
         title: "Disable All Animations"
