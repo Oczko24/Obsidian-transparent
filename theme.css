@@ -201,7 +201,7 @@ body {
   --divider-width: 0px;
   --divider-color: var(--tr);
   --background-modifier-border: var(--tr);
-
+  --input-radius: 5px;
   --input-border-width: 1px;
   --scrollbar-width: 10px;
 
