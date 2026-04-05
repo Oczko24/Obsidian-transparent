@@ -1119,6 +1119,10 @@ div.suggestion-bg {
   transition: opacity 3s ease-in-out;
 }
 
+.metadata-property-icon {
+  padding: var(--size-4-1) 5px;
+}
+
 /* ===================== settings open animation ===================== */
 @keyframes modal-open {
   from {
