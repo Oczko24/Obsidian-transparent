@@ -774,6 +774,11 @@ because there was stupid glitch :((( but it is now fixed :)))
   box-shadow: none;
 }
 
+.canvas-color-picker-item {
+  border: none;
+  /* smoother color pallet looks */
+}
+
 /* hover on links */
 .popover.hover-popover .markdown-preview-view {
   background-color: var(--tr);
