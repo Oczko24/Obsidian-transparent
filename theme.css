@@ -583,7 +583,10 @@ input[type="number"] {
 /* sliders */
 input[type="range"] {
   background-color: hsla(var(--interactive-accent-hsl), 0.5);
+  accent-color: hsla(var(--color-accent-hsl), 0.6);
 }
+
+
 
 .suggestion-container.mod-search-suggestion {
   background-color: var(--tr);
@@ -980,11 +983,6 @@ because there was stupid glitch :((( but it is now fixed :)))
 .is-phone .mobile-tab-switcher {
   background-color: var(--tr06);
   backdrop-filter: blur(var(--set-blur));
-}
-
-/* sliders mobile */
-input[type="range"] {
-  accent-color: hsla(var(--color-accent-hsl), 0.6);
 }
 
 /* right sidebar menu for those extensions */
