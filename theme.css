@@ -1106,10 +1106,6 @@ hr {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.suggestion {
-  background-color: var(--tr);
-}
-
 .is-mobile .suggestion-container {
   border-radius: var(--radius-l);
   background-color: #00000000;
