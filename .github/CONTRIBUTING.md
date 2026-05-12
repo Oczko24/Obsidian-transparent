@@ -15,6 +15,8 @@ When reporting a bug, please tell me:
 - Your Obsidian version
 - A screenshot 
 
+If you have a feature request, just drop it in the issues tab. I'm open to ideas, especially if they make the theme feel more "premium".
+
 ## 💻 Pull Requests
 
 Want to code something yourself? Awesome! Feel free to open a Pull Request.
@@ -23,8 +25,6 @@ Just keep a few things in mind:
 - **Performance:** The theme needs to run smoothly on all devices. Please don't add things that will drastically kill performance on older phones.
 - **Animations:** If you add animations, make them clean and consistent with the rest. We are aiming for that premium feel.
 - **Style Settings:** If you add a new feature, consider making it a toggle in Style Settings so users have a choice.
-
-If you have a feature request, just drop it in the pull request. I'm open to ideas, especially if they make the theme feel more "premium".
 
 ## Local Development
 
