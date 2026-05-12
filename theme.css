@@ -1095,16 +1095,12 @@ hr {
 
 /* background dimming behind drawer when sliding sidebars is disabled */
 .workspace-drawer-backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0); /* was 0.5 */
   transition: opacity cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
 }
 
 .is-sliding .workspace-drawer-backdrop {
   background-color: transparent;
-}
-
-.workspace-drawer-backdrop {
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .is-mobile .suggestion-container {
