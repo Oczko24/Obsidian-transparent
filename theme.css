@@ -527,7 +527,10 @@ is-mobile - tablet and phone
 hr {
   border-color: var(--kolorboku);
   /* horizontal line fix */
+
+  margin: 0;
 }
+
 
 .menu-separator {
   border-bottom: 0px solid;
@@ -1067,10 +1070,6 @@ body .cm-html-embed thead tr>th {
 
 .markdown-rendered hr {
   border-color: rgba(255, 255, 255, var(--border-opacity));
-}
-
-hr {
-  margin: 0;
 }
 
 .mobile-navbar {
