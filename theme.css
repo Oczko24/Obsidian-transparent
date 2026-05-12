@@ -818,6 +818,7 @@ because there was stupid glitch :((( but it is now fixed :)))
 
 .canvas-control-group {
   box-shadow: none;
+  background-color: transparent;
 }
 
 .canvas-color-picker-item {
@@ -1124,10 +1125,6 @@ hr {
 
 .is-mobile .metadata-content {
   background-color: var(--tr);
-}
-
-.canvas-control-group {
-  background-color: transparent;
 }
 
 .canvas-controls {
