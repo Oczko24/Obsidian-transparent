@@ -200,6 +200,18 @@ div.setting-item[data-id="info-section"] {
 
 /* ===================== vars ===================== */
 :root {
+  /* fallback values: tint off by default */
+  --bg-tint-color-h: 240;
+  /* hue (set by Style Settings)        */
+  --bg-tint-color-s: 100%;
+  /* saturation (set by Style Settings) */
+  --bg-tint-color-l: 50%;
+  /* lightness (set by Style Settings)  */
+  --bg-tint-opacity: 0;
+  /* 0 = off, max 0.5 (slider capped)   */
+  --border-opacity: 0.063;
+  /* subtle borders on tables, bases, hr (≈ #ffffff10) */
+
   --tr: transparent;
   --set-blur: 80px;
   --mobile-sidebar-min-width: 100vw;
@@ -413,19 +425,6 @@ body.bg-type-custom .app-container::before {
    The overlay only has visual impact when the user picks a color with
    non-zero opacity. No extra GPU layer is created when transparent.
 */
-:root {
-  /* fallback values: tint off by default */
-  --bg-tint-color-h: 240;
-  /* hue (set by Style Settings)        */
-  --bg-tint-color-s: 100%;
-  /* saturation (set by Style Settings) */
-  --bg-tint-color-l: 50%;
-  /* lightness (set by Style Settings)  */
-  --bg-tint-opacity: 0;
-  /* 0 = off, max 0.5 (slider capped)   */
-  --border-opacity: 0.063;
-  /* subtle borders on tables, bases, hr (≈ #ffffff10) */
-}
 
 .app-container::after {
   content: "";
@@ -843,11 +842,6 @@ because there was stupid glitch :((( but it is now fixed :)))
 }
 
 /* tasks integration */
-.popover,
-.formula-editor .cm-tooltip.cm-tooltip-autocomplete,
-.suggestion-container {
-  background-color: #00000000;
-}
 
 /* make.md integration */
 
@@ -1092,7 +1086,8 @@ body .cm-html-embed thead tr>th {
 
 /* background dimming behind drawer when sliding sidebars is disabled */
 .workspace-drawer-backdrop {
-  background-color: rgba(0, 0, 0, 0); /* was 0.5 */
+  background-color: rgba(0, 0, 0, 0);
+  /* was 0.5 */
   transition: opacity cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
 }
 
