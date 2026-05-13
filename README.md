@@ -71,6 +71,8 @@ You don't need to change anything – everything works out of the box.
 2. Click **Manage** and search for **Transparent** (by Oczko24).
 3. Select **Install and Use**.
 
+4. ⚠️ **Important**: To unlock all customization options, theme presets, and the "100% True Glass" (OS transparency) effect, you **must** install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin.
+
 ### Star History
 
  <picture>
