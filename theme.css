@@ -200,6 +200,11 @@ settings:
         type: heading
         level: 1
     -
+        id: disable-drawer-dimming
+        title: "Disable Drawer Dimming (beta)"
+        description: "Removes the dimming and blur effect from sidebars. This makes sense only when sliding sidebars are enabled."
+        type: class-toggle
+    -
         id: show-scrollbars
         title: "Show Scrollbars"
         description: "Always show scrollbars instead of hiding them until hover."
@@ -665,8 +670,7 @@ is-mobile - tablet and phone
 .theme-dark .menu,
 /* Specificity hack to override default Obsidian background */
 .theme-light .menu {
-  backdrop-filter: blur(20px);
-  /* 20px looks objectively better than 80px */
+  backdrop-filter: blur(var(--ui-blur));
   background-color: var(--overlay-color);
   border: 1px solid var(--tr);
 }
@@ -731,9 +735,11 @@ body:not(.is-mobile) .prompt {
 }
 
 /* Mobile toolbar options list (tablet & phone bottom toolbar) */
-.is-mobile .mobile-toolbar-options-container {
+/*.is-mobile .mobile-toolbar-options-container {
   animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
 }
+  commented out because it wasnt really good looking 
+*/
 
 /* High specificity required to override default Obsidian styling */
 body.theme-dark .modal-container .modal.mod-settings .vertical-tab-content,
@@ -1241,10 +1247,19 @@ body .cm-html-embed thead tr>th {
   backdrop-filter: brightness(var(--brightness)) blur(12px);
 }
 
+/* Remove backdrop-filter specifically from the settings icon in the mobile drawer header when beta option is enabled */
+body.disable-drawer-dimming .clickable-icon.workspace-drawer-header-icon.mod-raised.mod-settings {
+  backdrop-filter: none;
+}
+
 /* blur + dimming when sliding sidebars is disabled */
 .workspace-drawer-inner {
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   transition: width cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
+}
+
+body.disable-drawer-dimming .workspace-drawer-inner {
+  backdrop-filter: none;
 }
 
 /* when sliding sidebars is enabled - no blur or dimming */
