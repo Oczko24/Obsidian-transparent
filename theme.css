@@ -234,19 +234,38 @@ settings:
         description: "Apply your accent color to headings, icons, and sliders throughout the UI."
         type: class-toggle
 */
-/* Style Settings UI Styling */
-div.setting-item[data-id="info-section"] {
-  background-color: #00000060;
+/* ===================== Style Settings UI Premium Styling ===================== */
+
+
+
+div.setting-item.setting-item-heading.style-settings-heading[data-id="obsidian-transparent"] .setting-item-info .setting-item-name {
+  color: var(--interactive-accent);
 }
 
-/*
-[data-id="main-section"]+.style-settings-container {
-  background-color: #00000030;
-  border-radius: var(--radius-l);
+div.setting-item[data-id="info-section"] {
+  background: var(--interactive-normal);
+  border-radius: 8px;
+  border: 1px solid var(--background-modifier-border);
+  padding: 1em;
+  margin-bottom: 1.5em;
 }
-*/
+
 .style-settings-container {
   padding-bottom: 0px;
+  transform-origin: top center;
+  animation: st-open 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes st-open {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scaleY(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 /* ===================== vars ===================== */
@@ -672,7 +691,7 @@ body.theme-dark .prompt {
   background-color: var(--overlay-color);
 }
 
-body:not(.is-phone) .prompt {
+body:not(.is-mobile) .prompt {
   animation: promptSlideUp var(--anim-duration-moderate) cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -686,6 +705,34 @@ body:not(.is-phone) .prompt {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ==================== Mobile menu & prompt animations ==================== */
+/* is-mobile covers both phone and tablet */
+
+.is-mobile .menu {
+  animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.is-mobile .prompt {
+  animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes tr-mobile-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile toolbar options list (tablet & phone bottom toolbar) */
+.is-mobile .mobile-toolbar-options-container {
+  animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* High specificity required to override default Obsidian styling */
