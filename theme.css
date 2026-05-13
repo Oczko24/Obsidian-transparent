@@ -202,7 +202,7 @@ settings:
     -
         id: disable-drawer-dimming
         title: "Disable Drawer Dimming (beta)"
-        description: "Removes the dimming and blur effect from sidebars. This makes sense only when sliding sidebars are enabled."
+        description: "Removes the dimming and blur effect from sidebars. This only makes sense on mobile devices, when sliding sidebars are enabled."
         type: class-toggle
     -
         id: show-scrollbars
