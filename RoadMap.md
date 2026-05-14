@@ -1,8 +1,12 @@
 # Roadmap 
 
-- [ ] Animate everything possible to make more premium feeling
-- [ ] Unificate phone, tablet and computer platform to show consistent colors blurs etc on every platform 
-
+- [ ] **Animate** everything possible to make more premium feeling
+- [ ] Unificate phone, tablet and computer platform to show consistent colors blurs etc on every platform
+- [ ] Style settings
+    - [ ] More theme presets
+    - [ ] Translate style settings to 4 more languages
+- [ ] and more:))
+<!--
 ### dev notes with things to do so i can note things I can do:))
 
 - [x] better light theme
@@ -53,3 +57,4 @@
 - [ ] stworzenie dev wersji motywu z animacjami I sitwerdzenie Na bazie testów na słabszych urządzeniach - czy zrobic, by animacje były dostępne by-default czy przez style settings
 - [ ] zrobienie mniej stymulującej wersji motywu, taki przełącznik na odcięcie, zmiana kolorow wytłumienie kolorów obrazków. ogolnie taki filtr na mocne kolory + zmiana tła z filtrem czarnym i dodanie z 30% pomarańczy. Ogólnie myślę, że jakieś presety by się mega spisały... jeśli style settings na nie pozwala:)))
 - [ ] update https://community.obsidian.md/themes/transparent
+--->
