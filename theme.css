@@ -259,6 +259,7 @@ div.setting-item[data-id="info-section"] {
   padding-bottom: 0px;
   transform-origin: top center;
   animation: st-open 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
 }
 
 @keyframes st-open {
@@ -503,6 +504,7 @@ body:not(.bg-custom) .setting-item[data-id="bg-custom-url"] {
   contain: strict;
   z-index: -1;
   pointer-events: none;
+  transform: translateZ(0);
 }
 
 /* === AUTO (default) === */
@@ -1015,7 +1017,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 .canvas-control-group {
   box-shadow: none;
-  background-color: transparent;
+  background-color: var(--tr);
 }
 
 .canvas-color-picker-item {
@@ -1203,8 +1205,8 @@ body.hide-canvas-dots svg.canvas-background {
 .is-phone .workspace-drawer .nav-files-container {
   -webkit-mask-image: linear-gradient(to bottom,
       black calc(100% - 120px),
-      transparent);
-  mask-image: linear-gradient(to bottom, black calc(100% - 120px), transparent);
+      var(--tr));
+  mask-image: linear-gradient(to bottom, black calc(100% - 120px), var(--tr));
 }
 
 .setting-group .setting-items {
@@ -1305,7 +1307,7 @@ body.disable-drawer-dimming .workspace-drawer-inner {
 }
 
 .is-sliding .workspace-drawer-backdrop {
-  background-color: transparent;
+  background-color: var(--tr);
 }
 
 .is-mobile .suggestion-container {
@@ -1495,6 +1497,7 @@ body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-ty
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
   animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
 }
 
 /* ===================== Animate Note Opening ===================== */
