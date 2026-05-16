@@ -1510,11 +1510,11 @@ body.no-animation *::after {
 /* ===================== No animations ===================== */
 
 /* ===================== iOS Fixes ===================== */
-.is-ios .workspace,
-.is-ios .workspace-split,
-.is-ios .workspace-leaf,
-.is-ios .workspace-leaf-content,
-.is-ios .view-content,
-.is-ios .view-header {
-  background-color: var(--tr) !important;
+body.is-ios .app-container .workspace,
+body.is-ios .app-container .workspace-split,
+body.is-ios .app-container .workspace-leaf,
+body.is-ios .app-container .workspace-leaf-content,
+body.is-ios .app-container .view-content,
+body.is-ios .app-container .view-header {
+  background-color: var(--tr);
 }
