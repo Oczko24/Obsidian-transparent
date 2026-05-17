@@ -61,6 +61,8 @@ You don't need to change anything – everything works out of the box.
 
 ### Roadmap
 
+you can find there roadmap and some info for devs etc
+
 [Roadmap](https://github.com/Oczko24/Obsidian-transparent/blob/main/RoadMap.md)
 
 ---
