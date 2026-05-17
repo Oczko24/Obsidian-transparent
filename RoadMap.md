@@ -1,10 +1,12 @@
-# Roadmap 
+# todo rather than roadmao
 
+- [ ] Make a good and informative roadmap rather than public todo lol
 - [ ] **Animate** everything possible to make more premium feeling
 - [ ] Unificate phone, tablet and computer platform to show consistent colors blurs etc on every platform
 - [ ] Style settings
     - [ ] More theme presets
     - [ ] Translate style settings to 4 more languages
+    - [ ] Give a possibility to turn off all the animations that this theme adds
 - [ ] and more:))
 
 <!--
