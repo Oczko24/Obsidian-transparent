@@ -6,7 +6,16 @@
     - [ ] More theme presets
     - [ ] Translate style settings to 4 more languages
 - [ ] and more:))
+
 <!--
+
+
+tested on:
+- android phone (low and high end)
+- windows 
+- linux & mobile emulation 
+
+
 ### dev notes with things to do so i can note things I can do:))
 
 - [x] better light theme
