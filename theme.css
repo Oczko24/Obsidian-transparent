@@ -238,6 +238,12 @@ settings:
         title: "Accent Color Everywhere"
         description: "Apply your accent color to headings, icons, and sliders throughout the UI."
         type: class-toggle
+    -
+        id: default-sync-error
+        title: "Default Sync Error Color"
+        description: "Use the default red color (var(--text-error)) for sync status errors instead of the theme's muted color."
+        type: class-toggle
+        default: false
 */
 /* ===================== Style Settings UI Premium Styling ===================== */
 
@@ -1311,6 +1317,15 @@ div.suggestion-bg {
 
 .metadata-property-icon {
   padding: var(--size-4-1) 5px;
+}
+
+/* syncs */
+.sync-status-icon.mod-error {
+  color: #dadada90;
+}
+
+body.default-sync-error .sync-status-icon.mod-error {
+  color: var(--text-error);
 }
 
 /* ===================== settings open animation ===================== */
