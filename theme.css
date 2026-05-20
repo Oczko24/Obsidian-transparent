@@ -456,6 +456,7 @@ body .h-scroll-handle {
 }
 
 .theme-light {
+  --customaccentcolor: #ffe8d2;
   --brightness: 1.3;
   --kolorboku: #1d1d1f;
   /* text color readable black */
@@ -482,6 +483,7 @@ body .h-scroll-handle {
 }
 
 .theme-dark {
+  --customaccentcolor: #2e2515;
   --kolorboku: #e2e0dc;
   /* text color readable white */
   --brightness: 0.5;
@@ -861,6 +863,12 @@ select,
   background-color: var(--tr06);
   box-shadow: none;
 }
+
+
+select.dropdown option {
+  background-color: var(--background-primary-alt);
+}
+
 
 
 /* blur of 80px looks bad there */
