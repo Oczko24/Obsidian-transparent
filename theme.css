@@ -44,6 +44,15 @@ settings:
                 label: "True Glass (100% Transparent)"
                 value: preset-true-glass
     -
+        id: glass-opacity
+        title: "True Glass Opacity"
+        description: "Adjust background opacity when True Glass is enabled. 0 = fully transparent."
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 0.95
+        step: 0.01
+    -
         id: bg-section
         title: "🖼️ Background"
         type: heading
@@ -75,9 +84,6 @@ settings:
             -
                 label: "Custom Image URL"
                 value: bg-custom
-            -
-                label: "True Glass (100% Transparent)"
-                value: bg-glass
     -
         id: bg-custom-url
         title: "Custom Image URL"
@@ -294,6 +300,7 @@ div.setting-item[data-id="info-section"] {
   --bg-tint-opacity: 0;
   /* 0 = off, zero GPU cost */
   --border-opacity: 0.063;
+  --glass-opacity: 0;
 
   --tr: #00000000;
 
@@ -457,6 +464,7 @@ body .h-scroll-handle {
   --background-modifier-border-focus: rgba(0, 0, 0, 0.1);
   --overlay-color: rgba(255, 255, 255, 0.4);
   /* Elegant, delicate white glass for modals */
+  /*  --tab-text-color-focused: #b6ada3;*/
 }
 
 /* ===================== theme-light ===================== */
@@ -483,19 +491,25 @@ body .h-scroll-handle {
   /*     --color-base-40: #555555; but with 60 */
   --overlay-color: #00000080;
   /* 80 = 50% opacity */
+  /*  --tab-text-color-focused: #666666;*/
 }
 
 /* ===================== theme-dark ===================== */
 
 /* ===================== Background System ===================== */
 /*
-   Priority (high wins): bg-glass / preset-true-glass > bg-custom > bg-solid > bg-gradient > bg-auto
+   Priority (high wins): preset-true-glass > bg-custom > bg-solid > bg-gradient > bg-auto
    bg-auto: dark = base64 wallpaper (dimmed), light = soft gradient
    All styles work in both dark and light mode.
 */
 
 /* Conditional UI: hide custom URL input unless bg-custom is selected */
-body:not(.bg-custom) .setting-item[data-id="bg-custom-url"] {
+body:not(.bg-custom) .setting-item[data-id*="bg-custom-url"] {
+  display: none;
+}
+
+/* Conditional UI: hide glass opacity input unless preset-true-glass is selected */
+body:not(.preset-true-glass) .setting-item[data-id*="glass-opacity"] {
   display: none;
 }
 
@@ -520,13 +534,13 @@ body:not(.bg-custom) .setting-item[data-id="bg-custom-url"] {
 
 /* === AUTO (default) === */
 /* Dark auto: base64 wallpaper, dimmed */
-body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass):not(.preset-true-glass) .app-container::before {
+body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass) .app-container::before {
   background-image: var(--background-image-base64);
   filter: brightness(0.54) blur(var(--background-blur));
 }
 
 /* Light auto: soft gradient */
-body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass):not(.preset-true-glass) .app-container::before {
+body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass) .app-container::before {
   background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
   background-color: unset;
   filter: blur(var(--background-blur));
@@ -569,15 +583,21 @@ body.theme-dark.bg-custom .app-container::before {
 }
 
 /* === GLASS / TRUE GLASS (both modes) === */
-body.bg-glass .app-container::before,
 body.preset-true-glass .app-container::before,
 body.theme-light.preset-true-glass .app-container::before,
 body.theme-dark.preset-true-glass .app-container::before {
   background-image: none;
-  background-color: unset;
   filter: blur(var(--background-blur));
   -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
+}
+
+body.theme-light.preset-true-glass .app-container::before {
+  background-color: rgba(255, 255, 255, var(--glass-opacity));
+}
+
+body.theme-dark.preset-true-glass .app-container::before {
+  background-color: rgba(0, 0, 0, var(--glass-opacity));
 }
 
 /* ===================== Background Color Tint ===================== */
@@ -639,10 +659,11 @@ body.is-focused .workspace-ribbon.mod-left {
   background-color: var(--tr);
 }
 
-/* Enhance visibility of the active tab for better navigation */
-.is-focused .workspace-tab-header {
+/* Enhance visibility of the active tab for better navigation 
+body.is-focused .workspace-tab-header-container .workspace-tab-header {
   color: #666666;
-}
+}*/
+
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
   background-color: var(--tr);
