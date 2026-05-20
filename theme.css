@@ -196,6 +196,12 @@ settings:
         type: class-toggle
         default: false
     -
+        id: disable-header-animations
+        title: "Disable Header Animations"
+        description: "Turn off the material pop animation and dynamic padding when focusing headers."
+        type: class-toggle
+        default: false
+    -
         id: animate-note-open
         title: "Animate Note Opening (beta)"
         description: "Slide-up + fade when opening or switching notes."
@@ -1545,6 +1551,68 @@ body:not(.disable-splash-screen):not(.no-animation) .workspace {
 }
 
 /* ===================== Startup Animation (Splash Screen) ===================== */
+
+/* ===================== Header Animations ===================== */
+
+/* zdebugowane przy pomocy gemini ponieważ sam nie potrafiłem naprawić specyficznego przechodzenia, gdy naciskało się strzałkę w górę, miało to związek w ogóle z bugiem CodeMirror lecz jakiegos researchu nie robiłem w związku z tym - ważne, że działa. */
+body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header .cm-formatting-header {
+  position: absolute;
+  top: auto;
+  animation: materialPopHeader 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes materialPopHeader {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) scale(0.6) translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-100%) scale(1) translateX(0);
+  }
+}
+
+/* linijka traci fokus */
+body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header {
+  position: relative;
+  padding-left: 0px;
+  transition: padding-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* linijka zyskuje fokus */
+body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active.HyperMD-header {
+  transition: padding-left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Hardcoded odsuwanie, pewnie będzie problem podczas zmiany czcionek headerów, lecz to się wydaje być niszowym rozwiązaniem */
+body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active {
+  &.HyperMD-header-1 {
+    padding-left: 20px
+  }
+
+  &.HyperMD-header-2 {
+    padding-left: 30px
+  }
+
+  &.HyperMD-header-3 {
+    padding-left: 40px
+  }
+
+  &.HyperMD-header-4 {
+    padding-left: 50px
+  }
+
+  &.HyperMD-header-5 {
+    padding-left: 60px
+  }
+
+  &.HyperMD-header-6 {
+    padding-left: 70px
+  }
+}
+
+/* ===================== Header Animations ===================== */
 
 /* ===================== iOS Fixes ===================== */
 body.is-ios .app-container .workspace,
