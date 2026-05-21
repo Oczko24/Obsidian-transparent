@@ -1525,9 +1525,6 @@ body:not(.disable-splash-screen):not(.no-animation)::before {
 }
 
 body:not(.disable-splash-screen):not(.no-animation) .workspace {
-  /* Use 'backwards' fill mode instead of 'forwards' and remove default 'opacity: 0'. 
-     This ensures the stacking context is removed after the animation completes,
-     fixing backdrop-filter transparency and z-index overlap issues. */
   animation: vaultReveal 1.2s ease 1.2s backwards;
 }
 
