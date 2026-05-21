@@ -1525,10 +1525,10 @@ body:not(.disable-splash-screen):not(.no-animation)::before {
 }
 
 body:not(.disable-splash-screen):not(.no-animation) .workspace {
-  opacity: 0;
-  animation: vaultReveal 1.2s ease forwards;
-  /* delay to hide that the theme is not fully loaded yet  */
-  animation-delay: 1.2s;
+  /* Use 'backwards' fill mode instead of 'forwards' and remove default 'opacity: 0'. 
+     This ensures the stacking context is removed after the animation completes,
+     fixing backdrop-filter transparency and z-index overlap issues. */
+  animation: vaultReveal 1.2s ease 1.2s backwards;
 }
 
 @keyframes vaultReveal {
