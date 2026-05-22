@@ -42,7 +42,7 @@ tested on:
 - [ ] Make readme better
   - [ ] GIF with animations
 - [ ] more animations and make them all consistent -> below based on ai research about things i will do 
-  - [ ] note open fade-in + slide up
+  - [x] note open fade-in + slide up
   - [ ] strikethrough done tasks
   - [ ] hover scale on icons/buttons
   - [ ] fade out inactive tabs

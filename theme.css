@@ -358,21 +358,6 @@ body.preset-orange svg.canvas-background {
   display: none;
 }
 
-body.preset-orange:not(.disable-modal-animation) .modal {
-  animation: modal-open calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
-}
-
-body.preset-orange:not(.disable-modal-animation) .modal-bg {
-  animation: modal-bg-fade calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
-}
-
-body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
-body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
-body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
-body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
-  animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
-}
-
 /* ===================== Orange ===================== */
 /* ===================== Theme Presets ===================== */
 
@@ -987,40 +972,11 @@ body.hide-canvas-dots svg.canvas-background {
   display: none;
 }
 
-/* Temporary canvas fix */
+/* Canvas export / screenshot background fix */
 .theme-dark .canvas-wrapper.is-screenshotting,
 .theme-light .canvas-wrapper.is-screenshotting {
-  background-color: #24291e;
+  background-color: var(--fakeblur);
   background-image: none;
-}
-
-/* Canvas export / screenshot background fix */
-.theme-dark .canvas-wrapper.is-screenshotting {
-  background-color: #0f0f0c;
-}
-
-.theme-light .canvas-wrapper.is-screenshotting {
-  background-color: #f0f0ee;
-}
-
-.theme-dark .canvas-wrapper.is-screenshotting::before,
-.theme-light .canvas-wrapper.is-screenshotting::before {
-  content: "";
-  position: absolute;
-  inset: calc(-2 * var(--background-blur));
-  background-image: var(--background-image-base64);
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.theme-dark .canvas-wrapper.is-screenshotting::before {
-  filter: brightness(0.54) blur(var(--background-blur));
-}
-
-.theme-light .canvas-wrapper.is-screenshotting::before {
-  filter: brightness(4) blur(var(--background-blur));
 }
 
 .canvas-control-item {
@@ -1028,12 +984,12 @@ body.hide-canvas-dots svg.canvas-background {
   border-radius: var(--canvas-controls-radius);
 }
 
-.canvas-card-menu {
+.canvas-card-menu,
+.canvas-control-group {
   box-shadow: none;
 }
 
 .canvas-control-group {
-  box-shadow: none;
   background-color: var(--tr);
 }
 
@@ -1142,11 +1098,9 @@ body.hide-canvas-dots svg.canvas-background {
 
 /* ===================== mobile ===================== */
 /* better settings on mobile  */
-.is-phone .vertical-tab-header-group-title,
-
-/*.is-phone .setting-item-heading .setting-item-name {
+.is-phone .vertical-tab-header-group-title {
   color: var(--color-accent);
-}*/
+}
 
 /* tab manager on mobile/ */
 .mobile-tab-preview-empty {
@@ -1495,6 +1449,10 @@ body.accent-everywhere hr {
 }
 
 /* Main note view - mod-root excludes side-panels, '>' excludes embeds */
+body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
+body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
+body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
+body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
 body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
 body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
 /* mod-active re-fires animation when switching note from the left file panel */
@@ -1623,6 +1581,7 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-a
 }
 
 /* ===================== Inline Formatting Animations ===================== */
+/* ogolnie to mega dumny jhestem z tego kawałka kodu :))) */
 
 @keyframes premiumHorizontalPush {
   0% {

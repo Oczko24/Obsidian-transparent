@@ -22,7 +22,6 @@ The theme is fully responsive and **supports both Light and Dark modes**, adapti
 </p>
 
 ## Features
-
 - **Light Color Palette**: The theme uses a soft color scheme that is easy on the eyes, perfect for long writing sessions.
 - **Minimalistic Design**: Clean lines and ample white space create a serene workspace, **focusing on your content**.
 - **Customizable Background**: You can easily `change the background image` to any custom URL directly from the **Style Settings** plugin, or stick with the default green aesthetic.
@@ -39,6 +38,7 @@ Comment for dev to future improvement of readme
 - testowanie na komputerze telefonie I tablecie (wszytskie konfiguracje obsidiana)
 - bardzo regularne aktualizacje, szybka odpowiedz na zgłaszane problemy czy rzeczy jakie mogę dodać - ciągły rozwój  
 - testy wydajnościowe na różnych urządzeniach, aby sprawdzić na ile theme obciąża urządzenie w zestawieniu z dsfult I sporządzenie tabelek wydsjnosciowych:)
+- bardzo częste aktualizacje
 --->
 
 Enjoy a **beautiful** and functional writing experience with this theme!
