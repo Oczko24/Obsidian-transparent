@@ -1031,6 +1031,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 .tooltip {
   background-color: var(--fakeblur);
+  color: var(--text-normal);
   /* this color is a fake blur used in places where real blur can't be applied */
 }
 
@@ -1168,11 +1169,15 @@ body.hide-canvas-dots svg.canvas-background {
 }
 
 /* fade at the bottom of file list, behind nav buttons */
-.is-phone .workspace-drawer .nav-files-container {
-  -webkit-mask-image: linear-gradient(to bottom,
-      black calc(100% - 120px),
-      var(--tr));
-  mask-image: linear-gradient(to bottom, black calc(100% - 120px), var(--tr));
+@supports (-webkit-mask-image: none) {
+
+  /* ai mi to zaproponowało aby linter nie narzekał */
+  .is-phone .workspace-drawer .nav-files-container {
+    -webkit-mask-image: linear-gradient(to bottom,
+        black calc(100% - 120px),
+        transparent);
+    mask-image: linear-gradient(to bottom, black calc(100% - 120px), transparent);
+  }
 }
 
 .setting-group .setting-items {
