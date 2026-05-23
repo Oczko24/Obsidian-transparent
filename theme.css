@@ -1169,15 +1169,11 @@ body.hide-canvas-dots svg.canvas-background {
 }
 
 /* fade at the bottom of file list, behind nav buttons */
-@supports (-webkit-mask-image: none) {
-
-  /* ai mi to zaproponowało aby linter nie narzekał */
-  .is-phone .workspace-drawer .nav-files-container {
-    -webkit-mask-image: linear-gradient(to bottom,
-        black calc(100% - 120px),
-        transparent);
-    mask-image: linear-gradient(to bottom, black calc(100% - 120px), transparent);
-  }
+.is-phone .workspace-drawer .nav-files-container {
+  -webkit-mask-image: linear-gradient(to bottom,
+      black calc(100% - 120px),
+      var(--tr));
+  mask-image: linear-gradient(to bottom, black calc(100% - 120px), var(--tr));
 }
 
 .setting-group .setting-items {
