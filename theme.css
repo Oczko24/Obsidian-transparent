@@ -5,6 +5,8 @@ https://github.com/Oczko24/Obsidian-transparent
 
 Your feedback and suggestions are greatly appreciated! 
 I’m working to make this as polished and functional as possible. Thanks for your support!
+
+Please don't copy this code without mentioning repository link
 */
 
 /* ========= style settings plugin support ========== */
@@ -776,15 +778,41 @@ body:not(.is-mobile) .prompt {
 
 /* ==================== Mobile menu & prompt animations ==================== */
 /* is-mobile covers both phone and tablet */
-
+/* ponizej lepiej pasuje 750ms ale to poprawie w przyszlosci */
 .is-phone .menu {
   /* phone bo na tablecie to wyglada po prostu zle */
-  animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+  animation: tr-mobile-slide-up var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .is-mobile .prompt {
-  animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+  animation: tr-mobile-slide-up var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* ==================== Settings mobile bypass ==================== */
+/* im really proud of this tbh */
+@keyframes tr-settings-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(var(--slide-start));
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+body.is-phone .modal.mod-settings .vertical-tab-content-container {
+  --slide-start: 30px;
+  animation: tr-settings-slide var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+body.is-phone .modal.mod-settings .vertical-tab-header {
+  --slide-start: -30px;
+  animation: tr-settings-slide var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* end ==================== Settings mobile drill-down ==================== */
 
 @keyframes tr-mobile-slide-up {
   from {
@@ -1130,6 +1158,13 @@ body.hide-canvas-dots svg.canvas-background {
 
 
 /* ===================== mobile ===================== */
+.is-phone .menu-group .menu-item.is-label {
+  /* lepszy prawy przycisk na folderach */
+  padding: 6px 16px;
+  margin: 8px 12px 8px 12px;
+  color: var(--text-normal);
+}
+
 /* better settings on mobile  */
 .is-phone .vertical-tab-header-group-title {
   color: var(--color-accent);
@@ -1267,6 +1302,7 @@ body.show-scrollbars ::-webkit-scrollbar-thumb {
     transform var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
 }
+
 
 .is-mobile.is-floating-nav .mod-raised {
   -webkit-backdrop-filter: brightness(var(--brightness)) blur(12px);
