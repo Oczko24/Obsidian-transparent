@@ -224,11 +224,6 @@ settings:
         type: heading
         level: 1
     -
-        id: disable-drawer-dimming
-        title: "Disable Drawer Dimming (beta)"
-        description: "Removes the dimming and blur effect from sidebars. This only makes sense on mobile devices, when sliding sidebars are enabled."
-        type: class-toggle
-    -
         id: show-scrollbars
         title: "Show Scrollbars"
         description: "Always show scrollbars instead of hiding them until hover."
@@ -268,6 +263,16 @@ settings:
         description: "Use the default red color (var(--text-error)) for sync status errors instead of the theme's muted color."
         type: class-toggle
         default: false
+    -
+        id: mobile-exclusive-section
+        title: "📱 Mobile Exclusive"
+        type: heading
+        level: 1
+    -
+        id: disable-drawer-dimming
+        title: "Disable Drawer Dimming (beta)"
+        description: "Removes the dimming and blur effect from sidebars. This only makes sense on mobile devices, when sliding sidebars are enabled."
+        type: class-toggle
 */
 /* ===================== Style Settings UI Premium Styling ===================== */
 
@@ -512,6 +517,12 @@ body:not(.preset-true-glass) .setting-item[data-id*="glass-opacity"] {
   display: none;
 }
 
+/* Conditional UI: hide mobile exclusive settings on desktop */
+body:not(.is-mobile) .setting-item[data-id*="mobile-exclusive-section"],
+body:not(.is-mobile) .setting-item[data-id*="disable-drawer-dimming"] {
+  display: none;
+}
+
 /* isolation: isolate is mandatory — keeps z-index: -1 scoped inside .app-container */
 .app-container {
   position: relative;
@@ -752,7 +763,8 @@ body:not(.is-mobile) .prompt {
 /* ==================== Mobile menu & prompt animations ==================== */
 /* is-mobile covers both phone and tablet */
 
-.is-mobile .menu {
+.is-phone .menu {
+  /* phone bo na tablecie to wyglada po prostu zle */
   animation: tr-mobile-slide-up var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1236,7 +1248,7 @@ body.show-scrollbars ::-webkit-scrollbar-thumb {
 }
 
 /* Remove backdrop-filter specifically from the settings icon in the mobile drawer header when beta option is enabled */
-body.disable-drawer-dimming .clickable-icon.workspace-drawer-header-icon.mod-raised.mod-settings {
+body.is-mobile.disable-drawer-dimming .clickable-icon.workspace-drawer-header-icon.mod-raised.mod-settings {
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
@@ -1248,7 +1260,7 @@ body.disable-drawer-dimming .clickable-icon.workspace-drawer-header-icon.mod-rai
   transition: width cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
 }
 
-body.disable-drawer-dimming .workspace-drawer-inner {
+body.is-mobile.disable-drawer-dimming .workspace-drawer-inner {
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
