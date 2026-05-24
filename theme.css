@@ -1607,9 +1607,9 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-a
 }
 
 /* Animuje znaczniki inline w aktywnej linii.
-  Wyklucza nagłówki (.cm-formatting-header) oraz całkowicie ignoruje wielolinijkowe bloki kodu (.HyperMD-codeblock).
+  Wyklucza nagłówki, elementy list i checkboxy oraz ignoruje wielolinijkowe bloki kodu.
 */
-body:not(.disable-formatting-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active:not(.HyperMD-codeblock) .cm-formatting:not(.cm-formatting-header) {
+body:not(.disable-formatting-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active:not(.HyperMD-codeblock) .cm-formatting:not(.cm-formatting-header):not(.cm-formatting-list):not(.cm-formatting-task) {
   display: inline-block;
   vertical-align: baseline;
   line-height: 0;
