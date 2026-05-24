@@ -184,6 +184,16 @@ settings:
         level: 1
         collapsed: false
     -
+        id: animationspeed
+        title: "Animation Speed"
+        description: "Adjust the overall speed of all transitions and animations. Warning: Very long speeds will cause layout delay or micro-stutters."
+        type: variable-number-slider
+        default: 500
+        min: 150
+        max: 1500
+        step: 50
+        format: ms
+    -
         id: disable-modal-animation
         title: "Disable Settings / Modal Animation"
         description: "Turn off smooth scale + fade when opening any modal or settings window."
@@ -271,7 +281,7 @@ settings:
     -
         id: disable-drawer-dimming
         title: "Disable Drawer Dimming (beta)"
-        description: "Removes the dimming and blur effect from sidebars. This only makes sense on mobile devices, when sliding sidebars are enabled."
+        description: "Removes the dimming and blur effect from sidebars. This only makes sense when sliding sidebars are enabled."
         type: class-toggle
 */
 /* ===================== Style Settings UI Premium Styling ===================== */
@@ -692,6 +702,10 @@ body.is-focused .workspace-tab-header-container .workspace-tab-header {
   /* I think this is the best implementation */
   position: relative;
   z-index: 1000;
+}
+
+.is-tablet .workspace-drawer-tab-options-list {
+  background-color: #000000;
 }
 
 /* remember that phone and mobile are two different things, just so you don't get confused when editing after a break 
@@ -1240,6 +1254,18 @@ body.show-scrollbars ::-webkit-scrollbar-thumb {
 .mobile-navbar {
   position: absolute;
   background-color: var(--tr);
+  transition:
+    opacity var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1),
+    margin-bottom var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1),
+    transform var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.is-phone .view-header {
+  transition:
+    opacity var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1),
+    transform var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
 }
 
 .is-mobile.is-floating-nav .mod-raised {
