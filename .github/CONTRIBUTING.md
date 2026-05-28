@@ -1,39 +1,13 @@
 # Contributing to Obsidian-transparent
 
-Firstly, thanks for even looking here! Your feedback, ideas, and contributions mean a lot and genuinely motivate me to develop this project :))
+Thank you for wanting to improve this theme!
 
-This theme is all about being **light, aesthetic, and unobtrusive**. I want to keep it fast and distraction-free, without heavy bloat. 
+## How to contribute:
+1. **Bugs & Features**: Open an issue on GitHub.
+2. **Pull Requests**:
+   - Fork the repo and create your branch.
+   - Make changes in `theme.css`.
+   - Test changes in Obsidian.
+   - Open a Pull Request.
 
-Here is how you can help:
-
-## 🐛 Bug Reports & Ideas
-
-Found a bug? Or maybe you have a cool idea for an animation or a tweak? Just open an **Issue**. 
-
-When reporting a bug, please tell me:
-- Your device (Computer, Phone, or Tablet)
-- Your Obsidian version
-- A screenshot 
-
-If you have a feature request, just drop it in the issues tab. I'm open to ideas, especially if they make the theme feel more "premium".
-
-## 💻 Pull Requests
-
-Want to code something yourself? Awesome! Feel free to open a Pull Request.
-
-Just keep a few things in mind:
-- **Performance:** The theme needs to run smoothly on all devices. Please don't add things that will drastically kill performance on older phones.
-- **Animations:** If you add animations, make them clean and consistent with the rest. We are aiming for that premium feel.
-- **Style Settings:** If you add a new feature, consider making it a toggle in Style Settings so users have a choice.
-
-## Local Development
-
-If you want to tweak the theme locally before making a PR:
-1. Go to your vault's `.obsidian/themes/` folder.
-2. Clone or download this repo there.
-3. Apply the theme in Obsidian and start making changes in `theme.css`.
-
-Thanks again for helping out!
-
-
-**i will update this guide soon because i dont have time right now to make everything as i think i should**
+All contributions are licensed under GPL-3.0.
