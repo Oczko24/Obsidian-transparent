@@ -56,7 +56,7 @@ Works especially well with:
 - MySnippets
 - Day Planner
 - Remotely Save
-- [**Enchanted Animations**](https://github.com/Oczko24/Enchanted-Animations) (Native animations turn off automatically to prevent conflicts)
+- [**Enchanted Animations**](https://github.com/Oczko24/Enchanted-Animations)
 
 You don't need to change anything – everything works out of the box.
 
