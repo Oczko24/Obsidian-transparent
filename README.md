@@ -35,9 +35,9 @@ Comment for dev to future improvement of readme
 - spójność interfejsu 
 - stawiam na optymalizację
 - celowanie w premium design połączone z moimi smaczkami
-- testowanie na komputerze telefonie I tablecie (wszytskie konfiguracje obsidiana)
+- testowanie na komputerze telefonie I tablecie (wszystkie konfiguracje obsidiana)
 - bardzo regularne aktualizacje, szybka odpowiedz na zgłaszane problemy czy rzeczy jakie mogę dodać - ciągły rozwój  
-- testy wydajnościowe na różnych urządzeniach, aby sprawdzić na ile theme obciąża urządzenie w zestawieniu z dsfult I sporządzenie tabelek wydsjnosciowych:)
+- testy wydajnościowe na różnych urządzeniach, aby sprawdzić na ile theme obciąża urządzenie w zestawieniu z default I sporządzenie tabelek wydajnościowych:)
 - bardzo częste aktualizacje
 --->
 
@@ -62,7 +62,7 @@ You don't need to change anything – everything works out of the box.
 
 ### Roadmap
 
-you can find there roadmap and some info for devs etc
+you can find the roadmap and some info for devs etc
 
 [Roadmap](https://github.com/Oczko24/Obsidian-transparent/blob/main/RoadMap.md)
 

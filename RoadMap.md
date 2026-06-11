@@ -1,8 +1,8 @@
-# todo rather than roadmao
+# todo rather than roadmap
 
 - [ ] Make a good and informative roadmap rather than public todo lol
 - [ ] **Animate** everything possible to make more premium feeling
-- [ ] Unificate phone, tablet and computer platform to show consistent colors blurs etc on every platform
+- [ ] Unify phone, tablet and computer platform to show consistent colors blurs etc on every platform
 - [ ] Style settings
     - [ ] More theme presets
     - [ ] Translate style settings to 4 more languages
@@ -22,7 +22,7 @@ tested on:
 
 - [x] better light theme
 - [x] style plugin settings
-- [x] better mobile mode trough it is good rn especially after latest obsidian update (1.11.7)
+- [x] better mobile mode though it is good rn especially after latest obsidian update (1.11.7)
 - [ ] more readable readme
   - [x] more screenshot especially from mobile
 - [ ] unification of everything possible on every platforms
@@ -32,7 +32,7 @@ tested on:
     - [x] accent everywhere
     - [x] hide canvas dots
     - [ ] colored folders
-    - [ ] **option to make accesibility lines visible and give option to tune transparency level of them:)))))**
+    - [ ] **option to make accessibility lines visible and give option to tune transparency level of them:)))))**
     - [ ] presets to background colors, make them above blur levels because background color is more important 
   - [ ] more customisation
     - [ ] Headings
@@ -65,7 +65,7 @@ tested on:
 
 
 - [ ] more readable roadmap lol
-- [ ] stworzenie dev wersji motywu z animacjami I sitwerdzenie Na bazie testów na słabszych urządzeniach - czy zrobic, by animacje były dostępne by-default czy przez style settings
+- [ ] stworzenie dev wersji motywu z animacjami I stwierdzenie Na bazie testów na słabszych urządzeniach - czy zrobic, by animacje były dostępne by-default czy przez style settings
 - [ ] zrobienie mniej stymulującej wersji motywu, taki przełącznik na odcięcie, zmiana kolorow wytłumienie kolorów obrazków. ogolnie taki filtr na mocne kolory + zmiana tła z filtrem czarnym i dodanie z 30% pomarańczy. Ogólnie myślę, że jakieś presety by się mega spisały... jeśli style settings na nie pozwala:)))
 - [ ] update https://community.obsidian.md/themes/transparent
 --->

@@ -1598,7 +1598,7 @@ body:not(.disable-splash-screen):not(.no-animation):not(.enchanted-animations-pr
 
 /* ===================== Header Animations ===================== */
 
-body:not(.disable-header-animations) body:not(.enchanted-animations-present) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header .cm-formatting-header {
+body:not(.disable-header-animations):not(.enchanted-animations-present) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header .cm-formatting-header {
   position: absolute;
   top: auto;
   animation: materialPopHeader 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
@@ -1656,7 +1656,7 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-a
 }
 
 /* ===================== Inline Formatting Animations ===================== */
-/* ogolnie to mega dumny jhestem z tego kawałka kodu :))) */
+/* ogolnie to mega dumny jestem z tego kawałka kodu :))) */
 
 @keyframes premiumHorizontalPush {
   0% {
