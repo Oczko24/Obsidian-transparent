@@ -9,6 +9,18 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 Please don't copy this code without mentioning repository link
 */
 
+
+/* Pluginy, pod które został napisany kod aby naprawić ich wyświetalnie:
+
+
+- Style Settings
+- Make.md
+- MySnippets
+- Day Planner
+- Remotely Save
+- [**Enchanted Animations**](https://github.com/Oczko24/Enchanted-Animations)
+
+*/
 /* ========= style settings plugin support ========== */
 
 /* @settings
@@ -867,14 +879,12 @@ input[type="range"] {
   border-color: var(--tr);
   max-height: 600px;
 }
-
 /* Button styling */
-button:not(.clickable-icon) {
+button:not(.clickable-icon):not(.nn-icon-button):not(.nn-list-group-header-collapse-button) { /* "nn" przedrostek to jest integracja ze zmienna od pluginu notebook navigator, a nn-list-group-header-collapse-button to jest integracja z pluginem notebook navigator */
   background-color: var(--color-accent);
   box-shadow: none;
   color: #060606;
 }
-
 /* right click on top right centered down arrow adjustments */
 .menu-scroll {
   display: inline;
