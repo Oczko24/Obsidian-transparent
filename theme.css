@@ -880,7 +880,7 @@ input[type="range"] {
   max-height: 600px;
 }
 /* Button styling */
-button:not(.clickable-icon):not(.nn-icon-button):not(.nn-list-group-header-collapse-button) { /* "nn" przedrostek to jest integracja ze zmienna od pluginu notebook navigator, a nn-list-group-header-collapse-button to jest integracja z pluginem notebook navigator */
+button:not(.clickable-icon):not(.nn-icon-button):not(.nn-list-group-header-collapse-button):not(.nn-mobile-toolbar-button) { /* "nn" przedrostek to jest integracja ze zmienna od pluginu notebook navigator, a nn-list-group-header-collapse-button to jest integracja z pluginem notebook navigator */
   background-color: var(--color-accent);
   box-shadow: none;
   color: #060606;
