@@ -14,11 +14,9 @@ The theme is fully responsive and **supports both Light and Dark modes**, adapti
   <img src="assets/preview2_computer.png" width="100%" />
 </p>
 
+## Beautiful on Any Device
 <p align="center">
-  <img src="assets/phone_screenshots/Phone_17_2_2026_2.png" width="24.3%" />
-  <img src="assets/phone_screenshots/Phone_17_2_2026_6.png" width="24.3%" />
-  <img src="assets/phone_screenshots/Phone_17_2_2026_3.png" width="24.3%" />
-  <img src="assets/phone_screenshots/Phone_17_2_2026_1.png" width="24.3%" />
+<img width="100%" alt="Phone screnshots" src="https://github.com/user-attachments/assets/2bf6a0f0-21f7-4fe2-8020-0df30fbbb885" />
 </p>
 
 ## Features
@@ -40,6 +38,11 @@ Comment for dev to future improvement of readme
 - testy wydajnościowe na różnych urządzeniach, aby sprawdzić na ile theme obciąża urządzenie w zestawieniu z default I sporządzenie tabelek wydajnościowych:)
 - bardzo częste aktualizacje
 --->
+
+- **Fluid Animations**: Subtle, smooth UI transitions that make navigating your workspace feel natural and responsive.
+<p align="center" >
+<img alt="Animations" src="https://github.com/user-attachments/assets/113785d7-902a-4307-b8cd-ea0005d741b0" />
+</p>
 
 Enjoy a **beautiful** and functional writing experience with this theme!
 
