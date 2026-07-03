@@ -442,6 +442,13 @@ body .tooltip,
 body .tooltip.mod-right,
 body .tooltip.mod-left {
   animation-duration: var(--anim-duration-fast);
+  will-change: transform, opacity;
+}
+
+/* ===================== Performance Overrides (Scrollers) ===================== */
+.cm-scroller, .markdown-preview-view {
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 /* 
@@ -1658,14 +1665,12 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-a
 
 @keyframes premiumHorizontalPush {
   0% {
-    margin-inline: -0.25em;
     /* left right */
     opacity: 0;
     transform: scale(0.85);
   }
 
   100% {
-    margin-inline: 0;
     /* left right */
     opacity: 1;
     transform: scale(1);
