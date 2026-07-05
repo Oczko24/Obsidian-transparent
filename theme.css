@@ -443,12 +443,14 @@ body .tooltip.mod-right,
 body .tooltip.mod-left {
   animation-duration: var(--anim-duration-fast);
   will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 /* ===================== Performance Overrides (Scrollers) ===================== */
 .cm-scroller, .markdown-preview-view {
   transform: translateZ(0);
   will-change: transform;
+  backface-visibility: hidden;
 }
 
 /* 
@@ -577,6 +579,7 @@ body:not(.is-mobile) .setting-item[data-id*="disable-drawer-dimming"] {
   z-index: -1;
   pointer-events: none;
   transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 /* === AUTO (default) === */
@@ -721,6 +724,7 @@ body.is-focused .workspace-tab-header-container .workspace-tab-header {
   backdrop-filter: blur(var(--ui-blur));
   transform: translateZ(0);
   will-change: transform, opacity;
+  backface-visibility: hidden;
   /* GPU acceleration */
   contain: layout style paint;
   border: 1px solid #00000000;
@@ -759,6 +763,7 @@ is-mobile - tablet and phone
   backdrop-filter: blur(var(--ui-blur));
   transform: translateZ(0);
   will-change: transform, opacity;
+  backface-visibility: hidden;
   /* GPU acceleration */
   contain: layout style paint;
   background-color: var(--overlay-color);
@@ -784,6 +789,7 @@ body.theme-dark .prompt {
   backdrop-filter: blur(var(--ui-blur));
   transform: translateZ(0);
   will-change: transform, opacity;
+  backface-visibility: hidden;
   /* GPU acceleration */
   contain: layout style paint;
   border: 1px solid #00000000;
@@ -1317,6 +1323,7 @@ body.show-scrollbars ::-webkit-scrollbar-thumb {
     margin-bottom var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1),
     transform var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .is-phone .view-header {
@@ -1324,6 +1331,7 @@ body.show-scrollbars ::-webkit-scrollbar-thumb {
     opacity var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1),
     transform var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 
@@ -1689,6 +1697,7 @@ body:not(.disable-formatting-animations):not(.enchanted-animations-present) .mar
   padding-block: 0;
   /* top down */
   will-change: margin-inline, transform, opacity;
+  backface-visibility: hidden;
   animation: premiumHorizontalPush 0.3s cubic-bezier(0.25, 1, 0.5, 1.05) forwards;
 }
 
