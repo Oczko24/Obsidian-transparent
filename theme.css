@@ -720,10 +720,10 @@ body.is-focused .workspace-tab-header-container .workspace-tab-header {
   -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   transform: translateZ(0);
-  will-change: transform, opacity, filter, backdrop-filter;
+  will-change: transform, opacity;
   /* GPU acceleration */
   contain: layout style paint;
-  border: 1px solid var(--tr);
+  border: 1px solid #00000000;
   background-color: var(--overlay-color);
   --settings-background: var(--overlay-color);
   --modal-background: var(--overlay-color);
@@ -758,10 +758,11 @@ is-mobile - tablet and phone
   -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   transform: translateZ(0);
-  will-change: transform, opacity, filter, backdrop-filter;
+  will-change: transform, opacity;
   /* GPU acceleration */
+  contain: layout style paint;
   background-color: var(--overlay-color);
-  border: 1px solid var(--tr);
+  border: 1px solid #00000000;
 }
 
 hr {
@@ -782,9 +783,10 @@ body.theme-dark .prompt {
   -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   transform: translateZ(0);
-  will-change: transform, opacity, filter, backdrop-filter;
+  will-change: transform, opacity;
   /* GPU acceleration */
-  border: 1px solid var(--tr);
+  contain: layout style paint;
+  border: 1px solid #00000000;
   background-color: var(--overlay-color);
 }
 
