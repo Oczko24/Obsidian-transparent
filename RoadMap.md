@@ -7,6 +7,7 @@
     - [ ] More theme presets
     - [ ] Translate style settings to 4 more languages
     - [ ] Give a possibility to turn off all the animations that this theme adds
+- [ ] Custom css styles properties
 - [ ] and more:))
 
 <!--
