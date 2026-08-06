@@ -192,6 +192,38 @@ settings:
         max: 0.3
         step: 0.01
     -
+        id: code-tint-section
+        title: "Code Blocks / Inlines"
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: code-tint-color
+        title: "Code Block / Inline Color Tint"
+        description: "Pick the tint color for code blocks and inline code. Default: #B13D00."
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#B13D00'
+    -
+        id: code-block-tint-opacity
+        title: "Code Block Tint Intensity"
+        description: "How strongly the tint is applied to code blocks. Default: 0."
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 0.35
+        step: 0.01
+    -
+        id: inline-code-tint-opacity
+        title: "Inline Code Tint Intensity"
+        description: "How strongly the tint is applied to inline code. Default: 0."
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 0.35
+        step: 0.01
+    -
         id: animation-settings-section
         title: "⚛️ Animations"
         type: heading
@@ -345,9 +377,14 @@ body:not(.enchanted-animations-present) .style-settings-container {
   --bg-tint-color-s: 100%;
   --bg-tint-color-l: 50%;
   --bg-tint-opacity: 0;
+  --code-tint-color: #b13d00;
+  --code-block-tint-opacity: 0;
+  --inline-code-tint-opacity: 0;
   /* 0 = off, zero GPU cost */
   --border-opacity: 0.063;
   --glass-opacity: 0;
+  --code-block-opacity: 0.24;
+  --inline-code-opacity: 0.18;
 
   --tr: #00000000;
 
@@ -403,6 +440,9 @@ body {
   --divider-width: 0px;
   --divider-color: var(--tr);
   --background-modifier-border: var(--tr);
+  --code-block-background: rgba(var(--code-background-rgb), var(--code-block-opacity));
+  --inline-code-background: rgba(var(--code-background-rgb), var(--inline-code-opacity));
+  --code-background: var(--code-block-background);
   --input-radius: 5px;
   --input-border-width: 1px;
   --scrollbar-width: 10px;
@@ -496,6 +536,7 @@ body .h-scroll-handle {
   --kolorboku: #1d1d1f;
   /* text color readable black */
   --tr06: rgba(255, 255, 255, 0.5);
+  --code-background-rgb: 255, 255, 255;
   /* Light, glass-like inputs */
   --interactive-normal: var(--tr06);
   --interactive-hover: rgba(255, 255, 255, 0.7);
@@ -523,6 +564,7 @@ body .h-scroll-handle {
   /* text color readable white */
   --brightness: 0.5;
   --tr06: #00000060;
+  --code-background-rgb: 0, 0, 0;
   --interactive-normal: var(--tr06);
   --interactive-hover: var(--tr06);
   --fakeblur: #0f0f0c;
@@ -633,6 +675,11 @@ body.theme-dark.bg-custom .app-container::before {
 }
 
 /* === GLASS / TRUE GLASS (both modes) === */
+.preset-true-glass {
+  --code-block-opacity: 0.16;
+  --inline-code-opacity: 0.12;
+}
+
 body.preset-true-glass .app-container::before,
 body.theme-light.preset-true-glass .app-container::before,
 body.theme-dark.preset-true-glass .app-container::before {
@@ -1032,12 +1079,34 @@ body .cm-html-embed thead tr>th {
 }
 
 /* Code block and inline code backgrounds */
-.cm-s-obsidian div.HyperMD-codeblock-bg,
-.cm-s-obsidian .cm-inline-code:not(.cm-formatting),
-.markdown-rendered pre,
-.markdown-rendered code,
-.cm-s-obsidian span.cm-inline-code {
-  background-color: var(--tr06);
+body .cm-s-obsidian div.HyperMD-codeblock-bg,
+body .cm-s-obsidian .HyperMD-codeblock-bg,
+body .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+body .cm-s-obsidian div.HyperMD-codeblock-end-bg,
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+body .markdown-preview-view pre,
+body .markdown-rendered pre {
+  background-color: var(--code-block-background);
+  background-image: linear-gradient(
+      color-mix(in srgb, var(--code-tint-color) calc(var(--code-block-tint-opacity) * 100%), transparent),
+      color-mix(in srgb, var(--code-tint-color) calc(var(--code-block-tint-opacity) * 100%), transparent)
+  );
+  box-shadow: inset 0 0 0 9999px color-mix(in srgb, var(--code-tint-color) calc(var(--code-block-tint-opacity) * 100%), transparent);
+}
+
+body .cm-s-obsidian .cm-inline-code:not(.cm-formatting),
+body .cm-s-obsidian span.cm-inline-code:not(.cm-formatting),
+body .markdown-rendered code {
+  background-color: var(--inline-code-background);
+  background-image: linear-gradient(
+      color-mix(in srgb, var(--code-tint-color) calc(var(--inline-code-tint-opacity) * 100%), transparent),
+      color-mix(in srgb, var(--code-tint-color) calc(var(--inline-code-tint-opacity) * 100%), transparent)
+  );
+}
+
+body .markdown-rendered pre code {
+  background-color: transparent;
+  background-image: none;
 }
 
 
