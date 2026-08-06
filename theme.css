@@ -733,7 +733,6 @@ body.is-focused .workspace-tab-header-container .workspace-tab-header {
   --modal-background: var(--overlay-color);
   /* I think this is the best implementation */
   position: relative;
-  z-index: 1000;
 }
 
 .is-tablet .workspace-drawer-tab-options-list {
