@@ -335,6 +335,12 @@ settings:
         title: "Disable Drawer Dimming (beta)"
         description: "Removes the dimming and blur effect from sidebars. This only makes sense when sliding sidebars are enabled."
         type: class-toggle
+    -
+        id: obsidian-classic-tree
+        title: "Revert to Classic File Tree"
+        description: "Disables the modern, spacious layout for files and folders, reverting to Obsidian's default compact style."
+        type: class-toggle
+        default: false
 */
 /* ===================== Style Settings UI Premium Styling ===================== */
 
@@ -731,10 +737,76 @@ body.theme-dark.preset-true-glass .app-container::before {
 
 /* ===================== blurred background via pseudo-element ===================== */
 
-/* left menu text */
+/* left menu text - Base Theme Color */
 .nav-file-title,
 .nav-folder-title {
   color: var(--kolorboku);
+}
+
+/* ===================== File Explorer Layout Refinements ===================== */
+:root {
+  --nav-tree-pad-y: 0.5rem;
+  --nav-tree-pad-m: 0.625rem;
+  --nav-tree-boldness: 500;
+}
+
+body:not(.obsidian-classic-tree) .workspace-leaf-content .tree-item-self {
+  padding-top: var(--nav-tree-pad-y);
+  padding-bottom: var(--nav-tree-pad-y);
+  --nav-item-background-hover: hsla(0, 0%, 100%, 0.05);
+}
+
+body:not(.obsidian-classic-tree) .tree-item-self.mod-collapsible {
+  --icon-opacity: 1;
+  --nav-item-weight: var(--nav-tree-boldness);
+  --nav-item-weight-active: var(--nav-tree-boldness);
+  --nav-item-weight-hover: var(--nav-tree-boldness);
+  --nav-item-color: var(--text-muted);
+  --nav-item-color-hover: var(--text-muted);
+  --nav-item-color-active: var(--text-muted);
+}
+
+
+/* Clear standard visual clutter (shadows) */
+body:not(.obsidian-classic-tree) .workspace-split .tree-item-self.is-selected,
+body:not(.obsidian-classic-tree) .workspace-split .tree-item-self.has-focus {
+  box-shadow: none;
+}
+
+body:not(.obsidian-classic-tree) .workspace-split .tree-item-self.has-focus {
+  background-color: var(--background-modifier-hover);
+  --nav-item-background-hover: var(--background-modifier-hover);
+}
+
+body:not(.obsidian-classic-tree) .workspace-split .tree-item-self.is-selected {
+  background-color: var(--background-modifier-hover);
+  --nav-item-color-selected: var(--text-normal);
+}
+
+/* Drag handling */
+body:not(.obsidian-classic-tree) .workspace-split .tree-item-self.is-being-dragged {
+  --nav-collapse-icon-color: var(--text-normal);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: color-mix(in srgb, var(--text-normal) 15%, transparent);
+}
+
+body:not(.obsidian-classic-tree) .tree-item-self.is-being-dragged > .nav-file-tag {
+  color: var(--text-normal);
+}
+
+/* Touch adjustments */
+body:not(.obsidian-classic-tree).is-mobile .search-result-file-match,
+body:not(.obsidian-classic-tree).is-mobile .workspace-drawer-tab-options .workspace-tab-header-inner,
+body:not(.obsidian-classic-tree).is-mobile .workspace-leaf-content .tree-item-self {
+  padding-top: var(--nav-tree-pad-m);
+  padding-bottom: var(--nav-tree-pad-m);
+}
+
+body:not(.obsidian-classic-tree).is-mobile .nav-folder > .tree-item-children,
+body:not(.obsidian-classic-tree).is-mobile .nav-files-container > * {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2px 0;
 }
 
 .workspace-split.mod-root {
