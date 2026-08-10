@@ -78,7 +78,7 @@ you can find the roadmap and some info for devs etc
 3. Select **Install and Use**.
 
 4. ⚠️ **Important**: To unlock all customization options, theme presets, and the "100% True Glass" (OS transparency) effect, you **must** install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin.
-
+<!--
 ### Star History
 
  <picture>
@@ -86,7 +86,7 @@ you can find the roadmap and some info for devs etc
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Oczko24/Obsidian-transparent&type=date&legend=top-left" />
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Oczko24/Obsidian-transparent&type=date&legend=top-left" />
  </picture>
-
+--->
 ### Support
 
 If you like this theme, you can give a star to this repo on GitHub :)
