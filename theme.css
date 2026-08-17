@@ -2045,8 +2045,6 @@ body.is-popout-window .modal.mod-settings .vertical-tab-content {
   --titlebar-background-focused: var(--tr);
   --modal-background: var(--tr);
   --modal-sidebar-background: var(--tr);
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
 }
 
 body.is-popout-window .app-container,
@@ -2066,4 +2064,3 @@ body.is-popout-window .view-header {
 .setting-page-title {
     font-size: var(--font-ui-medium);
 }
-
