@@ -619,7 +619,8 @@ body:not(.is-mobile) .setting-item[data-id*="disable-drawer-dimming"] {
 }
 
 /* === BASE pseudo-element layout === */
-.app-container::before {
+.app-container::before,
+body.is-popout-window::before {
   content: "";
   position: fixed;
   inset: calc(-2 * var(--background-blur));
@@ -634,51 +635,59 @@ body:not(.is-mobile) .setting-item[data-id*="disable-drawer-dimming"] {
 
 /* === AUTO (default) === */
 /* Dark auto: base64 wallpaper, dimmed */
-body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass) .app-container::before {
+body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass) .app-container::before,
+body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass).is-popout-window::before {
   background-image: var(--background-image-base64);
   filter: brightness(0.54) blur(var(--background-blur));
 }
 
 /* Light auto: soft gradient */
-body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass) .app-container::before {
+body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass) .app-container::before,
+body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass).is-popout-window::before {
   background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
   background-color: unset;
   filter: blur(var(--background-blur));
 }
 
 /* === GRADIENT (both modes) === */
-body.bg-gradient .app-container::before {
+body.bg-gradient .app-container::before,
+body.bg-gradient.is-popout-window::before {
   background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
   background-color: unset;
   filter: blur(var(--background-blur));
 }
 
-body.theme-dark.bg-gradient .app-container::before {
+body.theme-dark.bg-gradient .app-container::before,
+body.theme-dark.bg-gradient.is-popout-window::before {
   filter: brightness(0.75) blur(var(--background-blur));
 }
 
 /* === SOLID (from tint hue, both modes) === */
-body.theme-light.bg-solid .app-container::before {
+body.theme-light.bg-solid .app-container::before,
+body.theme-light.bg-solid.is-popout-window::before {
   background-image: none;
   background-color: hsl(var(--bg-tint-color-h), 30%, 90%);
   filter: blur(var(--background-blur));
 }
 
-body.theme-dark.bg-solid .app-container::before {
+body.theme-dark.bg-solid .app-container::before,
+body.theme-dark.bg-solid.is-popout-window::before {
   background-image: none;
   background-color: hsl(var(--bg-tint-color-h), 30%, 15%);
   filter: blur(var(--background-blur));
 }
 
 /* === CUSTOM URL (both modes) === */
-body.bg-custom .app-container::before {
+body.bg-custom .app-container::before,
+body.bg-custom.is-popout-window::before {
   background-image: var(--bg-custom-url);
   background-size: cover;
   background-position: center;
   filter: blur(var(--background-blur));
 }
 
-body.theme-dark.bg-custom .app-container::before {
+body.theme-dark.bg-custom .app-container::before,
+body.theme-dark.bg-custom.is-popout-window::before {
   filter: brightness(0.54) blur(var(--background-blur));
 }
 
@@ -689,19 +698,24 @@ body.theme-dark.bg-custom .app-container::before {
 }
 
 body.preset-true-glass .app-container::before,
+body.preset-true-glass.is-popout-window::before,
 body.theme-light.preset-true-glass .app-container::before,
-body.theme-dark.preset-true-glass .app-container::before {
+body.theme-light.preset-true-glass.is-popout-window::before,
+body.theme-dark.preset-true-glass .app-container::before,
+body.theme-dark.preset-true-glass.is-popout-window::before {
   background-image: none;
   filter: blur(var(--background-blur));
   -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
 }
 
-body.theme-light.preset-true-glass .app-container::before {
+body.theme-light.preset-true-glass .app-container::before,
+body.theme-light.preset-true-glass.is-popout-window::before {
   background-color: rgba(255, 255, 255, var(--glass-opacity));
 }
 
-body.theme-dark.preset-true-glass .app-container::before {
+body.theme-dark.preset-true-glass .app-container::before,
+body.theme-dark.preset-true-glass.is-popout-window::before {
   background-color: rgba(0, 0, 0, var(--glass-opacity));
 }
 
@@ -1710,7 +1724,7 @@ body.no-animation *::after {
 /* this is not my code in general it is inspired by */
 /* Benjamin Fernandez - github.com/benfernandezmedia */
 
-body:not(.disable-splash-screen):not(.no-animation):not(.enchanted-animations-present)::before {
+body:not(.disable-splash-screen):not(.no-animation):not(.enchanted-animations-present):not(.is-popout-window)::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -1720,7 +1734,7 @@ body:not(.disable-splash-screen):not(.no-animation):not(.enchanted-animations-pr
   animation: splashFade 2.5s ease forwards;
 }
 
-body:not(.disable-splash-screen):not(.no-animation):not(.enchanted-animations-present) .workspace {
+body:not(.disable-splash-screen):not(.no-animation):not(.enchanted-animations-present):not(.is-popout-window) .workspace {
   animation: vaultReveal 1.2s ease 1.2s backwards;
 }
 
@@ -2001,5 +2015,46 @@ body.is-ios .app-container .workspace-leaf,
 body.is-ios .app-container .workspace-leaf-content,
 body.is-ios .app-container .view-content,
 body.is-ios .app-container .view-header {
+  background-color: var(--tr);
+}
+
+/* ===================== Popout Windows ===================== */
+
+body.is-popout-window {
+  background-color: transparent;
+}
+
+body.is-popout-window::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--overlay-color);
+  pointer-events: none;
+}
+
+body.is-popout-window .modal,
+body.is-popout-window .modal-bg,
+body.is-popout-window .titlebar,
+body.is-popout-window .titlebar-button-container.mod-right,
+body.is-popout-window .modal.mod-settings .vertical-tab-header,
+body.is-popout-window .modal.mod-settings .vertical-tab-content-container,
+body.is-popout-window .modal.mod-settings .vertical-tab-content {
+  background-color: var(--tr);
+  --titlebar-background: var(--tr);
+  --titlebar-background-focused: var(--tr);
+  --modal-background: var(--tr);
+  --modal-sidebar-background: var(--tr);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+body.is-popout-window .app-container,
+body.is-popout-window .workspace,
+body.is-popout-window .workspace-split,
+body.is-popout-window .workspace-leaf,
+body.is-popout-window .workspace-leaf-content,
+body.is-popout-window .view-content,
+body.is-popout-window .view-header {
   background-color: var(--tr);
 }
