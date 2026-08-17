@@ -1135,13 +1135,14 @@ body.is-phone:not(.enchanted-animations-present) .notice {
 /* graph view */
 .graph-controls {
   background-color: var(--tr);
-  -webkit-backdrop-filter: brightness(0.5) blur(12px);
-  backdrop-filter: brightness(0.5) blur(12px);
+  -webkit-backdrop-filter: (12px);
+  backdrop-filter: blur(12px);
 }
 
 .graph-controls:not(.is-close) {
   box-shadow: none;
   border: 0px solid var(--tr);
+  background-color: #00000080;
 }
 
 /* Table border styling */
