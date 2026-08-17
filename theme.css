@@ -1038,7 +1038,7 @@ input[type="range"] {
   max-height: 600px;
 }
 /* Button styling */
-button:not(.clickable-icon):not(.nn-icon-button):not(.nn-list-group-header-collapse-button):not(.nn-mobile-toolbar-button):not(.copy-code-button) { /* "nn" prefix = Notebook Navigator plugin integration */
+button:not(.clickable-icon):not(.nn-icon-button):not(.nn-list-group-header-collapse-button):not(.nn-mobile-toolbar-button):not(.copy-code-button):not([data-type="excalidraw"] *):not(.excalidraw *) { /* "nn" prefix = Notebook Navigator plugin integration */
   background-color: var(--color-accent);
   box-shadow: none;
   color: var(--text-on-accent);
@@ -2063,4 +2063,8 @@ body.is-popout-window .view-header {
 }
 .setting-page-title {
     font-size: var(--font-ui-medium);
+}
+/* ===================== excalidraw fixes ===================== */
+.excalidraw-search.document-search-container {
+    background-color: #00000060;
 }
