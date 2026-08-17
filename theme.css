@@ -825,9 +825,7 @@ body:not(.obsidian-classic-tree).is-mobile .nav-files-container > * {
   gap: 2px 0;
 }
 
-.workspace-split.mod-root {
-  background-color: var(--background-primary);
-}
+
 
 /* background image is now on .app-container::before, not here */
 .horizontal-main-container {
@@ -886,7 +884,6 @@ is-mobile - tablet and phone
 }
 
 .modal-bg {
-  width: 100%;
   background-color: var(--tr);
 }
 
