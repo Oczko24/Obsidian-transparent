@@ -9,5 +9,3 @@ Thank you for wanting to improve this theme!
    - Make changes in `theme.css`.
    - **Test** changes in Obsidian.
    - Open a Pull Request.
-
-All contributions are licensed under GPL-3.0
