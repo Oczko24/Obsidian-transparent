@@ -1134,13 +1134,9 @@ body.is-phone:not(.enchanted-animations-present) .notice {
 
 /* graph view */
 .graph-controls {
-  background-color: #00000080;
-  -webkit-backdrop-filter:
-    /*brightness(var(--brightness))*/
-    blur(12px);
-  backdrop-filter:
-    /*brightness(var(--brightness))*/
-    blur(12px);
+  background-color: var(--tr);
+  -webkit-backdrop-filter: brightness(0.5) blur(12px);
+  backdrop-filter: brightness(0.5) blur(12px);
 }
 
 .graph-controls:not(.is-close) {
