@@ -389,8 +389,6 @@ body:not(.enchanted-animations-present) .style-settings-container {
   /* 0 = off, zero GPU cost */
   --border-opacity: 0.063;
   --glass-opacity: 0;
-  --code-block-opacity: 0.24;
-  --inline-code-opacity: 0.18;
 
   --tr: #00000000;
 
@@ -543,6 +541,8 @@ body .h-scroll-handle {
   /* text color readable black */
   --tr06: rgba(255, 255, 255, 0.5);
   --code-background-rgb: 255, 255, 255;
+  --code-block-opacity: 0.5;
+  --inline-code-opacity: 0.5;
   /* Light, glass-like inputs */
   --interactive-normal: var(--tr06);
   --interactive-hover: rgba(255, 255, 255, 0.7);
@@ -571,6 +571,8 @@ body .h-scroll-handle {
   --brightness: 0.5;
   --tr06: #00000060;
   --code-background-rgb: 0, 0, 0;
+  --code-block-opacity: 0.38;
+  --inline-code-opacity: 0.38;
   --interactive-normal: var(--tr06);
   --interactive-hover: var(--tr06);
   --fakeblur: #0f0f0c;
