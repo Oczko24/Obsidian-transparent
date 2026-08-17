@@ -2058,3 +2058,12 @@ body.is-popout-window .view-content,
 body.is-popout-window .view-header {
   background-color: var(--tr);
 }
+/* ===================== settings fixes ===================== */
+.setting-page-titlebar {
+    background-color: var(--tr);
+    box-shadow: 0px 0px 0px 0 var(--tr);
+}
+.setting-page-title {
+    font-size: var(--font-ui-medium);
+}
+
