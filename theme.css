@@ -148,7 +148,7 @@ settings:
         description: "Blur intensity on the background. Higher = smoother look, more GPU cost."
         type: variable-number-slider
         default: 80
-        min: 10
+        min: 0
         max: 200
         step: 1
         format: px
