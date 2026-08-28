@@ -888,15 +888,21 @@ body.is-focused .workspace-tab-header-container .workspace-tab-header {
 }
 
 /* ===================== settings blur fixes ===================== */
-/* When Settings is open, the wallpaper dynamically adopts the Settings Blur */
-body:not(.is-phone):has(.modal.mod-settings) {
+/* When Settings is open in a new window, the wallpaper dynamically adopts the Settings Blur */
+body.is-popout-window:not(.is-phone):has(.modal.mod-settings) {
   --background-blur: var(--settings-blur);
 }
 
-/* Modal itself has no blur, preventing blur-on-blur with the wallpaper */
-body:not(.is-phone) .modal.mod-settings {
+/* Modal itself has no blur in popout, preventing blur-on-blur with the wallpaper */
+body.is-popout-window:not(.is-phone) .modal.mod-settings {
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
+}
+
+/* When settings are opened in the main window (not popout), apply settings blur directly to the modal */
+body:not(.is-popout-window):not(.is-phone) .modal.mod-settings {
+  -webkit-backdrop-filter: blur(var(--settings-blur));
+  backdrop-filter: blur(var(--settings-blur));
 }
 
 
