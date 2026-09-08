@@ -174,14 +174,14 @@ settings:
         format: px
     -
         id: tint-section
-        title: "🎨 Color Tint"
+        title: "🎨 Color Tint (Blend)"
         type: heading
         level: 1
         collapsed: false
     -
         id: tint-info
         title: "What is a tint?"
-        description: "A color overlay applied on top of the background. Works in both Dark and Light mode. Set Intensity to 0 to disable — zero performance cost when off."
+        description: "A color overlay using blend mode — tints the hue of the background. Works in both Dark and Light mode. Set Intensity to 0 to disable — zero performance cost when off."
         type: info-text
         markdown: true
     -
@@ -200,6 +200,35 @@ settings:
         default: 0
         min: 0
         max: 0.3
+        step: 0.01
+    -
+        id: dim-section
+        title: "🌑 Background Overlay"
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: dim-info
+        title: "What is Background Overlay?"
+        description: "A solid color layer placed directly on top of the background — no blending tricks. Use it to dim, brighten, or tint the background with any color. 0 = fully transparent (off), 1 = fully opaque. Works independently of Color Tint."
+        type: info-text
+        markdown: true
+    -
+        id: bg-dim-color
+        title: "Overlay Color"
+        description: "Choose any color for the overlay. Default is black for dimming, but you can pick any color."
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#000000'
+    -
+        id: bg-dim-opacity
+        title: "Overlay Intensity"
+        description: "0 = off (transparent), 1 = fully covers the background. Use low values (0.1–0.4) for subtle dimming."
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 1
         step: 0.01
     -
         id: code-tint-section
@@ -399,6 +428,10 @@ body:not(.enchanted-animations-present) .style-settings-container {
   /* 0 = off, zero GPU cost */
   --border-opacity: 0.063;
   --glass-opacity: 0;
+
+  /* background overlay (dim/tint without blend mode) */
+  --bg-dim-color: #000000;
+  --bg-dim-opacity: 0;
 
   --tr: #00000000;
 
@@ -770,7 +803,26 @@ body.theme-dark.preset-true-glass.is-popout-window::before {
 
 /* ===================== Background Color Tint ===================== */
 
-/* ===================== blurred background via pseudo-element ===================== */
+/* ===================== Background Overlay (Dimming) ===================== */
+/*
+   Solid color overlay — no blend mode.
+   Unlike Color Tint (which uses mix-blend-mode: color), this layer sits
+   directly on top of the background at full opacity you choose.
+   Default: black at opacity 0 (off). Works with any hex color.
+   Perfect for dimming the background or adding a colored wash.
+*/
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: color-mix(in srgb, var(--bg-dim-color) calc(var(--bg-dim-opacity) * 100%), transparent);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===================== Background Overlay (Dimming) ===================== */
+
 
 /* left menu text - Base Theme Color */
 .nav-file-title,
@@ -1416,9 +1468,15 @@ body.hide-canvas-dots svg.canvas-background {
   background-color: var(--tr);
 }
 
+/* mod-raised is applied by Obsidian during tab-switching transitions.
+   backdrop-filter: blur() on this element forces a full GPU repaint on
+   every card switch, adding ~1 s of visible lag on mobile.
+   Removed blur here — transparent background is enough since the
+   blurred wallpaper already shows through the workspace. */
 .is-mobile .mod-raised {
-  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
-  backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
+  /* backdrop-filter intentionally omitted — see comment above */
+  contain: layout style;
+  transform: translateZ(0);
 }
 
 .is-phone .workspace-split {
@@ -1642,14 +1700,23 @@ body:not(.disable-modal-animation):not(.enchanted-animations-present) .modal-bg 
 
 /* ===================== code blocks border radius ===================== */
 
+/* Hardcoded to 12 px — the desktop Obsidian default for --radius-l.
+   Using a literal value guarantees the same result on every platform
+   (Obsidian sets --radius-l to a smaller value on mobile). */
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
-  border-top-left-radius: var(--radius-l);
-  border-top-right-radius: var(--radius-l);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-end-bg {
-  border-bottom-left-radius: var(--radius-l);
-  border-bottom-right-radius: var(--radius-l);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Reading View — pre wraps the entire code block */
+body .markdown-preview-view pre,
+body .markdown-rendered pre {
+  border-radius: 12px;
 }
 
 .callout {
