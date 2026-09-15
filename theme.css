@@ -940,12 +940,8 @@ body.is-focused .workspace-tab-header-container .workspace-tab-header {
 }
 
 /* ===================== settings blur fixes ===================== */
-/* When Settings is open in a new window, the wallpaper dynamically adopts the Settings Blur */
-body.is-popout-window:not(.is-phone):has(.modal.mod-settings) {
-  --background-blur: var(--settings-blur);
-}
-
-/* Modal itself has no blur in popout, preventing blur-on-blur with the wallpaper */
+/* Modal itself has no blur in popout, preventing blur-on-blur with the wallpaper.
+   important: We no longer change the body's background blur via :has() to avoid linter performance warnings. */
 body.is-popout-window:not(.is-phone) .modal.mod-settings {
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
@@ -1177,11 +1173,14 @@ select.dropdown option {
   backdrop-filter: blur(2px);
 }
 
-body:not(.enchanted-animations-present) .notice {
+.notice {
   background-color: var(--tr);
   -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   color: var(--kolorboku);
+}
+
+body:not(.is-phone):not(.enchanted-animations-present) .notice {
   animation: tr-notice-in-desktop var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1225,7 +1224,7 @@ body.is-phone:not(.enchanted-animations-present) .notice {
 /* graph view */
 .graph-controls {
   background-color: var(--tr);
-  -webkit-backdrop-filter: (12px);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
 
@@ -2024,15 +2023,12 @@ body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-i
 /* Strike-through animation for task list items (Reading View) */
 body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item {
   transition: opacity calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1),
-              color calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1),
-              text-decoration-color calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1);
-  text-decoration-line: line-through;
-  text-decoration-color: transparent;
+              color calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item.is-checked {
   opacity: 0.6;
-  text-decoration-color: var(--text-muted);
+  text-decoration: line-through;
   color: var(--text-muted);
 }
 
