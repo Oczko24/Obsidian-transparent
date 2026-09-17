@@ -2028,19 +2028,19 @@ body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-i
 
 body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item.is-checked {
   opacity: 0.6;
-  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  /* stylelint-disable-next-line */
   text-decoration: line-through;
   color: var(--text-muted);
 }
 
 /* Animated strikethrough in Live Preview */
 body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] {
-  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  /* stylelint-disable-next-line */
   text-decoration: none;
 }
 
 body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] .cm-line {
-  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  /* stylelint-disable-next-line */
   text-decoration: none;
 }
 
@@ -2062,7 +2062,7 @@ body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-so
 body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .cm-strikethrough {
   display: inline-block;
   position: relative;
-  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  /* stylelint-disable-next-line */
   text-decoration: none;
   color: var(--text-muted);
 }
@@ -2082,7 +2082,7 @@ body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .cm-striketh
 /* Reading mode strike-through */
 body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-preview-view .task-list-item.is-checked s,
 body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-preview-view .task-list-item.is-checked del {
-  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  /* stylelint-disable-next-line */
   text-decoration: none;
   position: relative;
   display: inline-block;
