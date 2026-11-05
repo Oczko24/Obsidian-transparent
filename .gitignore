@@ -1,2 +1,5 @@
 *.code-workspace
 .DS_Store
+node_modules
+ai-docs.md
+archive/

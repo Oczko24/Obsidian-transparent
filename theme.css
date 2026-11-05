@@ -1595,8 +1595,6 @@ body.is-mobile.disable-drawer-dimming .clickable-icon.workspace-drawer-header-ic
 .workspace-drawer-inner {
   -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
-  will-change: width, filter, backdrop-filter;
-  transition: width cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
 }
 
 body.is-mobile.disable-drawer-dimming .workspace-drawer-inner {
@@ -1950,7 +1948,7 @@ body:not(.disable-formatting-animations):not(.enchanted-animations-present) .mar
   line-height: 0;
   padding-block: 0;
   /* top down */
-  will-change: margin-inline, transform, opacity;
+  will-change: transform, opacity;
   backface-visibility: hidden;
   animation: premiumHorizontalPush 0.3s cubic-bezier(0.25, 1, 0.5, 1.05) forwards;
 }
@@ -2122,7 +2120,16 @@ body.is-ios .app-container .view-header {
 
 body.is-popout-window {
   background-color: transparent;
-  --background-blur: 0px;
+}
+
+body.is-popout-window:not(.is-popout-modal) {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--background-blur));
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--background-blur));
+}
+
+body.is-popout-window.is-popout-modal::after {
+  backdrop-filter: brightness(var(--brightness)) blur(var(--settings-blur));
+  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--settings-blur));
 }
 
 body.is-popout-window::after {
@@ -2135,8 +2142,6 @@ body.is-popout-window::after {
       var(--bg-tint-color-l),
       var(--bg-tint-opacity));
   mix-blend-mode: color;
-  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--settings-blur));
-  backdrop-filter: brightness(var(--brightness)) blur(var(--settings-blur));
   pointer-events: none;
 }
 
@@ -2176,3 +2181,39 @@ body.is-popout-window .view-header {
 .excalidraw-search.document-search-container {
     background-color: #00000060;
 }
+
+
+
+/* ---- TRUE GPU OPTIMIZATIONS ---- */
+/* Isolate all backdrop filters into their own GPU composite layers */
+.workspace-ribbon,
+.workspace-tab-header-container,
+.workspace-leaf,
+.view-header {
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* WORKAROUND: CSS Containment for the drawer */
+.workspace-drawer-inner {
+  contain: strict;
+}
+
+/* fixes for newest version */
+
+.is-phone .modal.mod-settings .vertical-tab-header-group-items,
+.is-phone .modal.mod-settings .setting-search-result-group {
+  background-color: var(--tr);
+}
+
+.setting-group .setting-item:not(.setting-item-heading)::before {
+  border: 0;
+}
+
+.is-phone .modal.mod-settings .vertical-tab-nav-item-chevron,
+.is-phone .modal.mod-settings .vertical-tab-nav-item-title,
+.is-phone .modal.mod-settings .setting-search-result-tab-text {
+  border-bottom: 0;
+}
+
