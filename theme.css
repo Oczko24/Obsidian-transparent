@@ -541,6 +541,14 @@ body .tooltip.mod-left {
   backface-visibility: hidden;
 }
 
+/* Canvas node exception: prevent raster scale locking in Chromium when zooming canvas */
+.canvas-node .cm-scroller,
+.canvas-node .markdown-preview-view {
+  transform: none;
+  will-change: auto;
+  backface-visibility: visible;
+}
+
 /* 
    Multi-select duplicate animation
    Original: 2000ms
@@ -1298,6 +1306,23 @@ input[type="range"]::-webkit-slider-thumb {
 /* canvas */
 body.hide-canvas-dots svg.canvas-background {
   display: none;
+}
+
+/* Canvas text and image crispness optimizations */
+.canvas {
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.canvas-node-container {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.canvas-node-content img,
+.canvas-node-content.media-embed img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
 }
 
 /* Canvas export / screenshot background fix */
@@ -2193,6 +2218,14 @@ body.is-popout-window .view-header {
   will-change: transform;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+}
+
+/* Exclude Canvas leaf from GPU translation lock to allow Skia/Chromium dynamic font re-rasterization on zoom */
+.workspace-leaf:has(.canvas-wrapper),
+.workspace-leaf:has([data-type="canvas"]) {
+  will-change: auto;
+  -webkit-transform: none;
+  transform: none;
 }
 
 /* WORKAROUND: CSS Containment for the drawer */
